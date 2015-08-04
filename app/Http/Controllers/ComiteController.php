@@ -11,22 +11,17 @@ use App\User;
 
 class ComiteController extends Controller
 {
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function show($name)
+    
+    public function getComite($name)
     {
-        $comite = Comite::where('name', '=', $name)->get();
-        // $comite['president'] = User::findOrFail($comite->president_id)->get();
-        // $comite['vicepresident'] = User::findOrFail($comite->vicepresident_id)->get();
-        // $comite['secretary'] = User::findOrFail($comite->secretary_id)->get();
-        // $comite['vocal'] = User::findOrFail($comite->vocal_id)->get();
-        // $comite['treasurer'] = User::findOrFail($comite->treasurer_id)->get();
+        $comite = Comite::where('name', '=', $name)->first();
+        $president = User::findOrFail($comite->president_id);
+        $vicepresident = User::findOrFail($comite->vicepresident_id);
+        $secretary = User::findOrFail($comite->secretary_id);
+        $vocal = User::findOrFail($comite->vocal_id);
+        $treasurer = User::findOrFail($comite->treasurer_id);
 
-        return view('pages.comite', $comite);
+        return view('pages.comite', compact('comite', 'president', 'vicepresident', 'secretary', 'vocal', 'treasurer'));
     }
 
 }

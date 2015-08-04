@@ -1,1 +1,1 @@
-<div id="copyright text-right">© Copyright 2015 Juan Carlos Minaya Morillo</div>
+<br><div id="copyright text-right">© Copyright 2015 Juan Carlos Minaya Morillo</div>

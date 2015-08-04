@@ -34,4 +34,4 @@ Route::group(['namespace' => 'Auth'], function()
 
 Route::get('user/{id}', 'UserController@showProfile');
 
-Route::get('comite/{name}', ['middleware' => 'auth'], 'ComiteController@show'	);
+Route::get('comite/{name}', ['middleware' => 'auth', 'uses' => 'ComiteController@getComite']);

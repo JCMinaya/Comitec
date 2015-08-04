@@ -15,7 +15,7 @@ class ComiteTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        $comites = array("Civil", "Industrial", "Software y Sistemas", "Mecatrónica", "Electrónica", "Diseño Industrial", "Medicina", "Psicología");
+        $comites = array("Civil", "Industrial", "Software", "Mecatrónica", "Electrónica", "Diseño", "Medicina", "Psicología");
         $i = 0;
 
         foreach ($comites as $comite) {
