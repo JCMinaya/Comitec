@@ -11,5 +11,8 @@ class Comite extends Model
      *
      * @var string
      */
-    protected $table = 'comites';
+    protected $table = 'comite';
+
+    protected $fillable = ['name', 'type_id', 'president_id', 'vicepresident_id', 'secretary_id', 'vocal_id', 'treasurer_id'];
+
 }

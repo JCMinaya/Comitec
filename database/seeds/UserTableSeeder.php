@@ -15,7 +15,7 @@ class UserTableSeeder extends Seeder
     {
         $faker = Faker::create('es_ES');
 
-        for ($i=0; $i < 30; $i++) { 
+        for ($i=0; $i < 40; $i++) { 
         	$user = User::create(array(
         		'name' => $faker->userName,
         		'email' => $faker->unique()->numberBetween($min = 1000000, $max = 1070000) . '@est.intec.edu.do',

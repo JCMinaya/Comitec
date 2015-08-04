@@ -13,6 +13,25 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::group(['namespace' => 'Auth'], function()
+{
+	//Login Routes
+	Route::get('auth/login', 'AuthController@getLogin');
+	Route::post('auth/login', 'AuthController@postLogin');
+	Route::get('auth/logout', 'AuthController@getLogout');
+
+	// Registration routes...
+	Route::get('auth/register', 'AuthController@getRegister');
+	Route::post('auth/register', 'AuthController@postRegister');
+
+	//Password reset
+	Route::get('password/email', 'PasswordController@getEmail');
+	Route::post('password/email', 'PasswordController@postEmail');
+	Route::get('password/reset', 'PasswordController@getReset');
+	Route::post('password/reset', 'PasswordController@postReset');
+
+});
+
 Route::get('user/{id}', 'UserController@showProfile');
 
-Route::get('comite/{name}', ['middleware' => 'auth'], 'ComiteController@index');
+Route::get('comite/{name}', ['middleware' => 'auth'], 'ComiteController@show'	);

@@ -6,82 +6,27 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Comite;
+use App\User;
 
 class ComiteController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return Response
-     */
-    public function index()
-    {
-        
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  Request  $request
-     * @return Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
     /**
      * Display the specified resource.
      *
      * @param  int  $id
      * @return Response
      */
-    public function show($id)
+    public function show($name)
     {
-        //
+        $comite = Comite::where('name', '=', $name)->get();
+        // $comite['president'] = User::findOrFail($comite->president_id)->get();
+        // $comite['vicepresident'] = User::findOrFail($comite->vicepresident_id)->get();
+        // $comite['secretary'] = User::findOrFail($comite->secretary_id)->get();
+        // $comite['vocal'] = User::findOrFail($comite->vocal_id)->get();
+        // $comite['treasurer'] = User::findOrFail($comite->treasurer_id)->get();
+
+        return view('pages.comite', $comite);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  Request  $request
-     * @param  int  $id
-     * @return Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }
