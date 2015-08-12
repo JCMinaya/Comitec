@@ -57,7 +57,7 @@ return [
             'host'      => env('DB_HOST', 'localhost'),
             'database'  => env('DB_DATABASE', 'comitec'),
             'username'  => env('DB_USERNAME', 'root'),
-            'password'  => env('DB_PASSWORD', 'GP@MSPW'),
+            'password'  => env('DB_PASSWORD', 'kakito1'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
