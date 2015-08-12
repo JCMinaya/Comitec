@@ -7,6 +7,6 @@ Homestead.json
 /bootstrap/compiled.php
 .env.*.php
 .env.php
-LaraApp.sublime-project
-LaraApp.sublime-workspace
+comitec.sublime-project
+comitec.sublime-workspace
 .idea
