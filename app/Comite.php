@@ -14,5 +14,6 @@ class Comite extends Model
     protected $table = 'comite';
 
     protected $fillable = ['name', 'type_id', 'president_id', 'vicepresident_id', 'secretary_id', 'vocal_id', 'treasurer_id'];
+    protected $fillable = ['name', 'abreviacion', 'descripcion'];
 
 }

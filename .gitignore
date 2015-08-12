@@ -1,12 +1,12 @@
 /vendor
 /node_modules
+/config
 Homestead.yaml
 Homestead.json
 /config
 /bootstrap/compiled.php
 .env.*.php
 .env.php
-.env
 LaraApp.sublime-project
 LaraApp.sublime-workspace
 .idea
