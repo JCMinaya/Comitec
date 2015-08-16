@@ -19,8 +19,10 @@ class CreateStudentTable extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('password', 60);
-            $table->string('genre');
-            $table->integer('member');
+            $table->string('gender');
+            $table->boolean('is_member');
+            $table->integer('id_comite')->nullable();
+            $table->integer('id_rol')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

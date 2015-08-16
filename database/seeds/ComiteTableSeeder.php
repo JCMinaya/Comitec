@@ -15,18 +15,17 @@ class ComiteTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        $comites = array("Civil", "Industrial", "Software", "Mecatrónica", "Electrónica", "Diseño", "Medicina", "Psicología");
-        $i = 0;
+        $comites = array('Comite Estudiantíl de Negocio' => 'CENIT',
+            'Comite Estudiantíl de Sistemas y Software' => 'CEISS',
+            'Comite Estudiantíl de Ingeniería Industrial' => 'CEII',
+            'Comite Estudiantíl de Mecánica' => 'CIM'
+            );
 
-        foreach ($comites as $comite) {
+        foreach ($comites as $comite => $abre) {
         	$comite = Comite::create(array(
         		'name' => $comite,
-        		'type_id' => $faker->randomDigitNotNull,
-        		'president_id' => ++$i,
-        		'vicepresident_id' => ++$i,
-        		'secretary_id' => ++$i,
-        		'vocal_id' => ++$i,
-        		'treasurer_id' => ++$i,
+        		'abreviation' => $abre,
+                'description' => 'Esta es la descripcion del comité'
         	));
         }
     }

@@ -17,9 +17,13 @@ class CreatePostsTable extends Migration
             $table->integer('id_comite');
             $table->integer('id_major');
             $table->string('title');
-            $table->string('type');
-            $table->string('description');
+            $table->text('description');
             $table->date('date');
+            $table->integer('id_type');
+            $table->integer('duration')->nullable();
+            $table->date('event_date')->nullable();
+            $table->string('location')->nullable();
+            $table->timeStamps();
         });
     }
 

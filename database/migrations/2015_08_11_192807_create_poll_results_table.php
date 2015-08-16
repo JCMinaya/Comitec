@@ -17,6 +17,7 @@ class CreatePollResultsTable extends Migration
             $table->integer('id_post');
             $table->integer('id_student');
             $table->integer('id_answer');
+            $table->timeStamps();
         });
     }
 

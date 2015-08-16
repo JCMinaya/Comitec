@@ -16,6 +16,7 @@ class CreateAnnouncementsTable extends Migration
             $table->integer('duration');
             $table->date('event_date');
             $table->string('location');
+            $table->timeStamps();
         });
     }
 

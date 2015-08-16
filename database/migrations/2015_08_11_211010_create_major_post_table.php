@@ -16,6 +16,7 @@ class CreateMajorPostTable extends Migration
             $table->increments('id_major_post');
             $table->integer('id_post');
             $table->integer('id_major');
+            $table->timeStamps();
         });
     }
 

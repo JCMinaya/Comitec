@@ -18,6 +18,7 @@ class CreateCommentsTable extends Migration
             $table->integer('id_post');
             $table->date('date');
             $table->string('text');
+            $table->timeStamps();
         });
     }
 

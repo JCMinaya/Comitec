@@ -3,18 +3,344 @@
 	{
 		"selected_items":
 		[
-			[
-				"upda",
-				"updateAllNames"
-			],
-			[
-				"student",
-				"student_name"
-			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "config/database.php",
+			"settings":
+			{
+				"buffer_size": 4098,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 1282,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/seeds/DatabaseSeeder.php",
+			"settings":
+			{
+				"buffer_size": 475,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".env.example",
+			"settings":
+			{
+				"buffer_size": 302,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/panel.php",
+			"settings":
+			{
+				"buffer_size": 412,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/app.php",
+			"settings":
+			{
+				"buffer_size": 8164,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 1247,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/vendor/panelViews/login.blade.php",
+			"settings":
+			{
+				"buffer_size": 2964,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Middleware/RedirectIfAuthenticated.php",
+			"settings":
+			{
+				"buffer_size": 752,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/UserController.php",
+			"settings":
+			{
+				"buffer_size": 315,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Student.php",
+			"settings":
+			{
+				"buffer_size": 905,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Comite.php",
+			"settings":
+			{
+				"buffer_size": 283,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 302,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Role.php",
+			"settings":
+			{
+				"buffer_size": 254,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/vendor/panelViews/dashboard.blade.php",
+			"settings":
+			{
+				"buffer_size": 2897,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/vendor/panelViews/mainTemplate.blade.php",
+			"settings":
+			{
+				"buffer_size": 5965,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/seeds/StudentTableSeeder.php",
+			"settings":
+			{
+				"buffer_size": 727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_181937_create_student_table.php",
+			"settings":
+			{
+				"buffer_size": 986,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_185344_create_roles_table.php",
+			"settings":
+			{
+				"buffer_size": 586,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_185916_create_proposals_table.php",
+			"settings":
+			{
+				"buffer_size": 684,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/seeds/RolesTableSeeder.php",
+			"settings":
+			{
+				"buffer_size": 418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_210509_create_block_history_table.php",
+			"settings":
+			{
+				"buffer_size": 808,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_211010_create_major_post_table.php",
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 7443 files for \"localhost\"\n\nC:\\xampp\\htdocs\\comitec\\.env:\n    3  APP_KEY=SomeRandomString\n    4  \n    5: DB_HOST=localhost\n    6  DB_DATABASE=comitec\n    7  DB_USERNAME=root\n\nC:\\xampp\\htdocs\\comitec\\.env.example:\n    3  APP_KEY=SomeRandomString\n    4  \n    5: DB_HOST=localhost\n    6  DB_DATABASE=comitec\n    7  DB_USERNAME=root\n\nC:\\xampp\\htdocs\\comitec\\comitec.sublime-project:\n    8  	\"settings\": {\n    9          \"xdebug\": {\n   10:              \"url\": \"http://localhost:8080\",\n   11          }\n   12      }\n\nC:\\xampp\\htdocs\\comitec\\config\\app.php:\n   27      */\n   28  \n   29:     'url' => 'http://localhost',\n   30  \n   31      /*\n\nC:\\xampp\\htdocs\\comitec\\config\\database.php:\n   55          'mysql' => [\n   56              'driver'    => 'mysql',\n   57:             'host'      => env('DB_HOST', 'localhost'),\n   58              'database'  => env('DB_DATABASE', 'comitec'),\n   59              'username'  => env('DB_USERNAME', 'root'),\n   ..\n   67          'pgsql' => [\n   68              'driver'   => 'pgsql',\n   69:             'host'     => env('DB_HOST', 'localhost'),\n   70              'database' => env('DB_DATABASE', 'forge'),\n   71              'username' => env('DB_USERNAME', 'forge'),\n   ..\n   78          'sqlsrv' => [\n   79              'driver'   => 'sqlsrv',\n   80:             'host'     => env('DB_HOST', 'localhost'),\n   81              'database' => env('DB_DATABASE', 'forge'),\n   82              'username' => env('DB_USERNAME', 'forge'),\n\nC:\\xampp\\htdocs\\comitec\\config\\excel.php:\n   44          'memcache' => array(\n   45  \n   46:             'host' => 'localhost',\n   47              'port' => 11211,\n   48  \n\nC:\\xampp\\htdocs\\comitec\\config\\queue.php:\n   45          'beanstalkd' => [\n   46              'driver' => 'beanstalkd',\n   47:             'host'   => 'localhost',\n   48              'queue'  => 'default',\n   49              'ttr'    => 60,\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\1b41e11604cdf0bcef50d4231080b9c2387b6361:\n    1: a:4:{s:6:\"_token\";s:40:\"6tHgNKOiSZE6Ne9b67tZaNEUNPRblKg2tDFFL3DP\";s:9:\"_previous\";a:1:{s:3:\"url\";s:57:\"http://localhost:8000?XDEBUG_SESSION_START=sublime.xdebug\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439591070;s:1:\"c\";i:1439590855;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\533aa4d37db44e598b66bf3695de9a2d1f3d3406:\n    1: a:5:{s:6:\"_token\";s:40:\"QwHSKP32hIsqfgPjQrkf5ZP2Wx56MDmSBebUdTnk\";s:9:\"_previous\";a:1:{s:3:\"url\";s:35:\"http://localhost:8000/auth/register\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:3:\"url\";a:1:{s:8:\"intended\";s:34:\"http://localhost:8000/comite/civil\";}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439399635;s:1:\"c\";i:1439379506;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\73c11370a965179d023e136f242ab3b3b8b1eea6:\n    1: a:4:{s:6:\"_token\";s:40:\"4PRieMUrrwrGCuAWX3MJgnimz4f4tdpzNWHxDUhx\";s:9:\"_previous\";a:1:{s:3:\"url\";s:33:\"http://localhost:8000/panel/login\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439598464;s:1:\"c\";i:1439598272;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\776bc6b67ea88e813afbb95db8d8f7e83b83cff9:\n    1: a:4:{s:6:\"_token\";s:40:\"qGq97aTUxXj8oWzwLeyZqW4hgTtpNMp3DiSXGsSo\";s:9:\"_previous\";a:1:{s:3:\"url\";s:21:\"http://localhost:8000\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439655623;s:1:\"c\";i:1439648138;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\fc425a94d7a6e8d702061d297372c433254d6c3b:\n    1: a:5:{s:6:\"_token\";s:40:\"lLdOGuUwAibrZrFBf2afaijdxMGwXARGGWR7DMnc\";s:9:\"_previous\";a:1:{s:3:\"url\";s:28:\"http://localhost:8000/user/1\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:5:\"rapyd\";a:1:{s:14:\"panel/Link/all\";s:36:\"http://localhost:8000/panel/Link/all\";}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439414001;s:1:\"c\";i:1439409681;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\logs\\laravel.log:\n  496  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n  497  #11 {main}  \n  498: [2015-08-04 23:02:34] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  499  Stack trace:\n  500  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n  ...\n  518  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  519  #19 {main}  \n  520: [2015-08-04 23:04:52] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  521  Stack trace:\n  522  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n  ...\n  540  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  541  #19 {main}  \n  542: [2015-08-04 23:06:06] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  543  Stack trace:\n  544  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', '', Array)\n  ...\n  562  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  563  #19 {main}  \n  564: [2015-08-04 23:06:17] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  565  Stack trace:\n  566  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', '', Array)\n  ...\n 1799  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n 1800  #11 {main}  \n 1801: [2015-08-12 01:53:25] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n 1802  Stack trace:\n 1803  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n ....\n 2047  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n 2048  #11 {main}  \n 2049: [2015-08-12 20:02:09] local.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n 2050  Stack trace:\n 2051  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'kakito1', Array)\n\nC:\\xampp\\htdocs\\comitec\\tests\\TestCase.php:\n    8       * @var string\n    9       */\n   10:     protected $baseUrl = 'http://localhost';\n   11  \n   12      /**\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\README.md:\n   14  $capsule->addConnection([\n   15      'driver'    => 'mysql',\n   16:     'host'      => 'localhost',\n   17      'database'  => 'database',\n   18      'username'  => 'root',\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\SetRequestForConsole.php:\n   16      public function bootstrap(Application $app)\n   17      {\n   18:         $url = $app->make('config')->get('app.url', 'http://localhost');\n   19  \n   20          $app->instance('request', Request::create($url, 'GET', [], [], [], $_SERVER));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php:\n   59      {\n   60          return [\n   61:             ['host', null, InputOption::VALUE_OPTIONAL, 'The host address to serve the application on.', 'localhost'],\n   62  \n   63              ['port', null, InputOption::VALUE_OPTIONAL, 'The port to serve the application on.', 8000],\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:\n   14  $queue->addConnection([\n   15      'driver' => 'beanstalkd',\n   16:     'host' => 'localhost',\n   17      'queue' => 'default',\n   18  ]);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\maatwebsite\\excel\\src\\config\\excel.php:\n   44          'memcache' => array(\n   45  \n   46:             'host' => 'localhost',\n   47              'port' => 11211,\n   48  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\maatwebsite\\excel\\src\\Maatwebsite\\Excel\\Classes\\Cache.php:\n   99                  // Add extra memcache settings\n  100                  $this->settings = array_merge($this->settings, array(\n  101:                     'memcacheServer' => Config::get($this->configName . '.memcache.host', 'localhost'),\n  102                      'memcachePort'   => Config::get($this->configName . '.memcache.port', 11211)\n  103                  ));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\CouchDBHandler.php:\n   27      {\n   28          $this->options = array_merge(array(\n   29:             'host'     => 'localhost',\n   30              'port'     => 5984,\n   31              'dbname'   => 'logger',\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\MongoDBHandler.php:\n   21   *\n   22   *   $log = new Logger('application');\n   23:  *   $mongodb = new MongoDBHandler(new \\Mongo(\"mongodb://localhost:27017\"), \"logs\", \"prod\");\n   24   *   $log->pushHandler($mongodb);\n   25   *\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\RedisHandler.php:\n   21   *\n   22   *   $log = new Logger('application');\n   23:  *   $redis = new RedisHandler(new Predis\\Client(\"tcp://localhost:6379\"), \"logs\", \"prod\");\n   24   *   $log->pushHandler($redis);\n   25   *\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\CouchDBHandlerTest.php:\n   26              $handler->handle($record);\n   27          } catch (\\RuntimeException $e) {\n   28:             $this->markTestSkipped('Could not connect to couchdb server on http://localhost:5984');\n   29          }\n   30      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\ElasticSearchHandlerTest.php:\n  154  \n  155      /**\n  156:      * Integration test using localhost Elastic Search server\n  157       *\n  158       * @covers Monolog\\Handler\\ElasticSearchHandler::__construct\n  ...\n  186              $handler->handleBatch(array($msg));\n  187          } catch (\\RuntimeException $e) {\n  188:             $this->markTestSkipped(\"Cannot connect to Elastic Search server on localhost\");\n  189          }\n  190  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\FlowdockHandlerTest.php:\n   72          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n   73          $reflectionProperty->setAccessible(true);\n   74:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n   75  \n   76          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\GelfHandlerLegacyTest.php:\n   46      protected function getMessagePublisher()\n   47      {\n   48:         return new GelfMockMessagePublisher('localhost');\n   49      }\n   50  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\HipChatHandlerTest.php:\n  214          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  215          $reflectionProperty->setAccessible(true);\n  216:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  217  \n  218          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\LogEntriesHandlerTest.php:\n   70          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n   71          $reflectionProperty->setAccessible(true);\n   72:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n   73  \n   74          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\PushoverHandlerTest.php:\n  125          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  126          $reflectionProperty->setAccessible(true);\n  127:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  128  \n  129          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\SlackHandlerTest.php:\n  117          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  118          $reflectionProperty->setAccessible(true);\n  119:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  120  \n  121          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\SocketHandlerTest.php:\n   44      public function testBadConnectionTimeout()\n   45      {\n   46:         $this->createHandler('localhost:1234');\n   47          $this->handler->setConnectionTimeout(-1);\n   48      }\n   ..\n   50      public function testSetConnectionTimeout()\n   51      {\n   52:         $this->createHandler('localhost:1234');\n   53          $this->handler->setConnectionTimeout(10.1);\n   54          $this->assertEquals(10.1, $this->handler->getConnectionTimeout());\n   ..\n   60      public function testBadTimeout()\n   61      {\n   62:         $this->createHandler('localhost:1234');\n   63          $this->handler->setTimeout(-1);\n   64      }\n   ..\n   66      public function testSetTimeout()\n   67      {\n   68:         $this->createHandler('localhost:1234');\n   69          $this->handler->setTimeout(10.25);\n   70          $this->assertEquals(10.25, $this->handler->getTimeout());\n   ..\n   73      public function testSetConnectionString()\n   74      {\n   75:         $this->createHandler('tcp://localhost:9090');\n   76:         $this->assertEquals('tcp://localhost:9090', $this->handler->getConnectionString());\n   77      }\n   78  \n   ..\n  257  \n  258          $this->handler = $this->getMock(\n  259:             '\\Monolog\\Handler\\SocketHandler', $finalMethods, array('localhost:1234')\n  260          );\n  261  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\CachedObjectStorage\\Memcache.php:\n  254  	 */\n  255  	public function __construct(PHPExcel_Worksheet $parent, $arguments) {\n  256: 		$memcacheServer	= (isset($arguments['memcacheServer']))	? $arguments['memcacheServer']	: 'localhost';\n  257  		$memcachePort	= (isset($arguments['memcachePort']))	? $arguments['memcachePort']	: 11211;\n  258  		$cacheTime		= (isset($arguments['cacheTime']))		? $arguments['cacheTime']		: 600;\n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\CachedObjectStorageFactory.php:\n  105          self::cache_to_apc                  => array( 'cacheTime'       => 600\n  106                                                      ),\n  107:         self::cache_to_memcache             => array( 'memcacheServer'  => 'localhost',\n  108                                                        'memcachePort'    => 11211,\n  109                                                        'cacheTime'       => 600\n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpunit\\phpunit\\src\\Util\\Configuration.php:\n  810                  $host = (string) $config->getAttribute('host');\n  811              } else {\n  812:                 $host = 'localhost';\n  813              }\n  814  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\doc\\sending.rst:\n  436  \n  437      // Create the Transport\n  438:     $transport = Swift_SmtpTransport::newInstance('localhost', 25);\n  439  \n  440      // Create the Mailer using your created Transport\n  ...\n  514  \n  515          // Create the Transport\n  516:         $transport = Swift_SmtpTransport::newInstance('localhost', 25);\n  517  \n  518          // Create the Mailer using your created Transport\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\SmtpTransport.php:\n   30       * @param string $security\n   31       */\n   32:     public function __construct($host = 'localhost', $port = 25, $security = null)\n   33      {\n   34          call_user_func_array(\n   ..\n   52       * @return Swift_SmtpTransport\n   53       */\n   54:     public static function newInstance($host = 'localhost', $port = 25, $security = null)\n   55      {\n   56          return new self($host, $port, $security);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\EsmtpTransport.php:\n   37      private $_params = array(\n   38          'protocol' => 'tcp',\n   39:         'host' => 'localhost',\n   40          'port' => 25,\n   41          'timeout' => 30,\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\tests\\acceptance.conf.php.default:\n   24   Recommended: smtp.gmail.com:25\n   25   */\n   26: define('SWIFT_SMTP_HOST', 'localhost:4456');\n   27  \n   28  /*\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\tests\\smoke.conf.php.default:\n   29   Recommended: smtp.your-isp.com (varies wildly!)\n   30   */\n   31: define('SWIFT_SMOKE_SMTP_HOST', 'localhost');\n   32  \n   33  /*\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\css-selector\\Tests\\XPath\\Fixtures\\ids.html:\n    5  <div id=\"outer-div\">\n    6   <a id=\"name-anchor\" name=\"foo\"></a>\n    7:  <a id=\"tag-anchor\" rel=\"tag\" href=\"http://localhost/foo\">link</a>\n    8   <a id=\"nofollow-anchor\" rel=\"nofollow\" href=\"https://example.org\">\n    9      link</a>\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\css-selector\\Tests\\XPath\\TranslatorTest.php:\n  159              array('a[rel]', array('tag-anchor', 'nofollow-anchor')),\n  160              array('a[rel=\"tag\"]', array('tag-anchor')),\n  161:             array('a[href*=\"localhost\"]', array('tag-anchor')),\n  162              array('a[href*=\"\"]', array()),\n  163              array('a[href^=\"http\"]', array('tag-anchor', 'nofollow-anchor')),\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\CrawlerTest.php:\n  637              <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  638                  <url>\n  639:                     <loc>http://localhost/foo</loc>\n  640                      <changefreq>weekly</changefreq>\n  641                      <priority>0.5</priority>\n  ...\n  643                 </url>\n  644                 <url>\n  645:                     <loc>http://localhost/bar</loc>\n  646                      <changefreq>weekly</changefreq>\n  647                      <priority>0.5</priority>\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\FormTest.php:\n  521      public function testGetUriAbsolute()\n  522      {\n  523:         $form = $this->createForm('<form action=\"foo\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/');\n  524:         $this->assertEquals('http://localhost/foo/foo', $form->getUri(), '->getUri() returns absolute URIs');\n  525  \n  526:         $form = $this->createForm('<form action=\"/foo\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/');\n  527:         $this->assertEquals('http://localhost/foo', $form->getUri(), '->getUri() returns absolute URIs');\n  528      }\n  529  \n  530      public function testGetUriWithOnlyQueryString()\n  531      {\n  532:         $form = $this->createForm('<form action=\"?get=param\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/bar');\n  533:         $this->assertEquals('http://localhost/foo/bar?get=param', $form->getUri(), '->getUri() returns absolute URIs only if the host has been defined in the constructor');\n  534      }\n  535  \n  536      public function testGetUriWithoutAction()\n  537      {\n  538:         $form = $this->createForm('<form><input type=\"submit\" /></form>', null, 'http://localhost/foo/bar');\n  539:         $this->assertEquals('http://localhost/foo/bar', $form->getUri(), '->getUri() returns path if no action defined');\n  540      }\n  541  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\LinkTest.php:\n  102      {\n  103          return array(\n  104:             array('/foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  105:             array('/foo', 'http://localhost/bar/foo', 'http://localhost/foo'),\n  106              array('\n  107:             /foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  108              array('/foo\n  109:             ', 'http://localhost/bar/foo', 'http://localhost/foo'),\n  110  \n  111:             array('foo', 'http://localhost/bar/foo/', 'http://localhost/bar/foo/foo'),\n  112:             array('foo', 'http://localhost/bar/foo', 'http://localhost/bar/foo'),\n  113  \n  114:             array('', 'http://localhost/bar/', 'http://localhost/bar/'),\n  115:             array('#', 'http://localhost/bar/', 'http://localhost/bar/#'),\n  116:             array('#bar', 'http://localhost/bar?a=b', 'http://localhost/bar?a=b#bar'),\n  117:             array('#bar', 'http://localhost/bar/#foo', 'http://localhost/bar/#bar'),\n  118:             array('?a=b', 'http://localhost/bar#foo', 'http://localhost/bar?a=b'),\n  119:             array('?a=b', 'http://localhost/bar/', 'http://localhost/bar/?a=b'),\n  120  \n  121:             array('http://login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),\n  122:             array('https://login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),\n  123:             array('mailto:foo@bar.com', 'http://localhost/foo', 'mailto:foo@bar.com'),\n  124  \n  125              // tests schema relative URL (issue #7169)\n  126:             array('//login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),\n  127:             array('//login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),\n  128  \n  129:             array('?foo=2', 'http://localhost?foo=1', 'http://localhost?foo=2'),\n  130:             array('?foo=2', 'http://localhost/?foo=1', 'http://localhost/?foo=2'),\n  131:             array('?foo=2', 'http://localhost/bar?foo=1', 'http://localhost/bar?foo=2'),\n  132:             array('?foo=2', 'http://localhost/bar/?foo=1', 'http://localhost/bar/?foo=2'),\n  133:             array('?bar=2', 'http://localhost?foo=1', 'http://localhost?bar=2'),\n  134  \n  135              array('foo', 'http://login.foo.com/bar/baz?/query/string', 'http://login.foo.com/bar/foo'),\n  136  \n  137:             array('.', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),\n  138:             array('./', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),\n  139:             array('./foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/foo'),\n  140:             array('..', 'http://localhost/foo/bar/baz', 'http://localhost/foo/'),\n  141:             array('../', 'http://localhost/foo/bar/baz', 'http://localhost/foo/'),\n  142:             array('../foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo/foo'),\n  143:             array('../..', 'http://localhost/foo/bar/baz', 'http://localhost/'),\n  144:             array('../../', 'http://localhost/foo/bar/baz', 'http://localhost/'),\n  145:             array('../../foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo'),\n  146:             array('../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  147:             array('../bar/../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  148:             array('../bar/./../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  149:             array('../../', 'http://localhost/', 'http://localhost/'),\n  150:             array('../../', 'http://localhost', 'http://localhost/'),\n  151  \n  152:             array('/foo', 'http://localhost?bar=1', 'http://localhost/foo'),\n  153:             array('/foo', 'http://localhost#bar', 'http://localhost/foo'),\n  154              array('/foo', 'file:///', 'file:///foo'),\n  155              array('/foo', 'file:///bar/baz', 'file:///foo'),\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-foundation\\Request.php:\n  333      {\n  334          $server = array_replace(array(\n  335:             'SERVER_NAME' => 'localhost',\n  336              'SERVER_PORT' => 80,\n  337:             'HTTP_HOST' => 'localhost',\n  338              'HTTP_USER_AGENT' => 'Symfony/2.X',\n  339              'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n  ...\n  914       * The path info always starts with a /.\n  915       *\n  916:      * Suppose this request is instantiated from /mysite on localhost:\n  917       *\n  918:      *  * http://localhost/mysite              returns an empty string\n  919:      *  * http://localhost/mysite/about        returns '/about'\n  920:      *  * http://localhost/mysite/enco%20ded   returns '/enco%20ded'\n  921:      *  * http://localhost/mysite/about?var=1  returns '/about'\n  922       *\n  923       * @return string The raw path (i.e. not urldecoded)\n  ...\n  939       * Suppose that an index.php file instantiates this request object:\n  940       *\n  941:      *  * http://localhost/index.php         returns an empty string\n  942:      *  * http://localhost/index.php/page    returns an empty string\n  943:      *  * http://localhost/web/index.php     returns '/web'\n  944:      *  * http://localhost/we%20b/index.php  returns '/we%20b'\n  945       *\n  946       * @return string The raw path (i.e. not urldecoded)\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Fragment\\InlineFragmentRenderer.php:\n  117  \n  118          // Override the arguments to emulate a sub-request.\n  119:         // Sub-request object will point to localhost as client ip and real client ip\n  120          // will be included into trusted header for client ip\n  121          try {\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\DataCollector\\RequestDataCollectorTest.php:\n  174          $response->setStatusCode(200);\n  175          $response->headers->set('Content-Type', 'application/json');\n  176:         $response->headers->setCookie(new Cookie('foo', 'bar', 1, '/foo', 'localhost', true, true));\n  177          $response->headers->setCookie(new Cookie('bar', 'foo', new \\DateTime('@946684800')));\n  178          $response->headers->setCookie(new Cookie('bazz', 'foo', '2000-12-12'));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\EventListener\\RouterListenerTest.php:\n   55      {\n   56          return array(\n   57:             array(80, 443, 'http://localhost/', 80, 443),\n   58:             array(80, 443, 'http://localhost:90/', 90, 443),\n   59:             array(80, 443, 'https://localhost/', 80, 443),\n   60:             array(80, 443, 'https://localhost:90/', 80, 90),\n   61          );\n   62      }\n   ..\n   87      {\n   88          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n   89:         $request = Request::create('http://localhost/');\n   90          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);\n   91  \n   ..\n  103      {\n  104          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  105:         $request = Request::create('http://localhost/', 'post');\n  106          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);\n  107  \n  ...\n  122          // sub-request with another HTTP method\n  123          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  124:         $request = Request::create('http://localhost/', 'get');\n  125          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::SUB_REQUEST);\n  126  \n  ...\n  146  \n  147          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  148:         $request = Request::create('http://localhost/');\n  149  \n  150          $listener = new RouterListener($requestMatcher, new RequestContext(), $logger, $this->requestStack);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Fragment\\FragmentHandlerTest.php:\n   54      /**\n   55       * @expectedException \\RuntimeException\n   56:      * @expectedExceptionMessage Error when rendering \"http://localhost/\" (Status code is 404).\n   57       */\n   58      public function testDeliverWithUnsuccessfulResponse()\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Fragment\\RoutableFragmentRendererTest.php:\n   30      public function testGenerateAbsoluteFragmentUri($uri, $controller)\n   31      {\n   32:         $this->assertEquals('http://localhost'.$uri, $this->callGenerateFragmentUriMethod($controller, Request::create('/'), true));\n   33      }\n   34  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\HttpCache\\HttpCacheTest.php:\n  612          $m = $r->getMethod('save');\n  613          $m->setAccessible(true);\n  614:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  615  \n  616          $this->request('GET', '/');\n  ...\n  661          $m = $r->getMethod('save');\n  662          $m->setAccessible(true);\n  663:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  664  \n  665          $this->request('GET', '/');\n  ...\n  721          $m = $r->getMethod('save');\n  722          $m->setAccessible(true);\n  723:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  724  \n  725          // build subsequent request; should be found but miss due to freshness\n  ...\n 1133      }\n 1134  \n 1135:     public function testClientIpIsAlwaysLocalhostForForwardedRequests()\n 1136      {\n 1137          $this->setNextResponse();\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Profiler\\MongoDbProfilerStorageTest.php:\n   55      {\n   56          if (extension_loaded('mongo')) {\n   57:             self::$storage = new DummyMongoDbProfilerStorage('mongodb://localhost/symfony_tests/profiler_data', '', '', 86400);\n   58              try {\n   59                  self::$storage->getMongo();\n   ..\n   75      {\n   76          return array(\n   77:             array('mongodb://localhost/symfony_tests/profiler_data', array(\n   78:                 'mongodb://localhost/symfony_tests',\n   79                  'symfony_tests',\n   80                  'profiler_data',\n   81              )),\n   82:             array('mongodb://user:password@localhost/symfony_tests/profiler_data', array(\n   83:                 'mongodb://user:password@localhost/symfony_tests',\n   84                  'symfony_tests',\n   85                  'profiler_data',\n   86              )),\n   87:             array('mongodb://user:password@localhost/admin/symfony_tests/profiler_data', array(\n   88:                 'mongodb://user:password@localhost/admin',\n   89                  'symfony_tests',\n   90                  'profiler_data',\n   91              )),\n   92:             array('mongodb://user:password@localhost:27009,localhost:27010/?replicaSet=rs-name&authSource=admin/symfony_tests/profiler_data', array(\n   93:                 'mongodb://user:password@localhost:27009,localhost:27010/?replicaSet=rs-name&authSource=admin',\n   94                  'symfony_tests',\n   95                  'profiler_data',\n   ..\n  160              self::$storage->purge();\n  161          } else {\n  162:             $this->markTestSkipped('MongoDbProfilerStorageTest requires the mongo PHP extension and a MongoDB server on localhost');\n  163          }\n  164      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\RequestContext.php:\n   54       * @api\n   55       */\n   56:     public function __construct($baseUrl = '', $method = 'GET', $host = 'localhost', $scheme = 'http', $httpPort = 80, $httpsPort = 443, $path = '/', $queryString = '')\n   57      {\n   58          $this->setBaseUrl($baseUrl);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\Tests\\Generator\\Dumper\\PhpGeneratorDumperTest.php:\n   70          $relativeUrlWithoutParameter = $projectUrlGenerator->generate('Test2', array(), false);\n   71  \n   72:         $this->assertEquals($absoluteUrlWithParameter, 'http://localhost/app.php/testing/bar');\n   73:         $this->assertEquals($absoluteUrlWithoutParameter, 'http://localhost/app.php/testing2');\n   74          $this->assertEquals($relativeUrlWithParameter, '/app.php/testing/bar');\n   75          $this->assertEquals($relativeUrlWithoutParameter, '/app.php/testing2');\n   ..\n  128          $relativeUrl = $projectUrlGenerator->generate('Test1', array(), false);\n  129  \n  130:         $this->assertEquals($absoluteUrl, 'ftp://localhost/app.php/testing');\n  131:         $this->assertEquals($relativeUrl, 'ftp://localhost/app.php/testing');\n  132  \n  133:         $projectUrlGenerator = new \\SchemeUrlGenerator(new RequestContext('/app.php', 'GET', 'localhost', 'https'));\n  134  \n  135          $absoluteUrl = $projectUrlGenerator->generate('Test1', array(), true);\n  136          $relativeUrl = $projectUrlGenerator->generate('Test1', array(), false);\n  137  \n  138:         $this->assertEquals($absoluteUrl, 'https://localhost/app.php/testing');\n  139          $this->assertEquals($relativeUrl, '/app.php/testing');\n  140      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\Tests\\Generator\\UrlGeneratorTest.php:\n   25          $url = $this->getGenerator($routes)->generate('test', array(), true);\n   26  \n   27:         $this->assertEquals('http://localhost/app.php/testing', $url);\n   28      }\n   29  \n   ..\n   33          $url = $this->getGenerator($routes, array('scheme' => 'https'))->generate('test', array(), true);\n   34  \n   35:         $this->assertEquals('https://localhost/app.php/testing', $url);\n   36      }\n   37  \n   ..\n   41          $url = $this->getGenerator($routes, array('httpPort' => 8080))->generate('test', array(), true);\n   42  \n   43:         $this->assertEquals('http://localhost:8080/app.php/testing', $url);\n   44      }\n   45  \n   ..\n   49          $url = $this->getGenerator($routes, array('httpsPort' => 8080, 'scheme' => 'https'))->generate('test', array(), true);\n   50  \n   51:         $this->assertEquals('https://localhost:8080/app.php/testing', $url);\n   52      }\n   53  \n   ..\n  115          $url = $this->getGenerator($routes)->generate('test', array('foo' => 'bar'), true);\n  116  \n  117:         $this->assertEquals('http://localhost/app.php/testing?foo=bar', $url);\n  118      }\n  119  \n  ...\n  123          $url = $this->getGenerator($routes)->generate('test', array('foo' => null), true);\n  124  \n  125:         $this->assertEquals('http://localhost/app.php/testing', $url);\n  126      }\n  127  \n  ...\n  255      {\n  256          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('https')));\n  257:         $this->assertEquals('https://localhost/app.php/', $this->getGenerator($routes)->generate('test'));\n  258  \n  259          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('http')));\n  260:         $this->assertEquals('http://localhost/app.php/', $this->getGenerator($routes, array('scheme' => 'https'))->generate('test'));\n  261      }\n  262  \n  ...\n  264      {\n  265          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('Ftp', 'https')));\n  266:         $this->assertEquals('ftp://localhost/app.php/', $this->getGenerator($routes)->generate('test'));\n  267      }\n  268  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\yaml\\Tests\\Fixtures\\YtsBasicTests.yml:\n  174  yaml: |\n  175       allow:\n  176:      - 'localhost'\n  177       - '%.sourceforge.net'\n  178       - '%.freepan.org'\n  179  php: |\n  180:      array('allow' => array('localhost', '%.sourceforge.net', '%.freepan.org'))\n  181  ---\n  182  todo: true\n\n198 matches across 57 files\n\n\nSearching 7445 files for \"localhost\"\n\nC:\\xampp\\htdocs\\comitec\\.env:\n    3  APP_KEY=SomeRandomString\n    4  \n    5: DB_HOST=localhost\n    6  DB_DATABASE=comitec\n    7  DB_USERNAME=root\n\nC:\\xampp\\htdocs\\comitec\\.env.example:\n    3  APP_KEY=SomeRandomString\n    4  \n    5: DB_HOST=localhost\n    6  DB_DATABASE=comitec\n    7  DB_USERNAME=root\n\nC:\\xampp\\htdocs\\comitec\\comitec.sublime-project:\n    8  	\"settings\": {\n    9          \"xdebug\": {\n   10:              \"url\": \"http://localhost:8080\",\n   11          }\n   12      }\n\nC:\\xampp\\htdocs\\comitec\\config\\app.php:\n   27      */\n   28  \n   29:     'url' => 'http://localhost',\n   30  \n   31      /*\n\nC:\\xampp\\htdocs\\comitec\\config\\database.php:\n   55          'mysql' => [\n   56              'driver'    => 'mysql',\n   57:             'host'      => env('DB_HOST', 'localhost'),\n   58              'database'  => env('DB_DATABASE', 'comitec'),\n   59              'username'  => env('DB_USERNAME', 'root'),\n   ..\n   67          'pgsql' => [\n   68              'driver'   => 'pgsql',\n   69:             'host'     => env('DB_HOST', 'localhost'),\n   70              'database' => env('DB_DATABASE', 'forge'),\n   71              'username' => env('DB_USERNAME', 'forge'),\n   ..\n   78          'sqlsrv' => [\n   79              'driver'   => 'sqlsrv',\n   80:             'host'     => env('DB_HOST', 'localhost'),\n   81              'database' => env('DB_DATABASE', 'forge'),\n   82              'username' => env('DB_USERNAME', 'forge'),\n\nC:\\xampp\\htdocs\\comitec\\config\\excel.php:\n   44          'memcache' => array(\n   45  \n   46:             'host' => 'localhost',\n   47              'port' => 11211,\n   48  \n\nC:\\xampp\\htdocs\\comitec\\config\\queue.php:\n   45          'beanstalkd' => [\n   46              'driver' => 'beanstalkd',\n   47:             'host'   => 'localhost',\n   48              'queue'  => 'default',\n   49              'ttr'    => 60,\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\1b41e11604cdf0bcef50d4231080b9c2387b6361:\n    1: a:4:{s:6:\"_token\";s:40:\"6tHgNKOiSZE6Ne9b67tZaNEUNPRblKg2tDFFL3DP\";s:9:\"_previous\";a:1:{s:3:\"url\";s:57:\"http://localhost:8000?XDEBUG_SESSION_START=sublime.xdebug\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439591070;s:1:\"c\";i:1439590855;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\533aa4d37db44e598b66bf3695de9a2d1f3d3406:\n    1: a:5:{s:6:\"_token\";s:40:\"QwHSKP32hIsqfgPjQrkf5ZP2Wx56MDmSBebUdTnk\";s:9:\"_previous\";a:1:{s:3:\"url\";s:35:\"http://localhost:8000/auth/register\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:3:\"url\";a:1:{s:8:\"intended\";s:34:\"http://localhost:8000/comite/civil\";}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439399635;s:1:\"c\";i:1439379506;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\73c11370a965179d023e136f242ab3b3b8b1eea6:\n    1: a:4:{s:6:\"_token\";s:40:\"4PRieMUrrwrGCuAWX3MJgnimz4f4tdpzNWHxDUhx\";s:9:\"_previous\";a:1:{s:3:\"url\";s:33:\"http://localhost:8000/panel/login\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439598464;s:1:\"c\";i:1439598272;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\776bc6b67ea88e813afbb95db8d8f7e83b83cff9:\n    1: a:4:{s:6:\"_token\";s:40:\"qGq97aTUxXj8oWzwLeyZqW4hgTtpNMp3DiSXGsSo\";s:9:\"_previous\";a:1:{s:3:\"url\";s:33:\"http://localhost:8000/panel/login\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439656203;s:1:\"c\";i:1439648138;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\e599e04609aea6c5ba0f5ebfeb9f197e1ba6cf1e:\n    1: a:4:{s:6:\"_token\";s:40:\"YUcKPiBI6R9lajS3YBIbUcOOpkCIA4VlJa8QBLfz\";s:9:\"_previous\";a:1:{s:3:\"url\";s:33:\"http://localhost:8000/panel/login\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439679623;s:1:\"c\";i:1439679614;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\fc425a94d7a6e8d702061d297372c433254d6c3b:\n    1: a:5:{s:6:\"_token\";s:40:\"lLdOGuUwAibrZrFBf2afaijdxMGwXARGGWR7DMnc\";s:9:\"_previous\";a:1:{s:3:\"url\";s:28:\"http://localhost:8000/user/1\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:5:\"rapyd\";a:1:{s:14:\"panel/Link/all\";s:36:\"http://localhost:8000/panel/Link/all\";}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439414001;s:1:\"c\";i:1439409681;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\logs\\laravel.log:\n  496  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n  497  #11 {main}  \n  498: [2015-08-04 23:02:34] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  499  Stack trace:\n  500  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n  ...\n  518  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  519  #19 {main}  \n  520: [2015-08-04 23:04:52] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  521  Stack trace:\n  522  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n  ...\n  540  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  541  #19 {main}  \n  542: [2015-08-04 23:06:06] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  543  Stack trace:\n  544  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', '', Array)\n  ...\n  562  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  563  #19 {main}  \n  564: [2015-08-04 23:06:17] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  565  Stack trace:\n  566  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', '', Array)\n  ...\n 1799  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n 1800  #11 {main}  \n 1801: [2015-08-12 01:53:25] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n 1802  Stack trace:\n 1803  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n ....\n 2047  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n 2048  #11 {main}  \n 2049: [2015-08-12 20:02:09] local.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n 2050  Stack trace:\n 2051  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'kakito1', Array)\n\nC:\\xampp\\htdocs\\comitec\\tests\\TestCase.php:\n    8       * @var string\n    9       */\n   10:     protected $baseUrl = 'http://localhost';\n   11  \n   12      /**\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\README.md:\n   14  $capsule->addConnection([\n   15      'driver'    => 'mysql',\n   16:     'host'      => 'localhost',\n   17      'database'  => 'database',\n   18      'username'  => 'root',\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\SetRequestForConsole.php:\n   16      public function bootstrap(Application $app)\n   17      {\n   18:         $url = $app->make('config')->get('app.url', 'http://localhost');\n   19  \n   20          $app->instance('request', Request::create($url, 'GET', [], [], [], $_SERVER));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php:\n   59      {\n   60          return [\n   61:             ['host', null, InputOption::VALUE_OPTIONAL, 'The host address to serve the application on.', 'localhost'],\n   62  \n   63              ['port', null, InputOption::VALUE_OPTIONAL, 'The port to serve the application on.', 8000],\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:\n   14  $queue->addConnection([\n   15      'driver' => 'beanstalkd',\n   16:     'host' => 'localhost',\n   17      'queue' => 'default',\n   18  ]);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\maatwebsite\\excel\\src\\config\\excel.php:\n   44          'memcache' => array(\n   45  \n   46:             'host' => 'localhost',\n   47              'port' => 11211,\n   48  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\maatwebsite\\excel\\src\\Maatwebsite\\Excel\\Classes\\Cache.php:\n   99                  // Add extra memcache settings\n  100                  $this->settings = array_merge($this->settings, array(\n  101:                     'memcacheServer' => Config::get($this->configName . '.memcache.host', 'localhost'),\n  102                      'memcachePort'   => Config::get($this->configName . '.memcache.port', 11211)\n  103                  ));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\CouchDBHandler.php:\n   27      {\n   28          $this->options = array_merge(array(\n   29:             'host'     => 'localhost',\n   30              'port'     => 5984,\n   31              'dbname'   => 'logger',\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\MongoDBHandler.php:\n   21   *\n   22   *   $log = new Logger('application');\n   23:  *   $mongodb = new MongoDBHandler(new \\Mongo(\"mongodb://localhost:27017\"), \"logs\", \"prod\");\n   24   *   $log->pushHandler($mongodb);\n   25   *\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\RedisHandler.php:\n   21   *\n   22   *   $log = new Logger('application');\n   23:  *   $redis = new RedisHandler(new Predis\\Client(\"tcp://localhost:6379\"), \"logs\", \"prod\");\n   24   *   $log->pushHandler($redis);\n   25   *\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\CouchDBHandlerTest.php:\n   26              $handler->handle($record);\n   27          } catch (\\RuntimeException $e) {\n   28:             $this->markTestSkipped('Could not connect to couchdb server on http://localhost:5984');\n   29          }\n   30      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\ElasticSearchHandlerTest.php:\n  154  \n  155      /**\n  156:      * Integration test using localhost Elastic Search server\n  157       *\n  158       * @covers Monolog\\Handler\\ElasticSearchHandler::__construct\n  ...\n  186              $handler->handleBatch(array($msg));\n  187          } catch (\\RuntimeException $e) {\n  188:             $this->markTestSkipped(\"Cannot connect to Elastic Search server on localhost\");\n  189          }\n  190  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\FlowdockHandlerTest.php:\n   72          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n   73          $reflectionProperty->setAccessible(true);\n   74:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n   75  \n   76          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\GelfHandlerLegacyTest.php:\n   46      protected function getMessagePublisher()\n   47      {\n   48:         return new GelfMockMessagePublisher('localhost');\n   49      }\n   50  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\HipChatHandlerTest.php:\n  214          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  215          $reflectionProperty->setAccessible(true);\n  216:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  217  \n  218          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\LogEntriesHandlerTest.php:\n   70          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n   71          $reflectionProperty->setAccessible(true);\n   72:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n   73  \n   74          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\PushoverHandlerTest.php:\n  125          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  126          $reflectionProperty->setAccessible(true);\n  127:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  128  \n  129          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\SlackHandlerTest.php:\n  117          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  118          $reflectionProperty->setAccessible(true);\n  119:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  120  \n  121          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\SocketHandlerTest.php:\n   44      public function testBadConnectionTimeout()\n   45      {\n   46:         $this->createHandler('localhost:1234');\n   47          $this->handler->setConnectionTimeout(-1);\n   48      }\n   ..\n   50      public function testSetConnectionTimeout()\n   51      {\n   52:         $this->createHandler('localhost:1234');\n   53          $this->handler->setConnectionTimeout(10.1);\n   54          $this->assertEquals(10.1, $this->handler->getConnectionTimeout());\n   ..\n   60      public function testBadTimeout()\n   61      {\n   62:         $this->createHandler('localhost:1234');\n   63          $this->handler->setTimeout(-1);\n   64      }\n   ..\n   66      public function testSetTimeout()\n   67      {\n   68:         $this->createHandler('localhost:1234');\n   69          $this->handler->setTimeout(10.25);\n   70          $this->assertEquals(10.25, $this->handler->getTimeout());\n   ..\n   73      public function testSetConnectionString()\n   74      {\n   75:         $this->createHandler('tcp://localhost:9090');\n   76:         $this->assertEquals('tcp://localhost:9090', $this->handler->getConnectionString());\n   77      }\n   78  \n   ..\n  257  \n  258          $this->handler = $this->getMock(\n  259:             '\\Monolog\\Handler\\SocketHandler', $finalMethods, array('localhost:1234')\n  260          );\n  261  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\CachedObjectStorage\\Memcache.php:\n  254  	 */\n  255  	public function __construct(PHPExcel_Worksheet $parent, $arguments) {\n  256: 		$memcacheServer	= (isset($arguments['memcacheServer']))	? $arguments['memcacheServer']	: 'localhost';\n  257  		$memcachePort	= (isset($arguments['memcachePort']))	? $arguments['memcachePort']	: 11211;\n  258  		$cacheTime		= (isset($arguments['cacheTime']))		? $arguments['cacheTime']		: 600;\n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\CachedObjectStorageFactory.php:\n  105          self::cache_to_apc                  => array( 'cacheTime'       => 600\n  106                                                      ),\n  107:         self::cache_to_memcache             => array( 'memcacheServer'  => 'localhost',\n  108                                                        'memcachePort'    => 11211,\n  109                                                        'cacheTime'       => 600\n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpunit\\phpunit\\src\\Util\\Configuration.php:\n  810                  $host = (string) $config->getAttribute('host');\n  811              } else {\n  812:                 $host = 'localhost';\n  813              }\n  814  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\doc\\sending.rst:\n  436  \n  437      // Create the Transport\n  438:     $transport = Swift_SmtpTransport::newInstance('localhost', 25);\n  439  \n  440      // Create the Mailer using your created Transport\n  ...\n  514  \n  515          // Create the Transport\n  516:         $transport = Swift_SmtpTransport::newInstance('localhost', 25);\n  517  \n  518          // Create the Mailer using your created Transport\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\SmtpTransport.php:\n   30       * @param string $security\n   31       */\n   32:     public function __construct($host = 'localhost', $port = 25, $security = null)\n   33      {\n   34          call_user_func_array(\n   ..\n   52       * @return Swift_SmtpTransport\n   53       */\n   54:     public static function newInstance($host = 'localhost', $port = 25, $security = null)\n   55      {\n   56          return new self($host, $port, $security);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\EsmtpTransport.php:\n   37      private $_params = array(\n   38          'protocol' => 'tcp',\n   39:         'host' => 'localhost',\n   40          'port' => 25,\n   41          'timeout' => 30,\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\tests\\acceptance.conf.php.default:\n   24   Recommended: smtp.gmail.com:25\n   25   */\n   26: define('SWIFT_SMTP_HOST', 'localhost:4456');\n   27  \n   28  /*\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\tests\\smoke.conf.php.default:\n   29   Recommended: smtp.your-isp.com (varies wildly!)\n   30   */\n   31: define('SWIFT_SMOKE_SMTP_HOST', 'localhost');\n   32  \n   33  /*\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\css-selector\\Tests\\XPath\\Fixtures\\ids.html:\n    5  <div id=\"outer-div\">\n    6   <a id=\"name-anchor\" name=\"foo\"></a>\n    7:  <a id=\"tag-anchor\" rel=\"tag\" href=\"http://localhost/foo\">link</a>\n    8   <a id=\"nofollow-anchor\" rel=\"nofollow\" href=\"https://example.org\">\n    9      link</a>\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\css-selector\\Tests\\XPath\\TranslatorTest.php:\n  159              array('a[rel]', array('tag-anchor', 'nofollow-anchor')),\n  160              array('a[rel=\"tag\"]', array('tag-anchor')),\n  161:             array('a[href*=\"localhost\"]', array('tag-anchor')),\n  162              array('a[href*=\"\"]', array()),\n  163              array('a[href^=\"http\"]', array('tag-anchor', 'nofollow-anchor')),\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\CrawlerTest.php:\n  637              <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  638                  <url>\n  639:                     <loc>http://localhost/foo</loc>\n  640                      <changefreq>weekly</changefreq>\n  641                      <priority>0.5</priority>\n  ...\n  643                 </url>\n  644                 <url>\n  645:                     <loc>http://localhost/bar</loc>\n  646                      <changefreq>weekly</changefreq>\n  647                      <priority>0.5</priority>\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\FormTest.php:\n  521      public function testGetUriAbsolute()\n  522      {\n  523:         $form = $this->createForm('<form action=\"foo\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/');\n  524:         $this->assertEquals('http://localhost/foo/foo', $form->getUri(), '->getUri() returns absolute URIs');\n  525  \n  526:         $form = $this->createForm('<form action=\"/foo\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/');\n  527:         $this->assertEquals('http://localhost/foo', $form->getUri(), '->getUri() returns absolute URIs');\n  528      }\n  529  \n  530      public function testGetUriWithOnlyQueryString()\n  531      {\n  532:         $form = $this->createForm('<form action=\"?get=param\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/bar');\n  533:         $this->assertEquals('http://localhost/foo/bar?get=param', $form->getUri(), '->getUri() returns absolute URIs only if the host has been defined in the constructor');\n  534      }\n  535  \n  536      public function testGetUriWithoutAction()\n  537      {\n  538:         $form = $this->createForm('<form><input type=\"submit\" /></form>', null, 'http://localhost/foo/bar');\n  539:         $this->assertEquals('http://localhost/foo/bar', $form->getUri(), '->getUri() returns path if no action defined');\n  540      }\n  541  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\LinkTest.php:\n  102      {\n  103          return array(\n  104:             array('/foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  105:             array('/foo', 'http://localhost/bar/foo', 'http://localhost/foo'),\n  106              array('\n  107:             /foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  108              array('/foo\n  109:             ', 'http://localhost/bar/foo', 'http://localhost/foo'),\n  110  \n  111:             array('foo', 'http://localhost/bar/foo/', 'http://localhost/bar/foo/foo'),\n  112:             array('foo', 'http://localhost/bar/foo', 'http://localhost/bar/foo'),\n  113  \n  114:             array('', 'http://localhost/bar/', 'http://localhost/bar/'),\n  115:             array('#', 'http://localhost/bar/', 'http://localhost/bar/#'),\n  116:             array('#bar', 'http://localhost/bar?a=b', 'http://localhost/bar?a=b#bar'),\n  117:             array('#bar', 'http://localhost/bar/#foo', 'http://localhost/bar/#bar'),\n  118:             array('?a=b', 'http://localhost/bar#foo', 'http://localhost/bar?a=b'),\n  119:             array('?a=b', 'http://localhost/bar/', 'http://localhost/bar/?a=b'),\n  120  \n  121:             array('http://login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),\n  122:             array('https://login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),\n  123:             array('mailto:foo@bar.com', 'http://localhost/foo', 'mailto:foo@bar.com'),\n  124  \n  125              // tests schema relative URL (issue #7169)\n  126:             array('//login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),\n  127:             array('//login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),\n  128  \n  129:             array('?foo=2', 'http://localhost?foo=1', 'http://localhost?foo=2'),\n  130:             array('?foo=2', 'http://localhost/?foo=1', 'http://localhost/?foo=2'),\n  131:             array('?foo=2', 'http://localhost/bar?foo=1', 'http://localhost/bar?foo=2'),\n  132:             array('?foo=2', 'http://localhost/bar/?foo=1', 'http://localhost/bar/?foo=2'),\n  133:             array('?bar=2', 'http://localhost?foo=1', 'http://localhost?bar=2'),\n  134  \n  135              array('foo', 'http://login.foo.com/bar/baz?/query/string', 'http://login.foo.com/bar/foo'),\n  136  \n  137:             array('.', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),\n  138:             array('./', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),\n  139:             array('./foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/foo'),\n  140:             array('..', 'http://localhost/foo/bar/baz', 'http://localhost/foo/'),\n  141:             array('../', 'http://localhost/foo/bar/baz', 'http://localhost/foo/'),\n  142:             array('../foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo/foo'),\n  143:             array('../..', 'http://localhost/foo/bar/baz', 'http://localhost/'),\n  144:             array('../../', 'http://localhost/foo/bar/baz', 'http://localhost/'),\n  145:             array('../../foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo'),\n  146:             array('../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  147:             array('../bar/../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  148:             array('../bar/./../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  149:             array('../../', 'http://localhost/', 'http://localhost/'),\n  150:             array('../../', 'http://localhost', 'http://localhost/'),\n  151  \n  152:             array('/foo', 'http://localhost?bar=1', 'http://localhost/foo'),\n  153:             array('/foo', 'http://localhost#bar', 'http://localhost/foo'),\n  154              array('/foo', 'file:///', 'file:///foo'),\n  155              array('/foo', 'file:///bar/baz', 'file:///foo'),\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-foundation\\Request.php:\n  333      {\n  334          $server = array_replace(array(\n  335:             'SERVER_NAME' => 'localhost',\n  336              'SERVER_PORT' => 80,\n  337:             'HTTP_HOST' => 'localhost',\n  338              'HTTP_USER_AGENT' => 'Symfony/2.X',\n  339              'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n  ...\n  914       * The path info always starts with a /.\n  915       *\n  916:      * Suppose this request is instantiated from /mysite on localhost:\n  917       *\n  918:      *  * http://localhost/mysite              returns an empty string\n  919:      *  * http://localhost/mysite/about        returns '/about'\n  920:      *  * http://localhost/mysite/enco%20ded   returns '/enco%20ded'\n  921:      *  * http://localhost/mysite/about?var=1  returns '/about'\n  922       *\n  923       * @return string The raw path (i.e. not urldecoded)\n  ...\n  939       * Suppose that an index.php file instantiates this request object:\n  940       *\n  941:      *  * http://localhost/index.php         returns an empty string\n  942:      *  * http://localhost/index.php/page    returns an empty string\n  943:      *  * http://localhost/web/index.php     returns '/web'\n  944:      *  * http://localhost/we%20b/index.php  returns '/we%20b'\n  945       *\n  946       * @return string The raw path (i.e. not urldecoded)\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Fragment\\InlineFragmentRenderer.php:\n  117  \n  118          // Override the arguments to emulate a sub-request.\n  119:         // Sub-request object will point to localhost as client ip and real client ip\n  120          // will be included into trusted header for client ip\n  121          try {\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\DataCollector\\RequestDataCollectorTest.php:\n  174          $response->setStatusCode(200);\n  175          $response->headers->set('Content-Type', 'application/json');\n  176:         $response->headers->setCookie(new Cookie('foo', 'bar', 1, '/foo', 'localhost', true, true));\n  177          $response->headers->setCookie(new Cookie('bar', 'foo', new \\DateTime('@946684800')));\n  178          $response->headers->setCookie(new Cookie('bazz', 'foo', '2000-12-12'));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\EventListener\\RouterListenerTest.php:\n   55      {\n   56          return array(\n   57:             array(80, 443, 'http://localhost/', 80, 443),\n   58:             array(80, 443, 'http://localhost:90/', 90, 443),\n   59:             array(80, 443, 'https://localhost/', 80, 443),\n   60:             array(80, 443, 'https://localhost:90/', 80, 90),\n   61          );\n   62      }\n   ..\n   87      {\n   88          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n   89:         $request = Request::create('http://localhost/');\n   90          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);\n   91  \n   ..\n  103      {\n  104          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  105:         $request = Request::create('http://localhost/', 'post');\n  106          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);\n  107  \n  ...\n  122          // sub-request with another HTTP method\n  123          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  124:         $request = Request::create('http://localhost/', 'get');\n  125          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::SUB_REQUEST);\n  126  \n  ...\n  146  \n  147          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  148:         $request = Request::create('http://localhost/');\n  149  \n  150          $listener = new RouterListener($requestMatcher, new RequestContext(), $logger, $this->requestStack);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Fragment\\FragmentHandlerTest.php:\n   54      /**\n   55       * @expectedException \\RuntimeException\n   56:      * @expectedExceptionMessage Error when rendering \"http://localhost/\" (Status code is 404).\n   57       */\n   58      public function testDeliverWithUnsuccessfulResponse()\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Fragment\\RoutableFragmentRendererTest.php:\n   30      public function testGenerateAbsoluteFragmentUri($uri, $controller)\n   31      {\n   32:         $this->assertEquals('http://localhost'.$uri, $this->callGenerateFragmentUriMethod($controller, Request::create('/'), true));\n   33      }\n   34  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\HttpCache\\HttpCacheTest.php:\n  612          $m = $r->getMethod('save');\n  613          $m->setAccessible(true);\n  614:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  615  \n  616          $this->request('GET', '/');\n  ...\n  661          $m = $r->getMethod('save');\n  662          $m->setAccessible(true);\n  663:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  664  \n  665          $this->request('GET', '/');\n  ...\n  721          $m = $r->getMethod('save');\n  722          $m->setAccessible(true);\n  723:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  724  \n  725          // build subsequent request; should be found but miss due to freshness\n  ...\n 1133      }\n 1134  \n 1135:     public function testClientIpIsAlwaysLocalhostForForwardedRequests()\n 1136      {\n 1137          $this->setNextResponse();\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Profiler\\MongoDbProfilerStorageTest.php:\n   55      {\n   56          if (extension_loaded('mongo')) {\n   57:             self::$storage = new DummyMongoDbProfilerStorage('mongodb://localhost/symfony_tests/profiler_data', '', '', 86400);\n   58              try {\n   59                  self::$storage->getMongo();\n   ..\n   75      {\n   76          return array(\n   77:             array('mongodb://localhost/symfony_tests/profiler_data', array(\n   78:                 'mongodb://localhost/symfony_tests',\n   79                  'symfony_tests',\n   80                  'profiler_data',\n   81              )),\n   82:             array('mongodb://user:password@localhost/symfony_tests/profiler_data', array(\n   83:                 'mongodb://user:password@localhost/symfony_tests',\n   84                  'symfony_tests',\n   85                  'profiler_data',\n   86              )),\n   87:             array('mongodb://user:password@localhost/admin/symfony_tests/profiler_data', array(\n   88:                 'mongodb://user:password@localhost/admin',\n   89                  'symfony_tests',\n   90                  'profiler_data',\n   91              )),\n   92:             array('mongodb://user:password@localhost:27009,localhost:27010/?replicaSet=rs-name&authSource=admin/symfony_tests/profiler_data', array(\n   93:                 'mongodb://user:password@localhost:27009,localhost:27010/?replicaSet=rs-name&authSource=admin',\n   94                  'symfony_tests',\n   95                  'profiler_data',\n   ..\n  160              self::$storage->purge();\n  161          } else {\n  162:             $this->markTestSkipped('MongoDbProfilerStorageTest requires the mongo PHP extension and a MongoDB server on localhost');\n  163          }\n  164      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\RequestContext.php:\n   54       * @api\n   55       */\n   56:     public function __construct($baseUrl = '', $method = 'GET', $host = 'localhost', $scheme = 'http', $httpPort = 80, $httpsPort = 443, $path = '/', $queryString = '')\n   57      {\n   58          $this->setBaseUrl($baseUrl);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\Tests\\Generator\\Dumper\\PhpGeneratorDumperTest.php:\n   70          $relativeUrlWithoutParameter = $projectUrlGenerator->generate('Test2', array(), false);\n   71  \n   72:         $this->assertEquals($absoluteUrlWithParameter, 'http://localhost/app.php/testing/bar');\n   73:         $this->assertEquals($absoluteUrlWithoutParameter, 'http://localhost/app.php/testing2');\n   74          $this->assertEquals($relativeUrlWithParameter, '/app.php/testing/bar');\n   75          $this->assertEquals($relativeUrlWithoutParameter, '/app.php/testing2');\n   ..\n  128          $relativeUrl = $projectUrlGenerator->generate('Test1', array(), false);\n  129  \n  130:         $this->assertEquals($absoluteUrl, 'ftp://localhost/app.php/testing');\n  131:         $this->assertEquals($relativeUrl, 'ftp://localhost/app.php/testing');\n  132  \n  133:         $projectUrlGenerator = new \\SchemeUrlGenerator(new RequestContext('/app.php', 'GET', 'localhost', 'https'));\n  134  \n  135          $absoluteUrl = $projectUrlGenerator->generate('Test1', array(), true);\n  136          $relativeUrl = $projectUrlGenerator->generate('Test1', array(), false);\n  137  \n  138:         $this->assertEquals($absoluteUrl, 'https://localhost/app.php/testing');\n  139          $this->assertEquals($relativeUrl, '/app.php/testing');\n  140      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\Tests\\Generator\\UrlGeneratorTest.php:\n   25          $url = $this->getGenerator($routes)->generate('test', array(), true);\n   26  \n   27:         $this->assertEquals('http://localhost/app.php/testing', $url);\n   28      }\n   29  \n   ..\n   33          $url = $this->getGenerator($routes, array('scheme' => 'https'))->generate('test', array(), true);\n   34  \n   35:         $this->assertEquals('https://localhost/app.php/testing', $url);\n   36      }\n   37  \n   ..\n   41          $url = $this->getGenerator($routes, array('httpPort' => 8080))->generate('test', array(), true);\n   42  \n   43:         $this->assertEquals('http://localhost:8080/app.php/testing', $url);\n   44      }\n   45  \n   ..\n   49          $url = $this->getGenerator($routes, array('httpsPort' => 8080, 'scheme' => 'https'))->generate('test', array(), true);\n   50  \n   51:         $this->assertEquals('https://localhost:8080/app.php/testing', $url);\n   52      }\n   53  \n   ..\n  115          $url = $this->getGenerator($routes)->generate('test', array('foo' => 'bar'), true);\n  116  \n  117:         $this->assertEquals('http://localhost/app.php/testing?foo=bar', $url);\n  118      }\n  119  \n  ...\n  123          $url = $this->getGenerator($routes)->generate('test', array('foo' => null), true);\n  124  \n  125:         $this->assertEquals('http://localhost/app.php/testing', $url);\n  126      }\n  127  \n  ...\n  255      {\n  256          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('https')));\n  257:         $this->assertEquals('https://localhost/app.php/', $this->getGenerator($routes)->generate('test'));\n  258  \n  259          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('http')));\n  260:         $this->assertEquals('http://localhost/app.php/', $this->getGenerator($routes, array('scheme' => 'https'))->generate('test'));\n  261      }\n  262  \n  ...\n  264      {\n  265          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('Ftp', 'https')));\n  266:         $this->assertEquals('ftp://localhost/app.php/', $this->getGenerator($routes)->generate('test'));\n  267      }\n  268  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\yaml\\Tests\\Fixtures\\YtsBasicTests.yml:\n  174  yaml: |\n  175       allow:\n  176:      - 'localhost'\n  177       - '%.sourceforge.net'\n  178       - '%.freepan.org'\n  179  php: |\n  180:      array('allow' => array('localhost', '%.sourceforge.net', '%.freepan.org'))\n  181  ---\n  182  todo: true\n\n199 matches across 58 files\n\n\nSearching 7445 files for \"localhost\"\n\nC:\\xampp\\htdocs\\comitec\\.env:\n    3  APP_KEY=SomeRandomString\n    4  \n    5: DB_HOST=localhost\n    6  DB_DATABASE=comitec\n    7  DB_USERNAME=root\n\nC:\\xampp\\htdocs\\comitec\\.env.example:\n    3  APP_KEY=SomeRandomString\n    4  \n    5: DB_HOST=localhost\n    6  DB_DATABASE=comitec\n    7  DB_USERNAME=root\n\nC:\\xampp\\htdocs\\comitec\\comitec.sublime-project:\n    8  	\"settings\": {\n    9          \"xdebug\": {\n   10:              \"url\": \"http://localhost:8000\",\n   11          }\n   12      }\n\nC:\\xampp\\htdocs\\comitec\\config\\app.php:\n   27      */\n   28  \n   29:     'url' => 'http://localhost',\n   30  \n   31      /*\n\nC:\\xampp\\htdocs\\comitec\\config\\database.php:\n   55          'mysql' => [\n   56              'driver'    => 'mysql',\n   57:             'host'      => env('DB_HOST', 'localhost'),\n   58              'database'  => env('DB_DATABASE', 'comitec'),\n   59              'username'  => env('DB_USERNAME', 'root'),\n   ..\n   67          'pgsql' => [\n   68              'driver'   => 'pgsql',\n   69:             'host'     => env('DB_HOST', 'localhost'),\n   70              'database' => env('DB_DATABASE', 'forge'),\n   71              'username' => env('DB_USERNAME', 'forge'),\n   ..\n   78          'sqlsrv' => [\n   79              'driver'   => 'sqlsrv',\n   80:             'host'     => env('DB_HOST', 'localhost'),\n   81              'database' => env('DB_DATABASE', 'forge'),\n   82              'username' => env('DB_USERNAME', 'forge'),\n\nC:\\xampp\\htdocs\\comitec\\config\\excel.php:\n   44          'memcache' => array(\n   45  \n   46:             'host' => 'localhost',\n   47              'port' => 11211,\n   48  \n\nC:\\xampp\\htdocs\\comitec\\config\\queue.php:\n   45          'beanstalkd' => [\n   46              'driver' => 'beanstalkd',\n   47:             'host'   => 'localhost',\n   48              'queue'  => 'default',\n   49              'ttr'    => 60,\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\1b41e11604cdf0bcef50d4231080b9c2387b6361:\n    1: a:4:{s:6:\"_token\";s:40:\"6tHgNKOiSZE6Ne9b67tZaNEUNPRblKg2tDFFL3DP\";s:9:\"_previous\";a:1:{s:3:\"url\";s:57:\"http://localhost:8000?XDEBUG_SESSION_START=sublime.xdebug\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439591070;s:1:\"c\";i:1439590855;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\533aa4d37db44e598b66bf3695de9a2d1f3d3406:\n    1: a:5:{s:6:\"_token\";s:40:\"QwHSKP32hIsqfgPjQrkf5ZP2Wx56MDmSBebUdTnk\";s:9:\"_previous\";a:1:{s:3:\"url\";s:35:\"http://localhost:8000/auth/register\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:3:\"url\";a:1:{s:8:\"intended\";s:34:\"http://localhost:8000/comite/civil\";}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439399635;s:1:\"c\";i:1439379506;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\73c11370a965179d023e136f242ab3b3b8b1eea6:\n    1: a:4:{s:6:\"_token\";s:40:\"4PRieMUrrwrGCuAWX3MJgnimz4f4tdpzNWHxDUhx\";s:9:\"_previous\";a:1:{s:3:\"url\";s:33:\"http://localhost:8000/panel/login\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439598464;s:1:\"c\";i:1439598272;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\776bc6b67ea88e813afbb95db8d8f7e83b83cff9:\n    1: a:4:{s:6:\"_token\";s:40:\"qGq97aTUxXj8oWzwLeyZqW4hgTtpNMp3DiSXGsSo\";s:9:\"_previous\";a:1:{s:3:\"url\";s:33:\"http://localhost:8000/panel/login\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439656203;s:1:\"c\";i:1439648138;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\e599e04609aea6c5ba0f5ebfeb9f197e1ba6cf1e:\n    1: a:4:{s:6:\"_token\";s:40:\"YUcKPiBI6R9lajS3YBIbUcOOpkCIA4VlJa8QBLfz\";s:9:\"_previous\";a:1:{s:3:\"url\";s:33:\"http://localhost:8000/panel/login\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439679623;s:1:\"c\";i:1439679614;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\framework\\sessions\\fc425a94d7a6e8d702061d297372c433254d6c3b:\n    1: a:5:{s:6:\"_token\";s:40:\"lLdOGuUwAibrZrFBf2afaijdxMGwXARGGWR7DMnc\";s:9:\"_previous\";a:1:{s:3:\"url\";s:28:\"http://localhost:8000/user/1\";}s:5:\"flash\";a:2:{s:3:\"old\";a:0:{}s:3:\"new\";a:0:{}}s:5:\"rapyd\";a:1:{s:14:\"panel/Link/all\";s:36:\"http://localhost:8000/panel/Link/all\";}s:9:\"_sf2_meta\";a:3:{s:1:\"u\";i:1439414001;s:1:\"c\";i:1439409681;s:1:\"l\";s:1:\"0\";}}\n\nC:\\xampp\\htdocs\\comitec\\storage\\logs\\laravel.log:\n  496  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n  497  #11 {main}  \n  498: [2015-08-04 23:02:34] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  499  Stack trace:\n  500  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n  ...\n  518  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  519  #19 {main}  \n  520: [2015-08-04 23:04:52] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  521  Stack trace:\n  522  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n  ...\n  540  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  541  #19 {main}  \n  542: [2015-08-04 23:06:06] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  543  Stack trace:\n  544  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', '', Array)\n  ...\n  562  #18 C:\\xampp\\htdocs\\comitec\\artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))\n  563  #19 {main}  \n  564: [2015-08-04 23:06:17] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n  565  Stack trace:\n  566  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', '', Array)\n  ...\n 1799  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n 1800  #11 {main}  \n 1801: [2015-08-12 01:53:25] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n 1802  Stack trace:\n 1803  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'GP@MSPW', Array)\n ....\n 2047  #10 C:\\xampp\\htdocs\\comitec\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')\n 2048  #11 {main}  \n 2049: [2015-08-12 20:02:09] local.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:50\n 2050  Stack trace:\n 2051  #0 C:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(50): PDO->__construct('mysql:host=loca...', 'root', 'kakito1', Array)\n\nC:\\xampp\\htdocs\\comitec\\tests\\TestCase.php:\n    8       * @var string\n    9       */\n   10:     protected $baseUrl = 'http://localhost';\n   11  \n   12      /**\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\README.md:\n   14  $capsule->addConnection([\n   15      'driver'    => 'mysql',\n   16:     'host'      => 'localhost',\n   17      'database'  => 'database',\n   18      'username'  => 'root',\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\SetRequestForConsole.php:\n   16      public function bootstrap(Application $app)\n   17      {\n   18:         $url = $app->make('config')->get('app.url', 'http://localhost');\n   19  \n   20          $app->instance('request', Request::create($url, 'GET', [], [], [], $_SERVER));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php:\n   59      {\n   60          return [\n   61:             ['host', null, InputOption::VALUE_OPTIONAL, 'The host address to serve the application on.', 'localhost'],\n   62  \n   63              ['port', null, InputOption::VALUE_OPTIONAL, 'The port to serve the application on.', 8000],\n\nC:\\xampp\\htdocs\\comitec\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:\n   14  $queue->addConnection([\n   15      'driver' => 'beanstalkd',\n   16:     'host' => 'localhost',\n   17      'queue' => 'default',\n   18  ]);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\maatwebsite\\excel\\src\\config\\excel.php:\n   44          'memcache' => array(\n   45  \n   46:             'host' => 'localhost',\n   47              'port' => 11211,\n   48  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\maatwebsite\\excel\\src\\Maatwebsite\\Excel\\Classes\\Cache.php:\n   99                  // Add extra memcache settings\n  100                  $this->settings = array_merge($this->settings, array(\n  101:                     'memcacheServer' => Config::get($this->configName . '.memcache.host', 'localhost'),\n  102                      'memcachePort'   => Config::get($this->configName . '.memcache.port', 11211)\n  103                  ));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\CouchDBHandler.php:\n   27      {\n   28          $this->options = array_merge(array(\n   29:             'host'     => 'localhost',\n   30              'port'     => 5984,\n   31              'dbname'   => 'logger',\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\MongoDBHandler.php:\n   21   *\n   22   *   $log = new Logger('application');\n   23:  *   $mongodb = new MongoDBHandler(new \\Mongo(\"mongodb://localhost:27017\"), \"logs\", \"prod\");\n   24   *   $log->pushHandler($mongodb);\n   25   *\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\RedisHandler.php:\n   21   *\n   22   *   $log = new Logger('application');\n   23:  *   $redis = new RedisHandler(new Predis\\Client(\"tcp://localhost:6379\"), \"logs\", \"prod\");\n   24   *   $log->pushHandler($redis);\n   25   *\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\CouchDBHandlerTest.php:\n   26              $handler->handle($record);\n   27          } catch (\\RuntimeException $e) {\n   28:             $this->markTestSkipped('Could not connect to couchdb server on http://localhost:5984');\n   29          }\n   30      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\ElasticSearchHandlerTest.php:\n  154  \n  155      /**\n  156:      * Integration test using localhost Elastic Search server\n  157       *\n  158       * @covers Monolog\\Handler\\ElasticSearchHandler::__construct\n  ...\n  186              $handler->handleBatch(array($msg));\n  187          } catch (\\RuntimeException $e) {\n  188:             $this->markTestSkipped(\"Cannot connect to Elastic Search server on localhost\");\n  189          }\n  190  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\FlowdockHandlerTest.php:\n   72          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n   73          $reflectionProperty->setAccessible(true);\n   74:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n   75  \n   76          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\GelfHandlerLegacyTest.php:\n   46      protected function getMessagePublisher()\n   47      {\n   48:         return new GelfMockMessagePublisher('localhost');\n   49      }\n   50  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\HipChatHandlerTest.php:\n  214          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  215          $reflectionProperty->setAccessible(true);\n  216:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  217  \n  218          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\LogEntriesHandlerTest.php:\n   70          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n   71          $reflectionProperty->setAccessible(true);\n   72:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n   73  \n   74          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\PushoverHandlerTest.php:\n  125          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  126          $reflectionProperty->setAccessible(true);\n  127:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  128  \n  129          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\SlackHandlerTest.php:\n  117          $reflectionProperty = new \\ReflectionProperty('\\Monolog\\Handler\\SocketHandler', 'connectionString');\n  118          $reflectionProperty->setAccessible(true);\n  119:         $reflectionProperty->setValue($this->handler, 'localhost:1234');\n  120  \n  121          $this->handler->expects($this->any())\n\nC:\\xampp\\htdocs\\comitec\\vendor\\monolog\\monolog\\tests\\Monolog\\Handler\\SocketHandlerTest.php:\n   44      public function testBadConnectionTimeout()\n   45      {\n   46:         $this->createHandler('localhost:1234');\n   47          $this->handler->setConnectionTimeout(-1);\n   48      }\n   ..\n   50      public function testSetConnectionTimeout()\n   51      {\n   52:         $this->createHandler('localhost:1234');\n   53          $this->handler->setConnectionTimeout(10.1);\n   54          $this->assertEquals(10.1, $this->handler->getConnectionTimeout());\n   ..\n   60      public function testBadTimeout()\n   61      {\n   62:         $this->createHandler('localhost:1234');\n   63          $this->handler->setTimeout(-1);\n   64      }\n   ..\n   66      public function testSetTimeout()\n   67      {\n   68:         $this->createHandler('localhost:1234');\n   69          $this->handler->setTimeout(10.25);\n   70          $this->assertEquals(10.25, $this->handler->getTimeout());\n   ..\n   73      public function testSetConnectionString()\n   74      {\n   75:         $this->createHandler('tcp://localhost:9090');\n   76:         $this->assertEquals('tcp://localhost:9090', $this->handler->getConnectionString());\n   77      }\n   78  \n   ..\n  257  \n  258          $this->handler = $this->getMock(\n  259:             '\\Monolog\\Handler\\SocketHandler', $finalMethods, array('localhost:1234')\n  260          );\n  261  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\CachedObjectStorage\\Memcache.php:\n  254  	 */\n  255  	public function __construct(PHPExcel_Worksheet $parent, $arguments) {\n  256: 		$memcacheServer	= (isset($arguments['memcacheServer']))	? $arguments['memcacheServer']	: 'localhost';\n  257  		$memcachePort	= (isset($arguments['memcachePort']))	? $arguments['memcachePort']	: 11211;\n  258  		$cacheTime		= (isset($arguments['cacheTime']))		? $arguments['cacheTime']		: 600;\n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\CachedObjectStorageFactory.php:\n  105          self::cache_to_apc                  => array( 'cacheTime'       => 600\n  106                                                      ),\n  107:         self::cache_to_memcache             => array( 'memcacheServer'  => 'localhost',\n  108                                                        'memcachePort'    => 11211,\n  109                                                        'cacheTime'       => 600\n\nC:\\xampp\\htdocs\\comitec\\vendor\\phpunit\\phpunit\\src\\Util\\Configuration.php:\n  810                  $host = (string) $config->getAttribute('host');\n  811              } else {\n  812:                 $host = 'localhost';\n  813              }\n  814  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\doc\\sending.rst:\n  436  \n  437      // Create the Transport\n  438:     $transport = Swift_SmtpTransport::newInstance('localhost', 25);\n  439  \n  440      // Create the Mailer using your created Transport\n  ...\n  514  \n  515          // Create the Transport\n  516:         $transport = Swift_SmtpTransport::newInstance('localhost', 25);\n  517  \n  518          // Create the Mailer using your created Transport\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\SmtpTransport.php:\n   30       * @param string $security\n   31       */\n   32:     public function __construct($host = 'localhost', $port = 25, $security = null)\n   33      {\n   34          call_user_func_array(\n   ..\n   52       * @return Swift_SmtpTransport\n   53       */\n   54:     public static function newInstance($host = 'localhost', $port = 25, $security = null)\n   55      {\n   56          return new self($host, $port, $security);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\EsmtpTransport.php:\n   37      private $_params = array(\n   38          'protocol' => 'tcp',\n   39:         'host' => 'localhost',\n   40          'port' => 25,\n   41          'timeout' => 30,\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\tests\\acceptance.conf.php.default:\n   24   Recommended: smtp.gmail.com:25\n   25   */\n   26: define('SWIFT_SMTP_HOST', 'localhost:4456');\n   27  \n   28  /*\n\nC:\\xampp\\htdocs\\comitec\\vendor\\swiftmailer\\swiftmailer\\tests\\smoke.conf.php.default:\n   29   Recommended: smtp.your-isp.com (varies wildly!)\n   30   */\n   31: define('SWIFT_SMOKE_SMTP_HOST', 'localhost');\n   32  \n   33  /*\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\css-selector\\Tests\\XPath\\Fixtures\\ids.html:\n    5  <div id=\"outer-div\">\n    6   <a id=\"name-anchor\" name=\"foo\"></a>\n    7:  <a id=\"tag-anchor\" rel=\"tag\" href=\"http://localhost/foo\">link</a>\n    8   <a id=\"nofollow-anchor\" rel=\"nofollow\" href=\"https://example.org\">\n    9      link</a>\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\css-selector\\Tests\\XPath\\TranslatorTest.php:\n  159              array('a[rel]', array('tag-anchor', 'nofollow-anchor')),\n  160              array('a[rel=\"tag\"]', array('tag-anchor')),\n  161:             array('a[href*=\"localhost\"]', array('tag-anchor')),\n  162              array('a[href*=\"\"]', array()),\n  163              array('a[href^=\"http\"]', array('tag-anchor', 'nofollow-anchor')),\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\CrawlerTest.php:\n  637              <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  638                  <url>\n  639:                     <loc>http://localhost/foo</loc>\n  640                      <changefreq>weekly</changefreq>\n  641                      <priority>0.5</priority>\n  ...\n  643                 </url>\n  644                 <url>\n  645:                     <loc>http://localhost/bar</loc>\n  646                      <changefreq>weekly</changefreq>\n  647                      <priority>0.5</priority>\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\FormTest.php:\n  521      public function testGetUriAbsolute()\n  522      {\n  523:         $form = $this->createForm('<form action=\"foo\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/');\n  524:         $this->assertEquals('http://localhost/foo/foo', $form->getUri(), '->getUri() returns absolute URIs');\n  525  \n  526:         $form = $this->createForm('<form action=\"/foo\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/');\n  527:         $this->assertEquals('http://localhost/foo', $form->getUri(), '->getUri() returns absolute URIs');\n  528      }\n  529  \n  530      public function testGetUriWithOnlyQueryString()\n  531      {\n  532:         $form = $this->createForm('<form action=\"?get=param\"><input type=\"submit\" /></form>', null, 'http://localhost/foo/bar');\n  533:         $this->assertEquals('http://localhost/foo/bar?get=param', $form->getUri(), '->getUri() returns absolute URIs only if the host has been defined in the constructor');\n  534      }\n  535  \n  536      public function testGetUriWithoutAction()\n  537      {\n  538:         $form = $this->createForm('<form><input type=\"submit\" /></form>', null, 'http://localhost/foo/bar');\n  539:         $this->assertEquals('http://localhost/foo/bar', $form->getUri(), '->getUri() returns path if no action defined');\n  540      }\n  541  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\dom-crawler\\Tests\\LinkTest.php:\n  102      {\n  103          return array(\n  104:             array('/foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  105:             array('/foo', 'http://localhost/bar/foo', 'http://localhost/foo'),\n  106              array('\n  107:             /foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  108              array('/foo\n  109:             ', 'http://localhost/bar/foo', 'http://localhost/foo'),\n  110  \n  111:             array('foo', 'http://localhost/bar/foo/', 'http://localhost/bar/foo/foo'),\n  112:             array('foo', 'http://localhost/bar/foo', 'http://localhost/bar/foo'),\n  113  \n  114:             array('', 'http://localhost/bar/', 'http://localhost/bar/'),\n  115:             array('#', 'http://localhost/bar/', 'http://localhost/bar/#'),\n  116:             array('#bar', 'http://localhost/bar?a=b', 'http://localhost/bar?a=b#bar'),\n  117:             array('#bar', 'http://localhost/bar/#foo', 'http://localhost/bar/#bar'),\n  118:             array('?a=b', 'http://localhost/bar#foo', 'http://localhost/bar?a=b'),\n  119:             array('?a=b', 'http://localhost/bar/', 'http://localhost/bar/?a=b'),\n  120  \n  121:             array('http://login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),\n  122:             array('https://login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),\n  123:             array('mailto:foo@bar.com', 'http://localhost/foo', 'mailto:foo@bar.com'),\n  124  \n  125              // tests schema relative URL (issue #7169)\n  126:             array('//login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),\n  127:             array('//login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),\n  128  \n  129:             array('?foo=2', 'http://localhost?foo=1', 'http://localhost?foo=2'),\n  130:             array('?foo=2', 'http://localhost/?foo=1', 'http://localhost/?foo=2'),\n  131:             array('?foo=2', 'http://localhost/bar?foo=1', 'http://localhost/bar?foo=2'),\n  132:             array('?foo=2', 'http://localhost/bar/?foo=1', 'http://localhost/bar/?foo=2'),\n  133:             array('?bar=2', 'http://localhost?foo=1', 'http://localhost?bar=2'),\n  134  \n  135              array('foo', 'http://login.foo.com/bar/baz?/query/string', 'http://login.foo.com/bar/foo'),\n  136  \n  137:             array('.', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),\n  138:             array('./', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),\n  139:             array('./foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/foo'),\n  140:             array('..', 'http://localhost/foo/bar/baz', 'http://localhost/foo/'),\n  141:             array('../', 'http://localhost/foo/bar/baz', 'http://localhost/foo/'),\n  142:             array('../foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo/foo'),\n  143:             array('../..', 'http://localhost/foo/bar/baz', 'http://localhost/'),\n  144:             array('../../', 'http://localhost/foo/bar/baz', 'http://localhost/'),\n  145:             array('../../foo', 'http://localhost/foo/bar/baz', 'http://localhost/foo'),\n  146:             array('../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  147:             array('../bar/../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  148:             array('../bar/./../../foo', 'http://localhost/bar/foo/', 'http://localhost/foo'),\n  149:             array('../../', 'http://localhost/', 'http://localhost/'),\n  150:             array('../../', 'http://localhost', 'http://localhost/'),\n  151  \n  152:             array('/foo', 'http://localhost?bar=1', 'http://localhost/foo'),\n  153:             array('/foo', 'http://localhost#bar', 'http://localhost/foo'),\n  154              array('/foo', 'file:///', 'file:///foo'),\n  155              array('/foo', 'file:///bar/baz', 'file:///foo'),\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-foundation\\Request.php:\n  333      {\n  334          $server = array_replace(array(\n  335:             'SERVER_NAME' => 'localhost',\n  336              'SERVER_PORT' => 80,\n  337:             'HTTP_HOST' => 'localhost',\n  338              'HTTP_USER_AGENT' => 'Symfony/2.X',\n  339              'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n  ...\n  914       * The path info always starts with a /.\n  915       *\n  916:      * Suppose this request is instantiated from /mysite on localhost:\n  917       *\n  918:      *  * http://localhost/mysite              returns an empty string\n  919:      *  * http://localhost/mysite/about        returns '/about'\n  920:      *  * http://localhost/mysite/enco%20ded   returns '/enco%20ded'\n  921:      *  * http://localhost/mysite/about?var=1  returns '/about'\n  922       *\n  923       * @return string The raw path (i.e. not urldecoded)\n  ...\n  939       * Suppose that an index.php file instantiates this request object:\n  940       *\n  941:      *  * http://localhost/index.php         returns an empty string\n  942:      *  * http://localhost/index.php/page    returns an empty string\n  943:      *  * http://localhost/web/index.php     returns '/web'\n  944:      *  * http://localhost/we%20b/index.php  returns '/we%20b'\n  945       *\n  946       * @return string The raw path (i.e. not urldecoded)\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Fragment\\InlineFragmentRenderer.php:\n  117  \n  118          // Override the arguments to emulate a sub-request.\n  119:         // Sub-request object will point to localhost as client ip and real client ip\n  120          // will be included into trusted header for client ip\n  121          try {\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\DataCollector\\RequestDataCollectorTest.php:\n  174          $response->setStatusCode(200);\n  175          $response->headers->set('Content-Type', 'application/json');\n  176:         $response->headers->setCookie(new Cookie('foo', 'bar', 1, '/foo', 'localhost', true, true));\n  177          $response->headers->setCookie(new Cookie('bar', 'foo', new \\DateTime('@946684800')));\n  178          $response->headers->setCookie(new Cookie('bazz', 'foo', '2000-12-12'));\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\EventListener\\RouterListenerTest.php:\n   55      {\n   56          return array(\n   57:             array(80, 443, 'http://localhost/', 80, 443),\n   58:             array(80, 443, 'http://localhost:90/', 90, 443),\n   59:             array(80, 443, 'https://localhost/', 80, 443),\n   60:             array(80, 443, 'https://localhost:90/', 80, 90),\n   61          );\n   62      }\n   ..\n   87      {\n   88          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n   89:         $request = Request::create('http://localhost/');\n   90          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);\n   91  \n   ..\n  103      {\n  104          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  105:         $request = Request::create('http://localhost/', 'post');\n  106          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);\n  107  \n  ...\n  122          // sub-request with another HTTP method\n  123          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  124:         $request = Request::create('http://localhost/', 'get');\n  125          $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::SUB_REQUEST);\n  126  \n  ...\n  146  \n  147          $kernel = $this->getMock('Symfony\\Component\\HttpKernel\\HttpKernelInterface');\n  148:         $request = Request::create('http://localhost/');\n  149  \n  150          $listener = new RouterListener($requestMatcher, new RequestContext(), $logger, $this->requestStack);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Fragment\\FragmentHandlerTest.php:\n   54      /**\n   55       * @expectedException \\RuntimeException\n   56:      * @expectedExceptionMessage Error when rendering \"http://localhost/\" (Status code is 404).\n   57       */\n   58      public function testDeliverWithUnsuccessfulResponse()\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Fragment\\RoutableFragmentRendererTest.php:\n   30      public function testGenerateAbsoluteFragmentUri($uri, $controller)\n   31      {\n   32:         $this->assertEquals('http://localhost'.$uri, $this->callGenerateFragmentUriMethod($controller, Request::create('/'), true));\n   33      }\n   34  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\HttpCache\\HttpCacheTest.php:\n  612          $m = $r->getMethod('save');\n  613          $m->setAccessible(true);\n  614:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  615  \n  616          $this->request('GET', '/');\n  ...\n  661          $m = $r->getMethod('save');\n  662          $m->setAccessible(true);\n  663:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  664  \n  665          $this->request('GET', '/');\n  ...\n  721          $m = $r->getMethod('save');\n  722          $m->setAccessible(true);\n  723:         $m->invoke($this->store, 'md'.hash('sha256', 'http://localhost/'), serialize($tmp));\n  724  \n  725          // build subsequent request; should be found but miss due to freshness\n  ...\n 1133      }\n 1134  \n 1135:     public function testClientIpIsAlwaysLocalhostForForwardedRequests()\n 1136      {\n 1137          $this->setNextResponse();\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\http-kernel\\Tests\\Profiler\\MongoDbProfilerStorageTest.php:\n   55      {\n   56          if (extension_loaded('mongo')) {\n   57:             self::$storage = new DummyMongoDbProfilerStorage('mongodb://localhost/symfony_tests/profiler_data', '', '', 86400);\n   58              try {\n   59                  self::$storage->getMongo();\n   ..\n   75      {\n   76          return array(\n   77:             array('mongodb://localhost/symfony_tests/profiler_data', array(\n   78:                 'mongodb://localhost/symfony_tests',\n   79                  'symfony_tests',\n   80                  'profiler_data',\n   81              )),\n   82:             array('mongodb://user:password@localhost/symfony_tests/profiler_data', array(\n   83:                 'mongodb://user:password@localhost/symfony_tests',\n   84                  'symfony_tests',\n   85                  'profiler_data',\n   86              )),\n   87:             array('mongodb://user:password@localhost/admin/symfony_tests/profiler_data', array(\n   88:                 'mongodb://user:password@localhost/admin',\n   89                  'symfony_tests',\n   90                  'profiler_data',\n   91              )),\n   92:             array('mongodb://user:password@localhost:27009,localhost:27010/?replicaSet=rs-name&authSource=admin/symfony_tests/profiler_data', array(\n   93:                 'mongodb://user:password@localhost:27009,localhost:27010/?replicaSet=rs-name&authSource=admin',\n   94                  'symfony_tests',\n   95                  'profiler_data',\n   ..\n  160              self::$storage->purge();\n  161          } else {\n  162:             $this->markTestSkipped('MongoDbProfilerStorageTest requires the mongo PHP extension and a MongoDB server on localhost');\n  163          }\n  164      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\RequestContext.php:\n   54       * @api\n   55       */\n   56:     public function __construct($baseUrl = '', $method = 'GET', $host = 'localhost', $scheme = 'http', $httpPort = 80, $httpsPort = 443, $path = '/', $queryString = '')\n   57      {\n   58          $this->setBaseUrl($baseUrl);\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\Tests\\Generator\\Dumper\\PhpGeneratorDumperTest.php:\n   70          $relativeUrlWithoutParameter = $projectUrlGenerator->generate('Test2', array(), false);\n   71  \n   72:         $this->assertEquals($absoluteUrlWithParameter, 'http://localhost/app.php/testing/bar');\n   73:         $this->assertEquals($absoluteUrlWithoutParameter, 'http://localhost/app.php/testing2');\n   74          $this->assertEquals($relativeUrlWithParameter, '/app.php/testing/bar');\n   75          $this->assertEquals($relativeUrlWithoutParameter, '/app.php/testing2');\n   ..\n  128          $relativeUrl = $projectUrlGenerator->generate('Test1', array(), false);\n  129  \n  130:         $this->assertEquals($absoluteUrl, 'ftp://localhost/app.php/testing');\n  131:         $this->assertEquals($relativeUrl, 'ftp://localhost/app.php/testing');\n  132  \n  133:         $projectUrlGenerator = new \\SchemeUrlGenerator(new RequestContext('/app.php', 'GET', 'localhost', 'https'));\n  134  \n  135          $absoluteUrl = $projectUrlGenerator->generate('Test1', array(), true);\n  136          $relativeUrl = $projectUrlGenerator->generate('Test1', array(), false);\n  137  \n  138:         $this->assertEquals($absoluteUrl, 'https://localhost/app.php/testing');\n  139          $this->assertEquals($relativeUrl, '/app.php/testing');\n  140      }\n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\routing\\Tests\\Generator\\UrlGeneratorTest.php:\n   25          $url = $this->getGenerator($routes)->generate('test', array(), true);\n   26  \n   27:         $this->assertEquals('http://localhost/app.php/testing', $url);\n   28      }\n   29  \n   ..\n   33          $url = $this->getGenerator($routes, array('scheme' => 'https'))->generate('test', array(), true);\n   34  \n   35:         $this->assertEquals('https://localhost/app.php/testing', $url);\n   36      }\n   37  \n   ..\n   41          $url = $this->getGenerator($routes, array('httpPort' => 8080))->generate('test', array(), true);\n   42  \n   43:         $this->assertEquals('http://localhost:8080/app.php/testing', $url);\n   44      }\n   45  \n   ..\n   49          $url = $this->getGenerator($routes, array('httpsPort' => 8080, 'scheme' => 'https'))->generate('test', array(), true);\n   50  \n   51:         $this->assertEquals('https://localhost:8080/app.php/testing', $url);\n   52      }\n   53  \n   ..\n  115          $url = $this->getGenerator($routes)->generate('test', array('foo' => 'bar'), true);\n  116  \n  117:         $this->assertEquals('http://localhost/app.php/testing?foo=bar', $url);\n  118      }\n  119  \n  ...\n  123          $url = $this->getGenerator($routes)->generate('test', array('foo' => null), true);\n  124  \n  125:         $this->assertEquals('http://localhost/app.php/testing', $url);\n  126      }\n  127  \n  ...\n  255      {\n  256          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('https')));\n  257:         $this->assertEquals('https://localhost/app.php/', $this->getGenerator($routes)->generate('test'));\n  258  \n  259          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('http')));\n  260:         $this->assertEquals('http://localhost/app.php/', $this->getGenerator($routes, array('scheme' => 'https'))->generate('test'));\n  261      }\n  262  \n  ...\n  264      {\n  265          $routes = $this->getRoutes('test', new Route('/', array(), array(), array(), '', array('Ftp', 'https')));\n  266:         $this->assertEquals('ftp://localhost/app.php/', $this->getGenerator($routes)->generate('test'));\n  267      }\n  268  \n\nC:\\xampp\\htdocs\\comitec\\vendor\\symfony\\yaml\\Tests\\Fixtures\\YtsBasicTests.yml:\n  174  yaml: |\n  175       allow:\n  176:      - 'localhost'\n  177       - '%.sourceforge.net'\n  178       - '%.freepan.org'\n  179  php: |\n  180:      array('allow' => array('localhost', '%.sourceforge.net', '%.freepan.org'))\n  181  ---\n  182  todo: true\n\n199 matches across 58 files\n",
+			"settings":
+			{
+				"buffer_size": 110785,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "comitec.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/apache/conf/httpd.conf",
+			"settings":
+			{
+				"buffer_size": 20836,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/seeds/ComiteTableSeeder.php",
+			"settings":
+			{
+				"buffer_size": 795,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_190927_create_posts_table.php",
+			"settings":
+			{
+				"buffer_size": 936,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_191439_create_question_table.php",
+			"settings":
+			{
+				"buffer_size": 678,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_191800_create_answers_table.php",
+			"settings":
+			{
+				"buffer_size": 634,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_07_31_193505_create_comite_table.php",
+			"settings":
+			{
+				"buffer_size": 661,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_192130_create_announcements_table.php",
+			"settings":
+			{
+				"buffer_size": 646,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_192445_create_comments_table.php",
+			"settings":
+			{
+				"buffer_size": 709,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2015_08_11_192807_create_poll_results_table.php",
+			"settings":
+			{
+				"buffer_size": 696,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/ComiteController.php",
+			"settings":
+			{
+				"buffer_size": 771,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Middleware/Authenticate.php",
+			"settings":
+			{
+				"buffer_size": 889,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> C:\\xampp\\htdocs\\comitec\\app\\Http\\Controllers\\HomeController.php\n	|+| 19\n",
+			"settings":
+			{
+				"buffer_size": 75,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -23,28 +349,80 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 127.0,
-		"last_filter": "package control: ins",
+		"height": 360.0,
+		"last_filter": "serve",
 		"selected_items":
 		[
 			[
-				"package control: ins",
+				"serve",
+				"Laravel Artisan: Serve"
+			],
+			[
+				"migra",
+				"Laravel Artisan: Migrate: Reset"
+			],
+			[
+				"seed",
+				"Laravel Artisan: DB: Seed"
+			],
+			[
+				"model",
+				"Laravel Make: Model"
+			],
+			[
+				"migrat",
+				"Laravel Artisan: Migrate: Refresh"
+			],
+			[
+				"seeder",
+				"Laravel Make: Seeder"
+			],
+			[
+				"see",
+				"Laravel Artisan: DB: Seed"
+			],
+			[
+				"inst",
 				"Package Control: Install Package"
 			],
 			[
-				"pa",
-				"Preferences: Browse Packages"
+				"mi",
+				"Laravel Artisan: Migrate: Refresh"
 			],
 			[
-				"pac",
+				"migrate",
+				"Laravel Artisan: Migrate: Refresh"
+			],
+			[
+				"migr",
+				"Laravel Artisan: Migrate: Rollback"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"SERVE",
+				"Laravel Artisan: Serve"
+			],
+			[
+				"servew",
+				"Snippet: Register an event listener with the dispatcher."
+			],
+			[
+				"migratr",
+				"Laravel Artisan: Migrate: Rollback"
+			],
+			[
+				"pack",
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 416.0
+		"width": 598.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 197.0,
 		"history":
 		[
 		]
@@ -60,67 +438,55 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/comitec"
+		"/C/xampp/htdocs/comitec",
+		"/C/xampp/htdocs/comitec/app",
+		"/C/xampp/htdocs/comitec/app/Console",
+		"/C/xampp/htdocs/comitec/app/Http",
+		"/C/xampp/htdocs/comitec/app/Http/Controllers",
+		"/C/xampp/htdocs/comitec/app/Http/Controllers/Auth",
+		"/C/xampp/htdocs/comitec/public/packages",
+		"/C/xampp/htdocs/comitec/public/packages/zofe",
+		"/C/xampp/htdocs/comitec/public/packages/zofe/rapyd",
+		"/C/xampp/htdocs/comitec/public/packages/zofe/rapyd/assets"
 	],
 	"file_history":
 	[
-		"/C/xampp/php/php.ini",
-		"/C/xampp/htdocs/UtilesEscolares/modules/blocksearch/blocksearch.js",
-		"/C/xampp/phpMyAdmin/config.inc.php",
-		"/C/xampp/htdocs/UtilesEscolares/cache/smarty/compile/b3/1a/c3/wrt55799d9542cc22_61250761",
-		"/C/xampp/php/ext/php_gd2.dll",
-		"/C/xampp/php/ext/php_eaccelerator_ts.dll",
-		"/C/xampp/htdocs/UtilesEscolares/config/settings.inc.php",
-		"/C/xampp/htdocs/LaraApp/server.php",
-		"/C/xampp/htdocs/UtilesEscolares/themes/UtilesTheme/guest-tracking.tpl",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/in_transit.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/refund.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/in_transit.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/order_canceled.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/order_changed.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/order_canceled.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/order_changed.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/order_conf.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/order_conf.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/outofstock.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/outofstock.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/payment.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/payment.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/payment_error.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/payment_error.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/preparation.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/download_product.html",
-		"/C/xampp/htdocs/UtilesEscolares/themes/UtilesTheme/header.tpl",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/bankwire.txt",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/bankwire.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/cheque.html",
-		"/C/xampp/htdocs/UtilesEscolares/mails/es/cheque.txt",
-		"/C/xampp/htdocs/UtilesEscolares/modules/statssupplyorderreceipt/views/templates/hook/statssupplyorderreceipt.tpl",
-		"/C/xampp/htdocs/UtilesEscolares/modules/statssupplyorderreceipt/statssupplyorderreceipt.php",
-		"/C/xampp/htdocs/UtilesEscolares/override/classes/module/statssupplierreport/supplierreport.php",
-		"/C/xampp/htdocs/UtilesEscolares/override/classes/module/statsdistributionreport/distributionreport.php",
-		"/C/xampp/htdocs/oldlandingpage/index.php",
-		"/C/xampp/htdocs/newLandingPage/js/submit.js",
-		"/C/xampp/htdocs/newLandingPage/js/slider.js",
-		"/C/Users/Didier/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/xampp/htdocs/newLandingPage/index.php",
-		"/C/Users/Didier/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
-		"/C/Users/Didier/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-		"/C/Users/Didier/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Didier/AppData/Roaming/Sublime Text 3/Packages/User/package_control.py",
-		"/C/xampp/htdocs/UtilesEscolares/modules/ueform/ueform.php",
-		"/C/Users/Didier/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/apache/conf/extra/httpd-ssl.conf",
+		"/C/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/C/xampp/htdocs/comitec/comitec.sublime-project",
+		"/C/xampp/htdocs/comitec/database/seeds/UserTableSeeder.php",
+		"/C/xampp/htdocs/comitec/database/migrations/2015_08_11_185613_create_members_table.php",
+		"/C/Users/JuanCarlos/Desktop/New Text Document.txt",
+		"/C/xampp/htdocs/comitec/database/seeds/StudentTableSeeder.php",
+		"/C/xampp/htdocs/Comitec1/public/.htaccess",
+		"/C/xampp/htdocs/comitec/.env",
+		"/C/xampp/htdocs/comitec/public/.htaccess",
+		"/C/xampp/htdocs/comitec/app/.htaccess",
+		"/C/xampp/htdocs/comitec/resources/views/vendor/panelViews/master.blade.php",
+		"/C/xampp/htdocs/comitec/database/seeds/ComiteTableSeeder.php",
+		"/C/xampp/htdocs/comitec/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php",
+		"/C/xampp/htdocs/comitec/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php",
+		"/C/xampp/htdocs/comitec/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php",
+		"/C/Users/JuanCarlos/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/comitec/composer.json",
+		"/C/xampp/htdocs/comitec/bootstrap/autoload.php",
+		"/C/xampp/htdocs/comitec/app/Http/routes.php",
+		"/C/xampp/htdocs/comitec/config/app.php",
+		"/C/Users/JuanCarlos/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/Temp/artisan",
+		"/C/xampp/htdocs/comitec/.env.example"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 123.0,
 		"where_history":
 		[
-			"C:\\xampp\\htdocs\\UtilesEscolares"
+			"C:\\xampp\\htdocs\\comitec"
 		]
 	},
 	"find_state":
@@ -128,29 +494,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"submitButton",
-			"delete",
-			"getstudent",
-			"updateName",
-			"ps_order_detail",
-			"order_detail",
-			"root",
-			"total_wrapping",
-			"tfoot",
-			"total_wrapping_taxes_num",
-			"total_wrapping_tax_exc",
-			"tfoot",
-			"guestTocustomer",
-			"/img/",
-			"/img",
-			"form-product",
-			"key_for_blockcart",
-			"submitButton",
-			"alertify",
-			"submitButton",
-			"#submitButton",
-			"submitButton",
-			"ajs-dimmer"
+			"localhost",
+			"CreateMemberTable",
+			"xampp",
+			"/xampp",
+			"/home",
+			"save",
+			"/home"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -158,7 +508,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"utilesescolares/img/"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -169,6 +518,3584 @@
 	"groups":
 	[
 		{
+			"selected": 24,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config/database.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								416,
+								416
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1107.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1221,
+								1221
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "database/seeds/DatabaseSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": ".env.example",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/panel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								331
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config/app.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3870,
+								3870
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2574.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1247,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/views/vendor/panelViews/login.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2964,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/Http/Middleware/RedirectIfAuthenticated.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/Http/Controllers/UserController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/Student.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/Comite.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": ".env",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/Role.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "resources/views/vendor/panelViews/dashboard.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "resources/views/vendor/panelViews/mainTemplate.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4381,
+								4381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 130.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "database/seeds/StudentTableSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 370.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "database/migrations/2015_08_11_181937_create_student_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "database/migrations/2015_08_11_185344_create_roles_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								419,
+								398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 50.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "database/migrations/2015_08_11_185916_create_proposals_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "database/seeds/RolesTableSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "database/migrations/2015_08_11_210509_create_block_history_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								634,
+								634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "database/migrations/2015_08_11_211010_create_major_post_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								399,
+								399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 200.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 110785,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										123,
+										132
+									],
+									[
+										278,
+										287
+									],
+									[
+										473,
+										482
+									],
+									[
+										611,
+										620
+									],
+									[
+										812,
+										821
+									],
+									[
+										1077,
+										1086
+									],
+									[
+										1341,
+										1350
+									],
+									[
+										1595,
+										1604
+									],
+									[
+										1804,
+										1813
+									],
+									[
+										2104,
+										2113
+									],
+									[
+										2500,
+										2509
+									],
+									[
+										2624,
+										2633
+									],
+									[
+										2947,
+										2956
+									],
+									[
+										3319,
+										3328
+									],
+									[
+										3679,
+										3688
+									],
+									[
+										3805,
+										3814
+									],
+									[
+										4218,
+										4227
+									],
+									[
+										4920,
+										4929
+									],
+									[
+										5622,
+										5631
+									],
+									[
+										6316,
+										6325
+									],
+									[
+										6898,
+										6907
+									],
+									[
+										7483,
+										7492
+									],
+									[
+										7945,
+										7954
+									],
+									[
+										8160,
+										8169
+									],
+									[
+										8491,
+										8500
+									],
+									[
+										8858,
+										8867
+									],
+									[
+										9162,
+										9171
+									],
+									[
+										9364,
+										9373
+									],
+									[
+										9740,
+										9749
+									],
+									[
+										10070,
+										10079
+									],
+									[
+										10372,
+										10381
+									],
+									[
+										10664,
+										10673
+									],
+									[
+										11025,
+										11034
+									],
+									[
+										11233,
+										11242
+									],
+									[
+										11546,
+										11555
+									],
+									[
+										11914,
+										11923
+									],
+									[
+										12207,
+										12216
+									],
+									[
+										12570,
+										12579
+									],
+									[
+										12981,
+										12990
+									],
+									[
+										13390,
+										13399
+									],
+									[
+										13796,
+										13805
+									],
+									[
+										14072,
+										14081
+									],
+									[
+										14270,
+										14279
+									],
+									[
+										14529,
+										14538
+									],
+									[
+										14707,
+										14716
+									],
+									[
+										14963,
+										14972
+									],
+									[
+										15023,
+										15032
+									],
+									[
+										15238,
+										15247
+									],
+									[
+										15572,
+										15581
+									],
+									[
+										16105,
+										16114
+									],
+									[
+										16499,
+										16508
+									],
+									[
+										16714,
+										16723
+									],
+									[
+										16915,
+										16924
+									],
+									[
+										17199,
+										17208
+									],
+									[
+										17409,
+										17418
+									],
+									[
+										17724,
+										17733
+									],
+									[
+										17972,
+										17981
+									],
+									[
+										18201,
+										18210
+									],
+									[
+										18438,
+										18447
+									],
+									[
+										18816,
+										18825
+									],
+									[
+										19210,
+										19219
+									],
+									[
+										19443,
+										19452
+									],
+									[
+										19815,
+										19824
+									],
+									[
+										19876,
+										19885
+									],
+									[
+										20067,
+										20076
+									],
+									[
+										20128,
+										20137
+									],
+									[
+										20406,
+										20415
+									],
+									[
+										20470,
+										20479
+									],
+									[
+										20789,
+										20798
+									],
+									[
+										20853,
+										20862
+									],
+									[
+										21115,
+										21124
+									],
+									[
+										21144,
+										21153
+									],
+									[
+										21202,
+										21211
+									],
+									[
+										21230,
+										21239
+									],
+									[
+										21308,
+										21317
+									],
+									[
+										21337,
+										21346
+									],
+									[
+										21415,
+										21424
+									],
+									[
+										21443,
+										21452
+									],
+									[
+										21508,
+										21517
+									],
+									[
+										21537,
+										21546
+									],
+									[
+										21602,
+										21611
+									],
+									[
+										21630,
+										21639
+									],
+									[
+										21696,
+										21705
+									],
+									[
+										21721,
+										21730
+									],
+									[
+										21777,
+										21786
+									],
+									[
+										21802,
+										21811
+									],
+									[
+										21862,
+										21871
+									],
+									[
+										21890,
+										21899
+									],
+									[
+										21956,
+										21965
+									],
+									[
+										21985,
+										21994
+									],
+									[
+										22048,
+										22057
+									],
+									[
+										22076,
+										22085
+									],
+									[
+										22138,
+										22147
+									],
+									[
+										22163,
+										22172
+									],
+									[
+										22254,
+										22263
+									],
+									[
+										22363,
+										22372
+									],
+									[
+										22465,
+										22474
+									],
+									[
+										22630,
+										22639
+									],
+									[
+										22733,
+										22742
+									],
+									[
+										22831,
+										22840
+									],
+									[
+										22857,
+										22866
+									],
+									[
+										22919,
+										22928
+									],
+									[
+										22946,
+										22955
+									],
+									[
+										23009,
+										23018
+									],
+									[
+										23039,
+										23048
+									],
+									[
+										23105,
+										23114
+									],
+									[
+										23136,
+										23145
+									],
+									[
+										23203,
+										23212
+									],
+									[
+										23229,
+										23238
+									],
+									[
+										23413,
+										23422
+									],
+									[
+										23445,
+										23454
+									],
+									[
+										23506,
+										23515
+									],
+									[
+										23538,
+										23547
+									],
+									[
+										23602,
+										23611
+									],
+									[
+										23634,
+										23643
+									],
+									[
+										23698,
+										23707
+									],
+									[
+										23730,
+										23739
+									],
+									[
+										23788,
+										23797
+									],
+									[
+										23820,
+										23829
+									],
+									[
+										23881,
+										23890
+									],
+									[
+										23913,
+										23922
+									],
+									[
+										23976,
+										23985
+									],
+									[
+										24008,
+										24017
+									],
+									[
+										24065,
+										24074
+									],
+									[
+										24097,
+										24106
+									],
+									[
+										24157,
+										24166
+									],
+									[
+										24189,
+										24198
+									],
+									[
+										24252,
+										24261
+									],
+									[
+										24281,
+										24290
+									],
+									[
+										24351,
+										24360
+									],
+									[
+										24380,
+										24389
+									],
+									[
+										24452,
+										24461
+									],
+									[
+										24481,
+										24490
+									],
+									[
+										24541,
+										24550
+									],
+									[
+										24562,
+										24571
+									],
+									[
+										24619,
+										24628
+									],
+									[
+										24639,
+										24648
+									],
+									[
+										24702,
+										24711
+									],
+									[
+										24728,
+										24737
+									],
+									[
+										24786,
+										24795
+									],
+									[
+										24810,
+										24819
+									],
+									[
+										25121,
+										25130
+									],
+									[
+										25208,
+										25217
+									],
+									[
+										25517,
+										25526
+									],
+									[
+										25566,
+										25575
+									],
+									[
+										25644,
+										25653
+									],
+									[
+										25715,
+										25724
+									],
+									[
+										25791,
+										25800
+									],
+									[
+										26039,
+										26048
+									],
+									[
+										26115,
+										26124
+									],
+									[
+										26191,
+										26200
+									],
+									[
+										26258,
+										26267
+									],
+									[
+										26597,
+										26606
+									],
+									[
+										27035,
+										27044
+									],
+									[
+										27429,
+										27438
+									],
+									[
+										27494,
+										27503
+									],
+									[
+										27563,
+										27572
+									],
+									[
+										27629,
+										27638
+									],
+									[
+										27847,
+										27856
+									],
+									[
+										28133,
+										28142
+									],
+									[
+										28469,
+										28478
+									],
+									[
+										28754,
+										28763
+									],
+									[
+										29119,
+										29128
+									],
+									[
+										29468,
+										29477
+									],
+									[
+										29824,
+										29833
+									],
+									[
+										30064,
+										30073
+									],
+									[
+										30304,
+										30313
+									],
+									[
+										30504,
+										30513
+									],
+									[
+										30829,
+										30838
+									],
+									[
+										31045,
+										31054
+									],
+									[
+										31126,
+										31135
+									],
+									[
+										31305,
+										31314
+									],
+									[
+										31400,
+										31409
+									],
+									[
+										31579,
+										31588
+									],
+									[
+										31680,
+										31689
+									],
+									[
+										31851,
+										31860
+									],
+									[
+										31867,
+										31876
+									],
+									[
+										32005,
+										32014
+									],
+									[
+										32021,
+										32030
+									],
+									[
+										32357,
+										32366
+									],
+									[
+										32582,
+										32591
+									],
+									[
+										33015,
+										33024
+									],
+									[
+										33121,
+										33130
+									],
+									[
+										33482,
+										33491
+									],
+									[
+										33567,
+										33576
+									],
+									[
+										33705,
+										33714
+									],
+									[
+										33975,
+										33984
+									],
+									[
+										34309,
+										34318
+									],
+									[
+										34536,
+										34545
+									],
+									[
+										34761,
+										34770
+									],
+									[
+										35014,
+										35023
+									],
+									[
+										35231,
+										35240
+									],
+									[
+										35450,
+										35459
+									],
+									[
+										35683,
+										35692
+									],
+									[
+										35917,
+										35926
+									],
+									[
+										36218,
+										36227
+									],
+									[
+										36437,
+										36446
+									],
+									[
+										36562,
+										36571
+									],
+									[
+										36796,
+										36805
+									],
+									[
+										36951,
+										36960
+									],
+									[
+										37146,
+										37155
+									],
+									[
+										37284,
+										37293
+									],
+									[
+										37485,
+										37494
+									],
+									[
+										37750,
+										37759
+									],
+									[
+										38014,
+										38023
+									],
+									[
+										38268,
+										38277
+									],
+									[
+										38477,
+										38486
+									],
+									[
+										38777,
+										38786
+									],
+									[
+										39173,
+										39182
+									],
+									[
+										39297,
+										39306
+									],
+									[
+										39620,
+										39629
+									],
+									[
+										39992,
+										40001
+									],
+									[
+										40364,
+										40373
+									],
+									[
+										40736,
+										40745
+									],
+									[
+										40862,
+										40871
+									],
+									[
+										41275,
+										41284
+									],
+									[
+										41977,
+										41986
+									],
+									[
+										42679,
+										42688
+									],
+									[
+										43373,
+										43382
+									],
+									[
+										43955,
+										43964
+									],
+									[
+										44540,
+										44549
+									],
+									[
+										45002,
+										45011
+									],
+									[
+										45217,
+										45226
+									],
+									[
+										45548,
+										45557
+									],
+									[
+										45915,
+										45924
+									],
+									[
+										46219,
+										46228
+									],
+									[
+										46421,
+										46430
+									],
+									[
+										46797,
+										46806
+									],
+									[
+										47127,
+										47136
+									],
+									[
+										47429,
+										47438
+									],
+									[
+										47721,
+										47730
+									],
+									[
+										48082,
+										48091
+									],
+									[
+										48290,
+										48299
+									],
+									[
+										48603,
+										48612
+									],
+									[
+										48971,
+										48980
+									],
+									[
+										49264,
+										49273
+									],
+									[
+										49627,
+										49636
+									],
+									[
+										50038,
+										50047
+									],
+									[
+										50447,
+										50456
+									],
+									[
+										50853,
+										50862
+									],
+									[
+										51129,
+										51138
+									],
+									[
+										51327,
+										51336
+									],
+									[
+										51586,
+										51595
+									],
+									[
+										51764,
+										51773
+									],
+									[
+										52020,
+										52029
+									],
+									[
+										52080,
+										52089
+									],
+									[
+										52295,
+										52304
+									],
+									[
+										52629,
+										52638
+									],
+									[
+										53162,
+										53171
+									],
+									[
+										53556,
+										53565
+									],
+									[
+										53771,
+										53780
+									],
+									[
+										53972,
+										53981
+									],
+									[
+										54256,
+										54265
+									],
+									[
+										54466,
+										54475
+									],
+									[
+										54781,
+										54790
+									],
+									[
+										55029,
+										55038
+									],
+									[
+										55258,
+										55267
+									],
+									[
+										55495,
+										55504
+									],
+									[
+										55873,
+										55882
+									],
+									[
+										56267,
+										56276
+									],
+									[
+										56500,
+										56509
+									],
+									[
+										56872,
+										56881
+									],
+									[
+										56933,
+										56942
+									],
+									[
+										57124,
+										57133
+									],
+									[
+										57185,
+										57194
+									],
+									[
+										57463,
+										57472
+									],
+									[
+										57527,
+										57536
+									],
+									[
+										57846,
+										57855
+									],
+									[
+										57910,
+										57919
+									],
+									[
+										58172,
+										58181
+									],
+									[
+										58201,
+										58210
+									],
+									[
+										58259,
+										58268
+									],
+									[
+										58287,
+										58296
+									],
+									[
+										58365,
+										58374
+									],
+									[
+										58394,
+										58403
+									],
+									[
+										58472,
+										58481
+									],
+									[
+										58500,
+										58509
+									],
+									[
+										58565,
+										58574
+									],
+									[
+										58594,
+										58603
+									],
+									[
+										58659,
+										58668
+									],
+									[
+										58687,
+										58696
+									],
+									[
+										58753,
+										58762
+									],
+									[
+										58778,
+										58787
+									],
+									[
+										58834,
+										58843
+									],
+									[
+										58859,
+										58868
+									],
+									[
+										58919,
+										58928
+									],
+									[
+										58947,
+										58956
+									],
+									[
+										59013,
+										59022
+									],
+									[
+										59042,
+										59051
+									],
+									[
+										59105,
+										59114
+									],
+									[
+										59133,
+										59142
+									],
+									[
+										59195,
+										59204
+									],
+									[
+										59220,
+										59229
+									],
+									[
+										59311,
+										59320
+									],
+									[
+										59420,
+										59429
+									],
+									[
+										59522,
+										59531
+									],
+									[
+										59687,
+										59696
+									],
+									[
+										59790,
+										59799
+									],
+									[
+										59888,
+										59897
+									],
+									[
+										59914,
+										59923
+									],
+									[
+										59976,
+										59985
+									],
+									[
+										60003,
+										60012
+									],
+									[
+										60066,
+										60075
+									],
+									[
+										60096,
+										60105
+									],
+									[
+										60162,
+										60171
+									],
+									[
+										60193,
+										60202
+									],
+									[
+										60260,
+										60269
+									],
+									[
+										60286,
+										60295
+									],
+									[
+										60470,
+										60479
+									],
+									[
+										60502,
+										60511
+									],
+									[
+										60563,
+										60572
+									],
+									[
+										60595,
+										60604
+									],
+									[
+										60659,
+										60668
+									],
+									[
+										60691,
+										60700
+									],
+									[
+										60755,
+										60764
+									],
+									[
+										60787,
+										60796
+									],
+									[
+										60845,
+										60854
+									],
+									[
+										60877,
+										60886
+									],
+									[
+										60938,
+										60947
+									],
+									[
+										60970,
+										60979
+									],
+									[
+										61033,
+										61042
+									],
+									[
+										61065,
+										61074
+									],
+									[
+										61122,
+										61131
+									],
+									[
+										61154,
+										61163
+									],
+									[
+										61214,
+										61223
+									],
+									[
+										61246,
+										61255
+									],
+									[
+										61309,
+										61318
+									],
+									[
+										61338,
+										61347
+									],
+									[
+										61408,
+										61417
+									],
+									[
+										61437,
+										61446
+									],
+									[
+										61509,
+										61518
+									],
+									[
+										61538,
+										61547
+									],
+									[
+										61598,
+										61607
+									],
+									[
+										61619,
+										61628
+									],
+									[
+										61676,
+										61685
+									],
+									[
+										61696,
+										61705
+									],
+									[
+										61759,
+										61768
+									],
+									[
+										61785,
+										61794
+									],
+									[
+										61843,
+										61852
+									],
+									[
+										61867,
+										61876
+									],
+									[
+										62178,
+										62187
+									],
+									[
+										62265,
+										62274
+									],
+									[
+										62574,
+										62583
+									],
+									[
+										62623,
+										62632
+									],
+									[
+										62701,
+										62710
+									],
+									[
+										62772,
+										62781
+									],
+									[
+										62848,
+										62857
+									],
+									[
+										63096,
+										63105
+									],
+									[
+										63172,
+										63181
+									],
+									[
+										63248,
+										63257
+									],
+									[
+										63315,
+										63324
+									],
+									[
+										63654,
+										63663
+									],
+									[
+										64092,
+										64101
+									],
+									[
+										64486,
+										64495
+									],
+									[
+										64551,
+										64560
+									],
+									[
+										64620,
+										64629
+									],
+									[
+										64686,
+										64695
+									],
+									[
+										64904,
+										64913
+									],
+									[
+										65190,
+										65199
+									],
+									[
+										65526,
+										65535
+									],
+									[
+										65811,
+										65820
+									],
+									[
+										66176,
+										66185
+									],
+									[
+										66525,
+										66534
+									],
+									[
+										66881,
+										66890
+									],
+									[
+										67121,
+										67130
+									],
+									[
+										67361,
+										67370
+									],
+									[
+										67561,
+										67570
+									],
+									[
+										67886,
+										67895
+									],
+									[
+										68102,
+										68111
+									],
+									[
+										68183,
+										68192
+									],
+									[
+										68362,
+										68371
+									],
+									[
+										68457,
+										68466
+									],
+									[
+										68636,
+										68645
+									],
+									[
+										68737,
+										68746
+									],
+									[
+										68908,
+										68917
+									],
+									[
+										68924,
+										68933
+									],
+									[
+										69062,
+										69071
+									],
+									[
+										69078,
+										69087
+									],
+									[
+										69414,
+										69423
+									],
+									[
+										69639,
+										69648
+									],
+									[
+										70072,
+										70081
+									],
+									[
+										70178,
+										70187
+									],
+									[
+										70539,
+										70548
+									],
+									[
+										70624,
+										70633
+									],
+									[
+										70762,
+										70771
+									],
+									[
+										71032,
+										71041
+									],
+									[
+										71366,
+										71375
+									],
+									[
+										71593,
+										71602
+									],
+									[
+										71818,
+										71827
+									],
+									[
+										72071,
+										72080
+									],
+									[
+										72288,
+										72297
+									],
+									[
+										72507,
+										72516
+									],
+									[
+										72740,
+										72749
+									],
+									[
+										72974,
+										72983
+									],
+									[
+										73275,
+										73284
+									],
+									[
+										73494,
+										73503
+									],
+									[
+										73619,
+										73628
+									],
+									[
+										73853,
+										73862
+									],
+									[
+										74008,
+										74017
+									],
+									[
+										74203,
+										74212
+									],
+									[
+										74341,
+										74350
+									],
+									[
+										74542,
+										74551
+									],
+									[
+										74807,
+										74816
+									],
+									[
+										75071,
+										75080
+									],
+									[
+										75325,
+										75334
+									],
+									[
+										75534,
+										75543
+									],
+									[
+										75834,
+										75843
+									],
+									[
+										76230,
+										76239
+									],
+									[
+										76354,
+										76363
+									],
+									[
+										76677,
+										76686
+									],
+									[
+										77049,
+										77058
+									],
+									[
+										77421,
+										77430
+									],
+									[
+										77793,
+										77802
+									],
+									[
+										77919,
+										77928
+									],
+									[
+										78332,
+										78341
+									],
+									[
+										79034,
+										79043
+									],
+									[
+										79736,
+										79745
+									],
+									[
+										80430,
+										80439
+									],
+									[
+										81012,
+										81021
+									],
+									[
+										81597,
+										81606
+									],
+									[
+										82059,
+										82068
+									],
+									[
+										82274,
+										82283
+									],
+									[
+										82605,
+										82614
+									],
+									[
+										82972,
+										82981
+									],
+									[
+										83276,
+										83285
+									],
+									[
+										83478,
+										83487
+									],
+									[
+										83854,
+										83863
+									],
+									[
+										84184,
+										84193
+									],
+									[
+										84486,
+										84495
+									],
+									[
+										84778,
+										84787
+									],
+									[
+										85139,
+										85148
+									],
+									[
+										85347,
+										85356
+									],
+									[
+										85660,
+										85669
+									],
+									[
+										86028,
+										86037
+									],
+									[
+										86321,
+										86330
+									],
+									[
+										86684,
+										86693
+									],
+									[
+										87095,
+										87104
+									],
+									[
+										87504,
+										87513
+									],
+									[
+										87910,
+										87919
+									],
+									[
+										88186,
+										88195
+									],
+									[
+										88384,
+										88393
+									],
+									[
+										88643,
+										88652
+									],
+									[
+										88821,
+										88830
+									],
+									[
+										89077,
+										89086
+									],
+									[
+										89137,
+										89146
+									],
+									[
+										89352,
+										89361
+									],
+									[
+										89686,
+										89695
+									],
+									[
+										90219,
+										90228
+									],
+									[
+										90613,
+										90622
+									],
+									[
+										90828,
+										90837
+									],
+									[
+										91029,
+										91038
+									],
+									[
+										91313,
+										91322
+									],
+									[
+										91523,
+										91532
+									],
+									[
+										91838,
+										91847
+									],
+									[
+										92086,
+										92095
+									],
+									[
+										92315,
+										92324
+									],
+									[
+										92552,
+										92561
+									],
+									[
+										92930,
+										92939
+									],
+									[
+										93324,
+										93333
+									],
+									[
+										93557,
+										93566
+									],
+									[
+										93929,
+										93938
+									],
+									[
+										93990,
+										93999
+									],
+									[
+										94181,
+										94190
+									],
+									[
+										94242,
+										94251
+									],
+									[
+										94520,
+										94529
+									],
+									[
+										94584,
+										94593
+									],
+									[
+										94903,
+										94912
+									],
+									[
+										94967,
+										94976
+									],
+									[
+										95229,
+										95238
+									],
+									[
+										95258,
+										95267
+									],
+									[
+										95316,
+										95325
+									],
+									[
+										95344,
+										95353
+									],
+									[
+										95422,
+										95431
+									],
+									[
+										95451,
+										95460
+									],
+									[
+										95529,
+										95538
+									],
+									[
+										95557,
+										95566
+									],
+									[
+										95622,
+										95631
+									],
+									[
+										95651,
+										95660
+									],
+									[
+										95716,
+										95725
+									],
+									[
+										95744,
+										95753
+									],
+									[
+										95810,
+										95819
+									],
+									[
+										95835,
+										95844
+									],
+									[
+										95891,
+										95900
+									],
+									[
+										95916,
+										95925
+									],
+									[
+										95976,
+										95985
+									],
+									[
+										96004,
+										96013
+									],
+									[
+										96070,
+										96079
+									],
+									[
+										96099,
+										96108
+									],
+									[
+										96162,
+										96171
+									],
+									[
+										96190,
+										96199
+									],
+									[
+										96252,
+										96261
+									],
+									[
+										96277,
+										96286
+									],
+									[
+										96368,
+										96377
+									],
+									[
+										96477,
+										96486
+									],
+									[
+										96579,
+										96588
+									],
+									[
+										96744,
+										96753
+									],
+									[
+										96847,
+										96856
+									],
+									[
+										96945,
+										96954
+									],
+									[
+										96971,
+										96980
+									],
+									[
+										97033,
+										97042
+									],
+									[
+										97060,
+										97069
+									],
+									[
+										97123,
+										97132
+									],
+									[
+										97153,
+										97162
+									],
+									[
+										97219,
+										97228
+									],
+									[
+										97250,
+										97259
+									],
+									[
+										97317,
+										97326
+									],
+									[
+										97343,
+										97352
+									],
+									[
+										97527,
+										97536
+									],
+									[
+										97559,
+										97568
+									],
+									[
+										97620,
+										97629
+									],
+									[
+										97652,
+										97661
+									],
+									[
+										97716,
+										97725
+									],
+									[
+										97748,
+										97757
+									],
+									[
+										97812,
+										97821
+									],
+									[
+										97844,
+										97853
+									],
+									[
+										97902,
+										97911
+									],
+									[
+										97934,
+										97943
+									],
+									[
+										97995,
+										98004
+									],
+									[
+										98027,
+										98036
+									],
+									[
+										98090,
+										98099
+									],
+									[
+										98122,
+										98131
+									],
+									[
+										98179,
+										98188
+									],
+									[
+										98211,
+										98220
+									],
+									[
+										98271,
+										98280
+									],
+									[
+										98303,
+										98312
+									],
+									[
+										98366,
+										98375
+									],
+									[
+										98395,
+										98404
+									],
+									[
+										98465,
+										98474
+									],
+									[
+										98494,
+										98503
+									],
+									[
+										98566,
+										98575
+									],
+									[
+										98595,
+										98604
+									],
+									[
+										98655,
+										98664
+									],
+									[
+										98676,
+										98685
+									],
+									[
+										98733,
+										98742
+									],
+									[
+										98753,
+										98762
+									],
+									[
+										98816,
+										98825
+									],
+									[
+										98842,
+										98851
+									],
+									[
+										98900,
+										98909
+									],
+									[
+										98924,
+										98933
+									],
+									[
+										99235,
+										99244
+									],
+									[
+										99322,
+										99331
+									],
+									[
+										99631,
+										99640
+									],
+									[
+										99680,
+										99689
+									],
+									[
+										99758,
+										99767
+									],
+									[
+										99829,
+										99838
+									],
+									[
+										99905,
+										99914
+									],
+									[
+										100153,
+										100162
+									],
+									[
+										100229,
+										100238
+									],
+									[
+										100305,
+										100314
+									],
+									[
+										100372,
+										100381
+									],
+									[
+										100711,
+										100720
+									],
+									[
+										101149,
+										101158
+									],
+									[
+										101543,
+										101552
+									],
+									[
+										101608,
+										101617
+									],
+									[
+										101677,
+										101686
+									],
+									[
+										101743,
+										101752
+									],
+									[
+										101961,
+										101970
+									],
+									[
+										102247,
+										102256
+									],
+									[
+										102583,
+										102592
+									],
+									[
+										102868,
+										102877
+									],
+									[
+										103233,
+										103242
+									],
+									[
+										103582,
+										103591
+									],
+									[
+										103938,
+										103947
+									],
+									[
+										104178,
+										104187
+									],
+									[
+										104418,
+										104427
+									],
+									[
+										104618,
+										104627
+									],
+									[
+										104943,
+										104952
+									],
+									[
+										105159,
+										105168
+									],
+									[
+										105240,
+										105249
+									],
+									[
+										105419,
+										105428
+									],
+									[
+										105514,
+										105523
+									],
+									[
+										105693,
+										105702
+									],
+									[
+										105794,
+										105803
+									],
+									[
+										105965,
+										105974
+									],
+									[
+										105981,
+										105990
+									],
+									[
+										106119,
+										106128
+									],
+									[
+										106135,
+										106144
+									],
+									[
+										106471,
+										106480
+									],
+									[
+										106696,
+										106705
+									],
+									[
+										107129,
+										107138
+									],
+									[
+										107235,
+										107244
+									],
+									[
+										107596,
+										107605
+									],
+									[
+										107681,
+										107690
+									],
+									[
+										107819,
+										107828
+									],
+									[
+										108089,
+										108098
+									],
+									[
+										108423,
+										108432
+									],
+									[
+										108650,
+										108659
+									],
+									[
+										108875,
+										108884
+									],
+									[
+										109128,
+										109137
+									],
+									[
+										109345,
+										109354
+									],
+									[
+										109564,
+										109573
+									],
+									[
+										109797,
+										109806
+									],
+									[
+										110031,
+										110040
+									],
+									[
+										110332,
+										110341
+									],
+									[
+										110551,
+										110560
+									],
+									[
+										110676,
+										110685
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								74208,
+								74208
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 38575.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "comitec.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/C/xampp/apache/conf/httpd.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "database/seeds/ComiteTableSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 148.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "database/migrations/2015_08_11_190927_create_posts_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 936,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 193.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "database/migrations/2015_08_11_191439_create_question_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "database/migrations/2015_08_11_191800_create_answers_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								466,
+								466
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "database/migrations/2015_07_31_193505_create_comite_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								416
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "database/migrations/2015_08_11_192130_create_announcements_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								472,
+								472
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "database/migrations/2015_08_11_192445_create_comments_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "database/migrations/2015_08_11_192807_create_poll_results_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "app/Http/Controllers/ComiteController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 771,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								530,
+								530
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 223.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "app/Http/Middleware/Authenticate.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
 			"sheets":
 			[
 			]
@@ -176,11 +4103,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 33.0
 	},
 	"input":
 	{
-		"height": 34.0
+		"height": 43.0
 	},
 	"layout":
 	{
@@ -189,23 +4116,45 @@
 			[
 				0,
 				0,
-				1,
+				2,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.94640943194,
 			1.0
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 190.0
+	},
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
 	{
 		"height": 0.0
 	},
@@ -213,7 +4162,7 @@
 	"project": "comitec.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -223,68 +4172,76 @@
 		"selected_items":
 		[
 			[
-				"setu",
-				"modules\\listsetup\\views\\templates\\hook\\listsetup.tpl"
-			],
-			[
-				"setup",
-				"modules\\listsetup\\listsetup.php"
-			],
-			[
-				"confirm",
-				"themes\\UtilesTheme\\order-confirmation.tpl"
-			],
-			[
-				"shop",
-				"themes\\UtilesTheme\\shopping-cart-product-line.tpl"
-			],
-			[
-				"shopp",
-				"themes\\UtilesTheme\\shopping-cart-product-line.tpl"
-			],
-			[
-				"orderopc",
-				"themes\\UtilesTheme\\order-opc-new-account.tpl"
-			],
-			[
-				"cartcont",
-				"override\\controllers\\front\\CartController.php"
-			],
-			[
-				"shopping",
-				"themes\\UtilesTheme\\shopping-cart-product-line.tpl"
-			],
-			[
-				"distribu",
-				"override\\classes\\module\\statsdistributionreport\\distributionreport.php"
-			],
-			[
-				"header",
-				"header.php"
-			],
-			[
-				"searchb",
-				"themes\\UtilesTheme\\modules\\blocksearch\\blocksearch-top.tpl"
-			],
-			[
-				"searchblo",
-				"themes\\UtilesTheme\\modules\\blocksearch\\blocksearch.tpl"
-			],
-			[
-				"search",
-				"themes\\UtilesTheme\\js\\modules\\blocksearch\\blocksearch.js"
+				"comit",
+				"database\\migrations\\2015_07_31_193505_create_comite_table.php"
 			],
 			[
 				"",
-				"modules\\blocksearch\\blocksearch.php"
+				"database\\seeds\\ComiteTableSeeder.php"
 			],
 			[
-				"blocks",
-				"modules\\blocksearch\\blocksearch.css"
+				"comitec",
+				"comitec.sublime-project"
 			],
 			[
-				"instant",
-				"modules\\blocksearch\\blocksearch-instantsearch.tpl"
+				"member",
+				"database\\migrations\\2015_08_11_185613_create_members_table.php"
+			],
+			[
+				"main",
+				"resources\\views\\vendor\\panelViews\\mainTemplate.blade.php"
+			],
+			[
+				"dashbo",
+				"resources\\views\\vendor\\panelViews\\dashboard.blade.php"
+			],
+			[
+				"studen",
+				"database\\migrations\\2015_08_11_181937_create_student_table.php"
+			],
+			[
+				"user",
+				"app\\Http\\Controllers\\UserController.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
+			],
+			[
+				"data",
+				"config\\database.php"
+			],
+			[
+				"redi",
+				"app\\Http\\Middleware\\RedirectIfAuthenticated.php"
+			],
+			[
+				"redirec",
+				"app\\Http\\Middleware\\RedirectIfAuthenticated.php"
+			],
+			[
+				"app",
+				"config\\app.php"
+			],
+			[
+				"master",
+				"resources\\views\\vendor\\panelViews\\master.blade.php"
+			],
+			[
+				"login",
+				"resources\\views\\vendor\\panelViews\\login.blade.php"
+			],
+			[
+				"databa",
+				"database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"auth",
+				"app\\Http\\Middleware\\Authenticate.php"
+			],
+			[
+				"encrypti",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php"
 			]
 		],
 		"width": 0.0
@@ -310,12 +4267,210 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"117":
+				{
+					"group": 0,
+					"index": 19
+				},
+				"120":
+				{
+					"group": 2,
+					"index": 1
+				},
+				"121":
+				{
+					"group": 1,
+					"index": 0
+				},
+				"122":
+				{
+					"group": 2,
+					"index": 0
+				},
+				"123":
+				{
+					"group": 1,
+					"index": 1
+				},
+				"139":
+				{
+					"group": 0,
+					"index": 24
+				},
+				"140":
+				{
+					"group": 0,
+					"index": 25
+				},
+				"15":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"19":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"20":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"21":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"22":
+				{
+					"group": 0,
+					"index": 7
+				},
+				"23":
+				{
+					"group": 0,
+					"index": 8
+				},
+				"24":
+				{
+					"group": 0,
+					"index": 9
+				},
+				"25":
+				{
+					"group": 0,
+					"index": 10
+				},
+				"26":
+				{
+					"group": 0,
+					"index": 11
+				},
+				"27":
+				{
+					"group": 0,
+					"index": 12
+				},
+				"28":
+				{
+					"group": 0,
+					"index": 13
+				},
+				"30":
+				{
+					"group": 0,
+					"index": 14
+				},
+				"32":
+				{
+					"group": 0,
+					"index": 15
+				},
+				"34":
+				{
+					"group": 0,
+					"index": 26
+				},
+				"42":
+				{
+					"group": 0,
+					"index": 20
+				},
+				"43":
+				{
+					"group": 0,
+					"index": 23
+				},
+				"44":
+				{
+					"group": 0,
+					"index": 21
+				},
+				"45":
+				{
+					"group": 0,
+					"index": 22
+				},
+				"47":
+				{
+					"group": 0,
+					"index": 16
+				},
+				"49":
+				{
+					"group": 0,
+					"index": 17
+				},
+				"86":
+				{
+					"group": 0,
+					"index": 18
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.593890675241,
+					1.0
+				]
+			}
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 335.0,
+	"side_bar_width": 443.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

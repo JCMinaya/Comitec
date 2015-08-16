@@ -16,10 +16,11 @@ class CreateBlockHistoryTable extends Migration
             $table->increments('id_block');
             $table->integer('id_student');
             $table->integer('id_comite');
-            $table->integer('time');
+            $table->dateTime('time');
             $table->date('start_date');
             $table->date('end_date');
             $table->string('comment');
+            $table->timeStamps();
         });
     }
 

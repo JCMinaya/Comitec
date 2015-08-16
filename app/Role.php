@@ -4,15 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Comite extends Model
+class Role extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'comite';
+    protected $table = 'roles';
 
-    protected $fillable = ['name', 'abreviacion', 'descripcion'];
-
+    protected $fillable = ['role_name'];
 }
