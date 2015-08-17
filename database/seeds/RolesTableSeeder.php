@@ -16,7 +16,7 @@ class RolesTableSeeder extends Seeder
 
         foreach ($roles as $role) {
         	$role = App\Role::create(array(
-        		'role_name' => $role,
+        		'role_name' => $role
         	));
         }
     }

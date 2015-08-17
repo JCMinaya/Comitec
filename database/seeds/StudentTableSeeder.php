@@ -17,13 +17,13 @@ class StudentTableSeeder extends Seeder
         $gender = Array('Masculino', 'Femenino');
 
         for ($i=0; $i < 40; $i++) { 
-        	$user = Student::create(array(
+        	$student = Student::create(array(
         		'name' => $faker->name,
         		'last_name' => $faker->lastName,
         		'email' => $faker->unique()->numberBetween($min = 1000000, $max = 1070000) . '@est.intec.edu.do',
         		'password' => $faker->word,
         		'gender' => array_rand($gender),
-        		'is_member' => 0,
+        		'is_member' => 0
         	));
         }
     }
