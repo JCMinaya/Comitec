@@ -6,22 +6,29 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Proposal;
 use App\Comite;
-use App\User;
 
 class ComiteController extends Controller
 {
     
-    public function getComite($name)
+    public static function getComite($abrev)
     {
-        $comite = Comite::where('name', '=', $name)->first();
-        // $president = User::findOrFail($comite->president_id);
-        // $vicepresident = User::findOrFail($comite->vicepresident_id);
-        // $secretary = User::findOrFail($comite->secretary_id);
-        // $vocal = User::findOrFail($comite->vocal_id);
-        // $treasurer = User::findOrFail($comite->treasurer_id);
+        return Comite::where('abreviation', $abrev)->first();
+    }
 
-        return view('pages.comite', compact('comite', 'president', 'vicepresident', 'secretary', 'vocal', 'treasurer'));
+    public function showComite($abrev)
+    {
+        $comite = $this->getComite($abrev);
+
+        return view('pages.comite.index', compact('comite'));
+    }
+
+    public function showDashboard($abrev){
+        $comite = $this->getComite($abrev);
+        $proposals = $comite->proposals;
+
+        return view('pages.comite.dashboard', compact('comite', 'proposals'));
     }
 
 }

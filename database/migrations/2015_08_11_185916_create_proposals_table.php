@@ -13,10 +13,11 @@ class CreateProposalsTable extends Migration
     public function up()
     {
         Schema::create('proposals', function (Blueprint $table) {
-            $table->increments('id_proposal');
-            $table->integer('id_student');
-            $table->integer('id_comite');
+            $table->increments('id');
+            $table->integer('student_id');
+            $table->integer('comite_id');
             $table->string('subject');
+            $table->text('text');
             $table->timeStamps();
         });
     }

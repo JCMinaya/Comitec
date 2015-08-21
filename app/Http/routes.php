@@ -21,17 +21,22 @@ Route::group(['namespace' => 'Auth'], function()
 	Route::get('auth/logout', 'AuthController@getLogout');
 
 	// Registration routes...
-	Route::get('auth/register', 'AuthController@getRegister');
-	Route::post('auth/register', 'AuthController@postRegister');
+	// Route::get('auth/register', 'AuthController@getRegister');
+	// Route::post('auth/register', 'AuthController@postRegister');
 
-	//Password reset
-	Route::get('password/email', 'PasswordController@getEmail');
-	Route::post('password/email', 'PasswordController@postEmail');
-	Route::get('password/reset', 'PasswordController@getReset');
-	Route::post('password/reset', 'PasswordController@postReset');
+	// Password reset
+	// Route::get('password/email', 'PasswordController@getEmail');
+	// Route::post('password/email', 'PasswordController@postEmail');
+	// Route::get('password/reset', 'PasswordController@getReset');
+	// Route::post('password/reset', 'PasswordController@postReset');
 
 });
 
-Route::get('user/{id}', 'UserController@showProfile');
+Route::get('comite/{name}', ['middleware' => 'auth', 'uses' => 'ComiteController@showComite']);
 
-Route::get('comite/{name}', ['middleware' => 'auth', 'uses' => 'ComiteController@getComite']);
+Route::group(['middleware' => ['auth', 'member']], function(){
+	Route::get('comite/{abrev}/dashboard', 'ComiteController@showDashboard');
+});
+
+Route::get('student/{id}', 'UserController@showProfile');
+// Route::get('student/{id}', 'StudentController@showProfile');

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAnnouncementsTable extends Migration
+class CreatePollsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,14 @@ class CreateAnnouncementsTable extends Migration
      */
     public function up()
     {
-        Schema::create('announcements', function (Blueprint $table) {
+        Schema::create('polls', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('comite_id');
+            $table->integer('major_id');
+            $table->string('title');
+            $table->text('description');
             $table->integer('duration');
-            $table->date('event_date');
-            $table->string('location');
+            $table->integer('active');
             $table->timeStamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateAnnouncementsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('announcements');
+        Schema::drop('polls');
     }
 }

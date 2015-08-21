@@ -14,4 +14,6 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         return view('pages.user', $user);
     }
+
+   
 }

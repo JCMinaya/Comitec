@@ -13,9 +13,9 @@ class CreateMajorPostTable extends Migration
     public function up()
     {
         Schema::create('major_post', function (Blueprint $table) {
-            $table->increments('id_major_post');
-            $table->integer('id_post');
-            $table->integer('id_major');
+            $table->increments('id');
+            $table->integer('post_id');
+            $table->integer('major_id');
             $table->timeStamps();
         });
     }

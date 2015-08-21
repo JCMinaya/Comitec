@@ -13,16 +13,16 @@ class CreateStudentTable extends Migration
     public function up()
     {
         Schema::create('students', function (Blueprint $table) {
-            $table->increments('id_student');
-            $table->integer('id_major');
+            $table->increments('id');
+            $table->integer('major_id')->unsigned();
+            $table->integer('comite_id')->unsigned();
+            $table->integer('role_id')->unsigned();
+            $table->boolean('member');
             $table->string('name');
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('password', 60);
             $table->string('gender');
-            $table->boolean('is_member');
-            $table->integer('id_comite')->nullable();
-            $table->integer('id_rol')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Student;
 use Illuminate\Http\Request;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -44,10 +45,27 @@ class AuthController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|max:30',
+            'last_name' => 'required|max:30',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
         ]);
     }
+
+    /**
+     * Create a new student instance after a valid registration.
+     *
+     * @param  array  $data
+     * @return Student
+     */
+    // protected function create(array $data)
+    // {
+    //     return Student::create([
+    //         'name' => $data['name'],
+    //         'last_name' => $data['last_name'],
+    //         'email' => $data['email'],
+    //         'password' => bcrypt($data['password']),
+    //     ]);
+    // }
 
     /**
      * Create a new user instance after a valid registration.

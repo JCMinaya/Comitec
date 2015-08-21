@@ -15,7 +15,7 @@ class CreateComiteTable extends Migration
         Schema::create('comite', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('abreviation');
+            $table->string('abreviation')->unique();
             $table->text('description');
             $table->timestamps();
         });

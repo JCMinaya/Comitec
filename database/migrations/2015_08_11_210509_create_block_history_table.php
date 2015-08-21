@@ -13,9 +13,9 @@ class CreateBlockHistoryTable extends Migration
     public function up()
     {
         Schema::create('block_history', function (Blueprint $table) {
-            $table->increments('id_block');
-            $table->integer('id_student');
-            $table->integer('id_comite');
+            $table->increments('id');
+            $table->integer('student_id');
+            $table->integer('comite_id');
             $table->dateTime('time');
             $table->date('start_date');
             $table->date('end_date');
