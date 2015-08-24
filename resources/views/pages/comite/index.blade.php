@@ -5,4 +5,5 @@ Comite de {{ $comite->name }}.<br>
 {{ $comite->abreviation }}
 
 
+
 @stop

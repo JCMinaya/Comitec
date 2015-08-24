@@ -27,7 +27,7 @@ class Post extends Model
 
 	public function majors()
     {
-        return $this->belongsToMany('App\Major');
+        return $this->belongsToMany('App\Major');   
     }
 
     public function comment()

@@ -32,10 +32,13 @@ Route::group(['namespace' => 'Auth'], function()
 
 });
 
-Route::get('comite/{name}', ['middleware' => 'auth', 'uses' => 'ComiteController@showComite']);
+Route::get('comite/{name}', ['middleware' => 'auth', 'uses' => 'ComiteController@showComitePosts']);
 
 Route::group(['middleware' => ['auth', 'member']], function(){
 	Route::get('comite/{abrev}/dashboard', 'ComiteController@showDashboard');
+	Route::get('comite/{abrev}/dashboard/postForm', 'ComiteController@showPostForm');
+	Route::post('comite/{abrev}/dashboard/postForm', 'ComiteController@createPost');
+
 });
 
 Route::get('student/{id}', 'UserController@showProfile');

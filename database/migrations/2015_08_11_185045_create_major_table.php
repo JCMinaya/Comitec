@@ -16,6 +16,7 @@ class CreateMajorTable extends Migration
             $table->increments('id');
             $table->integer('comite_id');
             $table->string('name');
+            $table->timeStamps();
         });
     }
 
