@@ -2,37 +2,32 @@
 
 @section('content')
 
-<form name="postform" method="post">
-	<input type="hidden" name="_token" value="{{ csrf_token() }}">
-	<div>
-	<label>title</label>
-		<input type="text" name="title">
-	</div>
-	<div>
-	<label>description</label>
-		<input type="text" name="description">
-	</div>
-	<div>
-	<label>Carreras</label>
-		<select name="majors[]" multiple>
-			@foreach($majors as $major)
-				<option value="{{ $major->id }}">
-					{{ $major->name }}
-				</option>
-			@endforeach
-		</select>
-	</div>
-	<div>
-	<label>fecha de evento</label>
-		<input type="text" name="event_date">
-	</div>
-	<div>
-	<label>Lugar</label>
-		<input type="text" name="location">
-	</div>
-	<div>
-		<input type="submit" name="Submit">
-	</div>
-</form>
+{!! Form::open(['method' => 'POST', 'route' => 'comite.{abrev}.dashboard.post.store', 'class' => 'form-horizontal']) !!}
+
+    <div class="form-group">
+        {!! Form::label('Title', 'Input label') !!}
+        {!! Form::text('Title', null, ['class' => 'form-control', 'required' => 'required']) !!}
+        <small class="text-danger">{{ $errors->first('Title') }}</small>
+    </div>
+
+    <div class="form-group">
+        {!! Form::label('Description', 'Input label') !!}
+        {!! Form::textarea('Description', null, ['class' => 'form-control', 'required' => 'required']) !!}
+        <small class="text-danger">{{ $errors->first('Description') }}</small>
+    </div>
+
+    <div class="form-group">
+        {!! Form::label('Selecciona las carreras que verán este post:', 'Input label') !!}
+        {!! Form::select('Carreras', $major_names, $major_ids, ['class' => 'form-control', 'required' => 'required', 'multiple']) !!}
+        <small class="text-danger">{{ $errors->first('Carreras') }}</small>
+    </div>
+
+    <div class="btn-group pull-right">
+        {!! Form::reset("Reset", ['class' => 'btn btn-warning']) !!}
+        {!! Form::submit("Add", ['class' => 'btn btn-success']) !!}
+    </div>
+
+{!! Form::close() !!}
+
 
 @stop

@@ -32,14 +32,21 @@ Route::group(['namespace' => 'Auth'], function()
 
 });
 
-Route::get('comite/{name}', ['middleware' => 'auth', 'uses' => 'ComiteController@showComitePosts']);
 
-Route::group(['middleware' => ['auth', 'member']], function(){
-	Route::get('comite/{abrev}/dashboard', 'ComiteController@showDashboard');
-	Route::get('comite/{abrev}/dashboard/postForm', 'ComiteController@showPostForm');
-	Route::post('comite/{abrev}/dashboard/postForm', 'ComiteController@createPost');
+Route::group(['namespace' => 'Comite'], function()
+{
+	Route::get('comite/{abrev}', 'ComiteController@showComitePosts');
 
+	Route::group(['middleware' => ['auth', 'member']], function()
+	{
+		Route::get('comite/{abrev}/dashboard', 'ComiteController@showDashboard');
+		Route::resource('comite/{abrev}/dashboard/post', 'PostController');
+		Route::resource('comite/{abrev}/dashboard/poll', 'PollController');
+		// Route::get('comite/{abrev}/dashboard/postForm', 'ComiteController@showPostForm');
+		// Route::get('comite/{abrev}/dashboard/pollForm', 'ComiteController@showPollForm');
+		// Route::post('comite/{abrev}/dashboard/postForm', 'ComiteController@createPost');
+		// Route::post('comite/{abrev}/dashboard/pollForm', 'ComiteController@createPoll');
+	});
 });
 
 Route::get('student/{id}', 'UserController@showProfile');
-// Route::get('student/{id}', 'StudentController@showProfile');

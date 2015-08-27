@@ -7,20 +7,28 @@
 
 	<div class="container">
 
-		<header class="row">
-			@include('includes.header')
-		</header>
-		
-		<div id="main" class="row">
+		<div id="wrapper">
 
-			@yield('content')
+			<header class="row">
+				@include('includes.sidebar')
+			</header>
 
-		</div>
+			<div id="page-content-wrapper">
 
-		<footer class="row">
+				<div id="main" class="row">
+					@yield('content')
+				</div>
+
+			</div>
+			<!-- /#page-content-wrapper -->
+
+	    </div>
+	    <!-- /#wrapper -->
+
+		<footer>
 			@include('includes.footer')
 		</footer>
 
-		</body>
-	</div>
+		</div>
+	</body>
 </html>

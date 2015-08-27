@@ -18,6 +18,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->date('date');
+            $table->integer('mark');
             $table->date('event_date')->nullable();
             $table->string('location')->nullable();
             $table->timeStamps();

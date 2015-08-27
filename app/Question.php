@@ -20,9 +20,9 @@ class Question extends Model
      */
     protected $fillable = ['title', 'question'];
 
-    public function post()
+    public function poll()
     {
-        return $this->belongsTo('App\Post');
+        return $this->belongsTo('App\Poll');
     }
 
     public function answers()

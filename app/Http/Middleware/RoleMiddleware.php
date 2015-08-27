@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Http\Controllers\ComiteController;
 use Auth;
 
 class RoleMiddleware

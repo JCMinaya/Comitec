@@ -15,11 +15,12 @@ class CreatePollsTable extends Migration
         Schema::create('polls', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('comite_id');
-            $table->integer('major_id');
+            // $table->integer('major_id');
             $table->string('title');
             $table->text('description');
-            $table->integer('duration');
+            // $table->integer('duration');
             $table->integer('active');
+            $table->integer('mark');
             $table->timeStamps();
         });
     }

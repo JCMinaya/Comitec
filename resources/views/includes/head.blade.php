@@ -4,5 +4,30 @@
 
 	<title>LaraApp</title>
 
-	<!-- load bootstrap from a cdn -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/3.0.3/css/bootstrap-combined.min.css">
+<!-- STYLESSHEETS -->
+
+	{!! Html::style('css/bootstrap.min.css') !!}
+
+	{!! Html::style('css/flat-ui.min.css') !!}
+
+	{!! Html::style('css/simple-sidebar.css') !!}
+
+	{!! Html::style('css/my-style.css') !!}
+
+<!-- SCRIPTS -->
+
+	{!! Html::script('js/jquery.js') !!}
+
+	{!! Html::script('js/bootstrap.min.js') !!}
+
+	{!! Html::script('js/flat-ui.min.js') !!}
+
+	<script>
+	$(document).ready(function() {
+		$("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#wrapper").toggleClass("toggled");
+	    });
+	});
+	    
+    </script>	

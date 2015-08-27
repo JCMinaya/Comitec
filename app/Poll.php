@@ -25,9 +25,13 @@ class Poll extends Model
         return $this->belongsTo('App\Comite');
     }
 
-	public function major()
+	public function majors()
     {
         return $this->belongsToMany('App\Major');
     }
 
+    public function questions()
+    {
+        return $this->hasMany('App\Question');
+    }
 }

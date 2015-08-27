@@ -4,8 +4,170 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "78b3fd184f374abeede09c2d388a923b",
+    "hash": "4a96256578dcbfac4c9a7a148517497e",
     "packages": [
+        {
+            "name": "barryvdh/elfinder-builds",
+            "version": "v2.1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/elfinder-builds.git",
+                "reference": "f11eb97d55ad16cdb96b6e41c2d9ffc4e697303c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/elfinder-builds/zipball/f11eb97d55ad16cdb96b6e41c2d9ffc4e697303c",
+                "reference": "f11eb97d55ad16cdb96b6e41c2d9ffc4e697303c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Levashov",
+                    "email": "dio@std42.ru",
+                    "homepage": "http://std42.ru"
+                },
+                {
+                    "name": "Troex Nevelin",
+                    "email": "troex@fury.scancode.ru",
+                    "homepage": "http://std42.ru"
+                },
+                {
+                    "name": "Naoki Sawada",
+                    "email": "hypweb@gmail.com",
+                    "homepage": "http://xoops.hypweb.net"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/Studio-42/elFinder/contributors"
+                }
+            ],
+            "description": "File manager for web",
+            "homepage": "http://elfinder.org",
+            "time": "2015-06-25 06:56:25"
+        },
+        {
+            "name": "barryvdh/elfinder-flysystem-driver",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/elfinder-flysystem-driver.git",
+                "reference": "3ae5cd939e36710bab0ea0163011dbfbc1a6ec77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/elfinder-flysystem-driver/zipball/3ae5cd939e36710bab0ea0163011dbfbc1a6ec77",
+                "reference": "3ae5cd939e36710bab0ea0163011dbfbc1a6ec77",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "~2.0",
+                "league/flysystem": "~1.0",
+                "php": ">=5.4"
+            },
+            "suggest": {
+                "barryvdh/elfinder-builds": "~2.1",
+                "league/glide": "~0.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "elFinderVolumeFlysystem.php"
+                ],
+                "psr-4": {
+                    "Barryvdh\\elFinderFlysystemDriver\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "A Flysystem Driver for elFinder",
+            "keywords": [
+                "Flysystem",
+                "elfinder",
+                "filesystem"
+            ],
+            "time": "2015-06-20 06:51:51"
+        },
+        {
+            "name": "barryvdh/laravel-elfinder",
+            "version": "v0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-elfinder.git",
+                "reference": "f19c8870ab6a0e53da9b79045427a1cdedccbbec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-elfinder/zipball/f19c8870ab6a0e53da9b79045427a1cdedccbbec",
+                "reference": "f19c8870ab6a0e53da9b79045427a1cdedccbbec",
+                "shasum": ""
+            },
+            "require": {
+                "barryvdh/elfinder-builds": "2.1.x",
+                "barryvdh/elfinder-flysystem-driver": "0.1.x@dev",
+                "illuminate/support": "5.0.x|5.1.x",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Elfinder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "A Laravel Package to integrate elFinder 2",
+            "keywords": [
+                "elfinder",
+                "filebrowser",
+                "laravel",
+                "tinymce"
+            ],
+            "time": "2015-06-07 19:51:57"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "2.0.0",
@@ -218,16 +380,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd"
+                "reference": "4ef919b0cf3b1989523138b60163bbcb7ba1ff7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/af0e1758de355eb113917ad79c3c0e3604bce4bd",
-                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/4ef919b0cf3b1989523138b60163bbcb7ba1ff7e",
+                "reference": "4ef919b0cf3b1989523138b60163bbcb7ba1ff7e",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +413,7 @@
                     "GuzzleHttp\\Psr7\\": "src/"
                 },
                 "files": [
-                    "src/functions.php"
+                    "src/functions_include.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -272,7 +434,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2015-06-24 19:55:15"
+            "time": "2015-08-15 19:32:36"
         },
         {
             "name": "illuminate/html",
@@ -322,16 +484,16 @@
         },
         {
             "name": "intervention/image",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
-                "reference": "156f9d6f8a186c68b92f0c50084718f02dae1b5f"
+                "reference": "1124ff3c6298f0dcf9edf9156623904d7a5c3428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/image/zipball/156f9d6f8a186c68b92f0c50084718f02dae1b5f",
-                "reference": "156f9d6f8a186c68b92f0c50084718f02dae1b5f",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/1124ff3c6298f0dcf9edf9156623904d7a5c3428",
+                "reference": "1124ff3c6298f0dcf9edf9156623904d7a5c3428",
                 "shasum": ""
             },
             "require": {
@@ -380,7 +542,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2015-07-10 15:03:58"
+            "time": "2015-08-16 15:31:59"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -529,16 +691,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.9",
+            "version": "v5.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "2f1e0b8d7c24bb783d3a8d4fe4120ef82e5da648"
+                "reference": "d47ccc8de10ccb6f328cc90f901ca5e47e077c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/2f1e0b8d7c24bb783d3a8d4fe4120ef82e5da648",
-                "reference": "2f1e0b8d7c24bb783d3a8d4fe4120ef82e5da648",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d47ccc8de10ccb6f328cc90f901ca5e47e077c93",
+                "reference": "d47ccc8de10ccb6f328cc90f901ca5e47e077c93",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +815,57 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-08-05 12:51:18"
+            "time": "2015-08-12 18:16:08"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "v5.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "59f124084c9135a6a8d87323e5c5562ab823deb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/59f124084c9135a6a8d87323e5c5562ab823deb4",
+                "reference": "59f124084c9135a6a8d87323e5c5562ab823deb4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/session": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "time": "2015-07-28 03:18:41"
         },
         {
             "name": "league/flysystem",
@@ -738,23 +950,23 @@
         },
         {
             "name": "maatwebsite/excel",
-            "version": "v2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
-                "reference": "52bcd0873decff570e965dfc4d7351ff956b700f"
+                "reference": "8657c9ae76fe95a9e7b936fa20eaa953de751347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/52bcd0873decff570e965dfc4d7351ff956b700f",
-                "reference": "52bcd0873decff570e965dfc4d7351ff956b700f",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/8657c9ae76fe95a9e7b936fa20eaa953de751347",
+                "reference": "8657c9ae76fe95a9e7b936fa20eaa953de751347",
                 "shasum": ""
             },
             "require": {
-                "illuminate/cache": "~5.0",
-                "illuminate/config": "~5.0",
-                "illuminate/filesystem": "~5.0",
-                "illuminate/support": "~5.0",
+                "illuminate/cache": "~5.0|~5.1",
+                "illuminate/config": "~5.0|~5.1",
+                "illuminate/filesystem": "~5.0|~5.1",
+                "illuminate/support": "~5.0|~5.1",
                 "nesbot/carbon": "~1.0",
                 "php": ">=5.3.0",
                 "phpoffice/phpexcel": "~1.8.0",
@@ -767,9 +979,9 @@
                 "phpunit/phpunit": "~4.0"
             },
             "suggest": {
-                "illuminate/http": "~5.0",
-                "illuminate/routing": "~5.0",
-                "illuminate/view": "~5.0"
+                "illuminate/http": "~5.0|~5.1",
+                "illuminate/routing": "~5.0|~5.1",
+                "illuminate/view": "~5.0|~5.1"
             },
             "type": "library",
             "autoload": {
@@ -801,7 +1013,7 @@
                 "import",
                 "laravel"
             ],
-            "time": "2015-06-04 15:32:17"
+            "time": "2015-08-20 15:23:00"
         },
         {
             "name": "monolog/monolog",
@@ -1233,19 +1445,20 @@
         },
         {
             "name": "serverfireteam/panel",
-            "version": "1.3.4",
+            "version": "1.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serverfireteam/panel.git",
-                "reference": "b31441ad8cfe948829051aaeab8b5a263b9b19e7"
+                "reference": "feed4f85f705d0c7f6ec0a86fd2b53793805c25e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serverfireteam/panel/zipball/b31441ad8cfe948829051aaeab8b5a263b9b19e7",
-                "reference": "b31441ad8cfe948829051aaeab8b5a263b9b19e7",
+                "url": "https://api.github.com/repos/serverfireteam/panel/zipball/feed4f85f705d0c7f6ec0a86fd2b53793805c25e",
+                "reference": "feed4f85f705d0c7f6ec0a86fd2b53793805c25e",
                 "shasum": ""
             },
             "require": {
+                "barryvdh/laravel-elfinder": "0.3.4",
                 "illuminate/support": "~5.1",
                 "maatwebsite/excel": "~2.0.0",
                 "php": ">=5.4.0",
@@ -1298,20 +1511,20 @@
                 "laravel",
                 "panel"
             ],
-            "time": "2015-08-12 08:57:56"
+            "time": "2015-08-25 07:05:50"
         },
         {
             "name": "serverfireteam/rapyd-laravel",
-            "version": "1.5.2",
+            "version": "1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serverfireteam/rapyd-laravel.git",
-                "reference": "1d655be2387109c7fe844b82c63abdb979c6a895"
+                "reference": "cb5a93e3e81d491ca7fd0674beda2b4c606565c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serverfireteam/rapyd-laravel/zipball/1d655be2387109c7fe844b82c63abdb979c6a895",
-                "reference": "1d655be2387109c7fe844b82c63abdb979c6a895",
+                "url": "https://api.github.com/repos/serverfireteam/rapyd-laravel/zipball/cb5a93e3e81d491ca7fd0674beda2b4c606565c9",
+                "reference": "cb5a93e3e81d491ca7fd0674beda2b4c606565c9",
                 "shasum": ""
             },
             "require": {
@@ -1348,7 +1561,7 @@
                 "form",
                 "laravel"
             ],
-            "time": "2015-07-27 15:07:18"
+            "time": "2015-08-19 09:17:21"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2624,16 +2837,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.4.1",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373"
+                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
-                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4745ded9307786b730d7a60df5cb5a6c43cf95f7",
+                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7",
                 "shasum": ""
             },
             "require": {
@@ -2680,7 +2893,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-04-27 22:15:08"
+            "time": "2015-08-13 10:07:40"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2875,16 +3088,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.3",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "7a9b0969488c3c54fd62b4d504b3ec758fd005d9"
+                "reference": "3ab72c62e550370a6cd5dc873e1a04ab57562f5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/7a9b0969488c3c54fd62b4d504b3ec758fd005d9",
-                "reference": "7a9b0969488c3c54fd62b4d504b3ec758fd005d9",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/3ab72c62e550370a6cd5dc873e1a04ab57562f5b",
+                "reference": "3ab72c62e550370a6cd5dc873e1a04ab57562f5b",
                 "shasum": ""
             },
             "require": {
@@ -2920,20 +3133,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-06-19 03:43:16"
+            "time": "2015-08-16 08:51:00"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.3",
+            "version": "4.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fd3050e26e3105f416d74c4d33aea659b406c59d"
+                "reference": "2246830f4a1a551c67933e4171bf2126dc29d357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fd3050e26e3105f416d74c4d33aea659b406c59d",
-                "reference": "fd3050e26e3105f416d74c4d33aea659b406c59d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2246830f4a1a551c67933e4171bf2126dc29d357",
+                "reference": "2246830f4a1a551c67933e4171bf2126dc29d357",
                 "shasum": ""
             },
             "require": {
@@ -2992,24 +3205,24 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-08-10 09:16:56"
+            "time": "2015-08-24 04:09:38"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.6",
+            "version": "2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "18dfbcb81d05e2296c0bcddd4db96cade75e6f42"
+                "reference": "5e2645ad49d196e020b85598d7c97e482725786a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/18dfbcb81d05e2296c0bcddd4db96cade75e6f42",
-                "reference": "18dfbcb81d05e2296c0bcddd4db96cade75e6f42",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/5e2645ad49d196e020b85598d7c97e482725786a",
+                "reference": "5e2645ad49d196e020b85598d7c97e482725786a",
                 "shasum": ""
             },
             "require": {
-                "doctrine/instantiator": "~1.0,>=1.0.2",
+                "doctrine/instantiator": "^1.0.2",
                 "php": ">=5.3.3",
                 "phpunit/php-text-template": "~1.2",
                 "sebastian/exporter": "~1.2"
@@ -3048,7 +3261,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-07-10 06:54:24"
+            "time": "2015-08-19 09:14:08"
         },
         {
             "name": "sebastian/comparator",
