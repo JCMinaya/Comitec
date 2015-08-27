@@ -14,7 +14,8 @@
 			<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
 				<span class="fui-triangle-left-large"></span>
 			</a>
-			
+
+			<br>
 
 			<div id="page-content-wrapper">
 

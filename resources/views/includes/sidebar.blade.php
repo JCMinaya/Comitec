@@ -2,39 +2,24 @@
     <div id="sidebar-wrapper">
 
     	@unless (Auth::check())
-			<button class="btn btn-default"><a href="/auth/login">Login</a></button>
+			<div class="my-container">
+				<br>
+				<div class="text-center">
+					<a href="/auth/login" class="btn btn-primary">Soy estudiante de INTEC</a>
+				</div>
+			</div>
 		@else
-			<h2>Bienvenido {{ Auth::user()->name }}</h2>
-			<button><a href="/auth/logout">LogOut</a></button>
+			<div class="my-container">
+				<div class="text-center">
+					<h3>Bienvenido</h3>
+					<h4>{{ Auth::user()->name }}</h4>
+				</div>
+				<div class="text-right">
+					<a href="/auth/logout" class="btn btn-danger">Logout</a>
+				</div>
+			</div>
 		@endunless
+		
+		<hr>
 
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                {{-- <a href="#">
-                    Start Bootstrap
-                </a> --}}
-            	
-            </li>
-            <li>
-                <a href="#">Dashboard</a>
-            </li>
-            <li>
-                <a href="#">Shortcuts</a>
-            </li>
-            <li>
-                <a href="#">Overview</a>
-            </li>
-            <li>
-                <a href="#">Events</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
     </div>

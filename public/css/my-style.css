@@ -14,7 +14,21 @@ footer {
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 
+.my-container{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
 #menu-toggle{
+	position: fixed;
+	z-index: 1;
 	border-radius: 0;
 	color: #000;
 }#menu-toggle:hover{
