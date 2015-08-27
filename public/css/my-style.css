@@ -13,3 +13,10 @@ footer {
    position:absolute;
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
+
+#menu-toggle{
+	border-radius: 0;
+	color: #000;
+}#menu-toggle:hover{
+	background-color: #939393;
+}

@@ -23,7 +23,7 @@ hgroup,
 main,
 menu,
 nav,
-section,
+section, 
 summary {
   display: block;
 }

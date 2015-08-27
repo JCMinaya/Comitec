@@ -22,12 +22,5 @@
 
 	{!! Html::script('js/flat-ui.min.js') !!}
 
-	<script>
-	$(document).ready(function() {
-		$("#menu-toggle").click(function(e) {
-	        e.preventDefault();
-	        $("#wrapper").toggleClass("toggled");
-	    });
-	});
-	    
-    </script>	
+	{!! Html::script('js/sidebar.js') !!}
+
