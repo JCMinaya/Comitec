@@ -2,10 +2,11 @@ footer {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:35px;
+   height:40px;
    width:100%;
-   background:#999;
+   background:#333;
    z-index: 1000;
+   padding-top: 5px;
 }
 
 /* IE 6 */
