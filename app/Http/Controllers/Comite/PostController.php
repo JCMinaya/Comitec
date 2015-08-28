@@ -24,18 +24,19 @@ class PostController extends Controller
      *
      * @return Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $majors = \App\Major::all();
         $major_ids = array();
         $major_names = array();
+        $abrev = $request->abrev;
 
         foreach ($majors as $major) {
             array_push($major_ids, $major->id);
             array_push($major_names, $major->name);
         }
         
-        return view('pages.comite.post_form', compact('major_ids', 'major_names'));
+        return view('pages.comite.post_form', compact('major_ids', 'major_names', 'abrev'));
     }
 
     /**
@@ -50,7 +51,6 @@ class PostController extends Controller
         $post->title = $_POST['title'];
         $post->description = $_POST['description'];
         $post->event_date = $_POST['event_date'];
-        $post->location = $_POST['location'];
         $post->save();
         $post->majors()->sync($_POST['majors'], $post->id, false);
     }

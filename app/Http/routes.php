@@ -40,7 +40,11 @@ Route::group(['namespace' => 'Comite'], function()
 	Route::group(['middleware' => ['auth', 'member']], function()
 	{
 		Route::get('comite/{abrev}/dashboard', 'ComiteController@showDashboard');
-		Route::resource('comite/{abrev}/dashboard/post', 'PostController');
+		Route::resource('comite/{abrev}/dashboard/post', 'PostController', [
+			'names' => [
+				'store' => 'post.store'
+			]
+		]);
 		Route::resource('comite/{abrev}/dashboard/poll', 'PollController');
 		// Route::get('comite/{abrev}/dashboard/postForm', 'ComiteController@showPostForm');
 		// Route::get('comite/{abrev}/dashboard/pollForm', 'ComiteController@showPollForm');

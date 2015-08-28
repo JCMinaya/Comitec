@@ -24,7 +24,7 @@ class ComiteTableSeeder extends Seeder
             'Comite Estudiantíl de Ingeniería Electrónica y de Comunicaciones' => 'CEIEC',
             'Comite Estudiantíl de Ingeniería Eléctrica' => 'CEIE',
             'Comite Estudiantíl de Ingeniería Civil' => 'CEIC',
-            'Comite Estudiantíl de Medicina' => 'CEM',
+            'Comite Estudiantíl de Medicina' => 'CEMED',
             'Comite Estudiantíl de Psicología' => 'CEP'
             );
 

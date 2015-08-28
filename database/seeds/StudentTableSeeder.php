@@ -19,8 +19,8 @@ class StudentTableSeeder extends Seeder
         for ($i=0; $i < 40; $i++) { 
             if (!$i) {
                 $student = User::create(array(
-                    'name' => 'test',
-                    'last_name' => 'Perez',
+                    'name' => 'Juan Carlos',
+                    'last_name' => 'Minaya',
                     'email' => '1054485@est.intec.edu.do',
                     'gender' => array_rand($gender),
                     'password' => Hash::make('secret'),

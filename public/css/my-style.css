@@ -6,7 +6,7 @@ footer {
    width:100%;
    background:#333;
    z-index: 1000;
-   padding-top: 5px;
+   padding: 5px;
 }
 
 /* IE 6 */
@@ -15,9 +15,22 @@ footer {
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 
+#sidebar-wrapper h3{
+	color:#DF6E62;
+}
+
+#sidebar-wrapper h4{
+	color:#7D7D7D;
+}
+
 .my-container{
 	padding-right: 10px;
 	padding-left: 10px;
+}
+
+.center{
+	margin: 0 auto;
+	width: 70%;
 }
 
 .text-center{
@@ -32,6 +45,7 @@ footer {
 	z-index: 1;
 	border-radius: 0;
 	color: #000;
-}#menu-toggle:hover{
+}
+#menu-toggle:hover{
 	background-color: #939393;
 }

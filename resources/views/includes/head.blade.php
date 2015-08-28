@@ -14,6 +14,8 @@
 
 	{!! Html::style('css/my-style.css') !!}
 
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/vader/jquery-ui.css">
+
 <!-- SCRIPTS -->
 
 	{!! Html::script('js/jquery.js') !!}
@@ -24,3 +26,4 @@
 
 	{!! Html::script('js/sidebar.js') !!}
 
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

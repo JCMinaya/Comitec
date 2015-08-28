@@ -20,7 +20,6 @@ class CreatePostsTable extends Migration
             $table->date('date');
             $table->integer('mark');
             $table->date('event_date')->nullable();
-            $table->string('location')->nullable();
             $table->timeStamps();
         });
     }

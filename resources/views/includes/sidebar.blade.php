@@ -11,8 +11,9 @@
 		@else
 			<div class="my-container">
 				<div class="text-center">
+				{{-- <h2><img src="img/icons/svg/retina.svg"></h2> --}}
 					<h3>Bienvenido</h3>
-					<h4>{{ Auth::user()->name }}</h4>
+					<h4>{{ Auth::user()->name }} {{ Auth::user()->last_name }}</h4>
 				</div>
 				<div class="text-right">
 					<a href="/auth/logout" class="btn btn-danger">Logout</a>
