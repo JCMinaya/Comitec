@@ -19,7 +19,14 @@
     
         <div class="form-group">
             {!! Form::label('majors', 'Selecciona las carreras que verán este post:') !!}
-            {!! Form::select('majors', $major_names, $major_ids, ['class' => 'form-control', 'required' => 'required', 'multiple']) !!}
+            <div class="my-box">
+                @foreach($majors as $major)
+                    <label class="checkbox" for="checkbox{{$major->id}}">
+                        <input type="checkbox" value="{{$major->id}}" id="checkbox{{$major->id}}" data-toggle="checkbox">
+                        {{$major->name}}
+                    </label>
+                @endforeach
+            </div>
             <small class="text-danger">{{ $errors->first('Carreras') }}</small>
         </div>
 

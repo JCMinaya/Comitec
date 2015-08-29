@@ -49,3 +49,9 @@ footer {
 #menu-toggle:hover{
 	background-color: #939393;
 }
+
+.my-box{
+	border-radius: 10px;
+	background-color: #D1D3D5;
+	padding: 15px;
+}
