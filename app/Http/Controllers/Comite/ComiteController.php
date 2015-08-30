@@ -12,10 +12,17 @@ use Auth;
 
 class ComiteController extends Controller
 {
-
     public static function getComite($abrev)
     {
         return Comite::where('abreviation', $abrev)->first();
+    }
+
+    public function showDashboard($abrev){
+        $comite = $this->getComite($abrev);
+        $members = $comite->users();
+        // dd($members);
+
+        return view('pages.dashboard.index', compact('comite', 'members'));
     }
 
     public function showComitePosts($abrev)
@@ -29,15 +36,15 @@ class ComiteController extends Controller
         $posts = $major->posts()->where('comite_id', $comite->id)
                               ->orderBy('created_by');
 
-        return view('pages.comite.index', compact('comite'));
+        return view('pages.comite', compact('comite'));
     }
 
-    public function showDashboard($abrev){
+    public function showMessages($abrev){
         $comite = $this->getComite($abrev);
         $proposals = $comite->proposals;
-        // dd($proposals);
+        // dd($proposals); 
 
-        return view('pages.comite.messages', compact('comite', 'proposals'));
+        return view('pages.dashboard.messages', compact('proposals'));
     }
 
 }

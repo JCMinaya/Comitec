@@ -76,7 +76,7 @@ hr {
     column-count: 3;
 }
 
-#select_all{
+.bottom-right{
 	bottom: 0;
     right: 0;
     position: absolute;

@@ -6,12 +6,12 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="/">Home</a>
+          <a class="navbar-brand" href="/comite/{{Auth::user()->comite->abreviation}}/dashboard">Dashboard</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-01">
           <ul class="nav navbar-nav navbar-left">
             <li>
-            	<a href="/comite/{{Auth::user()->comite->abreviation}}/dashboard">Mensajes{{-- <span class="navbar-unread">1</span> --}}</a>
+            	<a href="/comite/{{Auth::user()->comite->abreviation}}/dashboard/message">Mensajes{{-- <span class="navbar-unread">1</span> --}}</a>
             </li>
 
             <li>

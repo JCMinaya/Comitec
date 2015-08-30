@@ -20,9 +20,15 @@
 						<a href="/auth/logout" class="btn btn-danger">Logout</a>
 					</div>
 					@if(Auth::user()->member)
-						<div class="to-right">
-							<a href="/comite/{{Auth::user()->comite->abreviation}}/dashboard" class="btn btn-inverse">Dashboard</a>
-						</div>
+						@if(Request::is('comite/*/dashboard/*') || Request::is('comite/*/dashboard'))
+							<div class="to-right">
+								<a href="/" class="btn btn-inverse">Home</a>
+							</div>
+						@else
+							<div class="to-right">
+								<a href="/comite/{{Auth::user()->comite->abreviation}}/dashboard" class="btn btn-inverse">Dashboard</a>
+							</div>
+						@endif
 					@endif
 				</div>
 			</div>

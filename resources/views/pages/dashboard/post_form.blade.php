@@ -37,7 +37,6 @@
 
         <!------------------------- jQUERY TEXT EDITOR -------------------------->
 
-    
         <div class="form-group">
             {!! Form::label('majors', 'Selecciona las carreras que verán este post:') !!}
             <div class="my-box columns" style="background:#D1D1D1">
@@ -49,7 +48,7 @@
                         </label>
                     @endforeach
                 </div>
-                <a class="btn btn-inverse   " id="select_all"><span class="fui-check"></span></a>
+                <a class="btn btn-inverse bottom-right" id="select_all">Público <span class="fui-check"></span></a>
             </div>
             <small class="text-danger">{{ $errors->first('Carreras') }}</small>
         </div>

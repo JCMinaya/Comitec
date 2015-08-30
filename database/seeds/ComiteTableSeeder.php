@@ -26,13 +26,14 @@ class ComiteTableSeeder extends Seeder
             'Comité Estudiantil de Ingeniería Civil' => 'CEIC',
             'Comité Estudianéil de Medicina' => 'CEMED',
             'Comité Estudianéil de Psicología' => 'CEP'
-            )éé
-        foreacé ($comites as $comite => $abre) {
-        	$cémite = Comite::create(array(
-        	é'name' => $comite,
-        é	'abreviation' => $abre,
-        é       'description' => 'Esta es la descripcion del comité'
-       é	));
+            );
+        
+        foreach($comites as $comite => $abre) {
+        	$comite = Comite::create(array(
+        	'name' => $comite,
+        	'abreviation' => $abre,
+            'description' => 'Esta es la descripcion del comité'
+       	));
         }
     }
 }

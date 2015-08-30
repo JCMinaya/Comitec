@@ -18,8 +18,9 @@ class PostController extends Controller
     public function index()
     {
         $posts = \App\Post::where('comite_id', Auth::user()->comite_id)->get();
+        $abrev = Auth::user()->comite->abreviation;
         // dd($posts);
-        return view('pages.comite.posts', compact('posts'));
+        return view('pages.dashboard.posts', compact('posts', 'abrev'));
     }
 
     /**
@@ -32,7 +33,7 @@ class PostController extends Controller
         $majors = \App\Major::all();
         $abrev = $request->abrev;
         
-        return view('pages.comite.post_form', compact('majors', 'abrev'));
+        return view('pages.dashboard.post_form', compact('majors', 'abrev'));
     }
 
     /**

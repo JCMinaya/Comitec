@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Auth;
 
 class PollController extends Controller
 {
@@ -16,9 +17,10 @@ class PollController extends Controller
      */
     public function index()
     {
-        $majors = \App\Major::all();
-        
-        return view('pages.comite.poll_form', compact('majors'));
+        $polls = \App\Poll::where('comite_id', Auth::user()->comite_id)->get();
+        $abrev = Auth::user()->comite->abreviation;
+
+        return view('pages.dashboard.polls', compact('polls', 'abrev'));
     }
 
     /**
@@ -28,7 +30,9 @@ class PollController extends Controller
      */
     public function create()
     {
+        $majors = \App\Major::all();
 
+        return view('pages.dashboard.poll_form', compact('majors'));
     }
 
     /**
