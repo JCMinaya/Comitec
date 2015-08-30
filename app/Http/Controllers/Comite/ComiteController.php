@@ -35,8 +35,9 @@ class ComiteController extends Controller
     public function showDashboard($abrev){
         $comite = $this->getComite($abrev);
         $proposals = $comite->proposals;
+        // dd($proposals);
 
-        return view('pages.comite.dashboard', compact('comite', 'proposals'));
+        return view('pages.comite.messages', compact('comite', 'proposals'));
     }
 
 }

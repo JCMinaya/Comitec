@@ -17,6 +17,7 @@ class PollController extends Controller
     public function index()
     {
         $majors = \App\Major::all();
+        
         return view('pages.comite.poll_form', compact('majors'));
     }
 

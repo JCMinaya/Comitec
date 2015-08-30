@@ -39,9 +39,10 @@ Route::group(['namespace' => 'Comite'], function()
 
 	Route::group(['middleware' => ['auth', 'member']], function()
 	{
-		Route::get('comite/{abrev}/dashboard', 'ComiteController@showDashboard');
+		Route::get('comite/{abrev}/dashboard', ['as' => 'comite.dashboard', 'uses' => 'ComiteController@showDashboard']);
 		Route::resource('comite/{abrev}/dashboard/post', 'PostController', [
 			'names' => [
+				'index' => 'post.index',
 				'store' => 'post.store'
 			]
 		]);

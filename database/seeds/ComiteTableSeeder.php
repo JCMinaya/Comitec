@@ -15,25 +15,24 @@ class ComiteTableSeeder extends Seeder
     {
         // $faker = Faker::create();
 
-        $comites = array('Comite Estudiantíl de Negocio' => 'CENIT',
-            'Comite Estudiantíl de Sistemas y Software' => 'CEISS',
-            'Comite Estudiantíl de Ingeniería Industrial' => 'CEII',
-            'Comite Estudiantíl de Diseño Industrial' => 'CEDI',
-            'Comite Estudiantíl de Ingeniería Mecánica' => 'CIM',
-            'Comite Estudiantíl de Ingeniería Mecatrónica' => 'CEIM',
-            'Comite Estudiantíl de Ingeniería Electrónica y de Comunicaciones' => 'CEIEC',
-            'Comite Estudiantíl de Ingeniería Eléctrica' => 'CEIE',
-            'Comite Estudiantíl de Ingeniería Civil' => 'CEIC',
-            'Comite Estudiantíl de Medicina' => 'CEMED',
-            'Comite Estudiantíl de Psicología' => 'CEP'
-            );
-
-        foreach ($comites as $comite => $abre) {
-        	$comite = Comite::create(array(
-        		'name' => $comite,
-        		'abreviation' => $abre,
-                'description' => 'Esta es la descripcion del comité'
-        	));
+        $comites = array('Comité Estudiantil de Negocio' => 'CENIT',
+            'Comité Estudiantil de Sistemas y Software' => 'CEISS',
+            'Comité Estudiantil de Ingeniería Industrial' => 'CEII',
+            'Comité Estudiantil de Diseño Industrial' => 'CEDI',
+            'Comité Estudiantil de Ingeniería Mecánica' => 'CIM',
+            'Comité Estudiantil de Ingeniería Mecatrónica' => 'CEIM',
+            'Comité Estudiantil de Ingeniería Electrónica y de Comunicaciones' => 'CEIEC',
+            'Comité Estudiantil de Ingeniería Eléctrica' => 'CEIE',
+            'Comité Estudiantil de Ingeniería Civil' => 'CEIC',
+            'Comité Estudianéil de Medicina' => 'CEMED',
+            'Comité Estudianéil de Psicología' => 'CEP'
+            )éé
+        foreacé ($comites as $comite => $abre) {
+        	$cémite = Comite::create(array(
+        	é'name' => $comite,
+        é	'abreviation' => $abre,
+        é       'description' => 'Esta es la descripcion del comité'
+       é	));
         }
     }
 }

@@ -15,6 +15,14 @@ footer {
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #959595; /* old IE */
+    background-color: #959595; /* Modern Browsers */
+}
+
 #sidebar-wrapper h3{
 	color:#DF6E62;
 }
@@ -36,8 +44,13 @@ footer {
 .text-center{
 	text-align: center;
 }
-.text-right{
+.to-right{
 	text-align: right;
+	float: right;
+}
+.to-left{
+	text-align: left;
+	float: left;
 }
 
 #menu-toggle{
@@ -52,6 +65,19 @@ footer {
 
 .my-box{
 	border-radius: 10px;
-	background-color: #D1D3D5;
+	background-color: #34495E;
 	padding: 15px;
+	position: relative;
+}
+
+.columns{
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+#select_all{
+	bottom: 0;
+    right: 0;
+    position: absolute;
 }

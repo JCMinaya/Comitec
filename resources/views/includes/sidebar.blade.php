@@ -15,8 +15,15 @@
 					<h3>Bienvenido</h3>
 					<h4>{{ Auth::user()->name }} {{ Auth::user()->last_name }}</h4>
 				</div>
-				<div class="text-right">
-					<a href="/auth/logout" class="btn btn-danger">Logout</a>
+				<div class="container-fluid">
+					<div class="to-left">
+						<a href="/auth/logout" class="btn btn-danger">Logout</a>
+					</div>
+					@if(Auth::user()->member)
+						<div class="to-right">
+							<a href="/comite/{{Auth::user()->comite->abreviation}}/dashboard" class="btn btn-inverse">Dashboard</a>
+						</div>
+					@endif
 				</div>
 			</div>
 		@endunless

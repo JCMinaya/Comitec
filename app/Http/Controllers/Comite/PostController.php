@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Auth;
 
 class PostController extends Controller
 {
@@ -16,7 +17,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        
+        $posts = \App\Post::where('comite_id', Auth::user()->comite_id)->get();
+        // dd($posts);
+        return view('pages.comite.posts', compact('posts'));
     }
 
     /**
@@ -27,14 +30,7 @@ class PostController extends Controller
     public function create(Request $request)
     {
         $majors = \App\Major::all();
-        // $major_ids = array();
-        // $major_names = array();
         $abrev = $request->abrev;
-
-        // foreach ($majors as $major) {
-        //     array_push($major_ids, $major->id);
-        //     array_push($major_names, $major->name);
-        // }
         
         return view('pages.comite.post_form', compact('majors', 'abrev'));
     }
@@ -48,12 +44,14 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $post = new \App\Post;
+        $post->comite_id = Auth::user()->comite_id;
         $post->title = $_POST['title'];
         $post->description = $_POST['description'];
-        $post->event_date = $_POST['event_date'];
+        $post->event_date = $_POST['date'];
         $post->save();
-        dd($_POST['majors']);
         $post->majors()->sync($_POST['majors'], $post->id, false);
+
+        return redirect()->route('post.index', $request->abrev);
     }
 
     /**
