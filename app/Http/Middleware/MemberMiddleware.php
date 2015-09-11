@@ -23,7 +23,7 @@ class MemberMiddleware
 
         if(!( $user->member && strtoupper($request->abrev) == $user->comite->abreviation))
         {
-            return response('Unauthorized.', 401);
+            return redirect('/');
         }
 
         return $next($request);

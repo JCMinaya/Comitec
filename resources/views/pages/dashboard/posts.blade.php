@@ -12,14 +12,14 @@
         </h3>
     </div>
     <div class="col-md-2">
-        <a href="/comite/{{$abrev}}/dashboard/post/create" class="btn btn-success">
+        <a href="/comite/{{$abrev}}/dashboard/post/create" class="btn btn-success to-right">
             <span class="fui-plus"> </span>
             Crear publicación
         </a>
     </div>
 </div>
 
-<div class="container-">
+<div class="container-fluid">
     <div class="col-sm-12 col-md-9">
         <hr>
        @if(!$posts->isEmpty())

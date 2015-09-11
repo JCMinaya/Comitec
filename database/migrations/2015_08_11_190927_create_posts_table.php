@@ -17,7 +17,9 @@ class CreatePostsTable extends Migration
             $table->integer('comite_id');
             $table->string('title');
             $table->text('description');
+            $table->integer('public');
             $table->date('date');
+            $table->date('end_date');
             $table->integer('mark');
             $table->date('event_date')->nullable();
             $table->timeStamps();

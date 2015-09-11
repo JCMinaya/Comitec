@@ -1,15 +1,29 @@
 $(document).ready(function() {
-    var flag = true;
+
+  $('#checkbox_public').change(function(){
+      if (this.checked) {
+        $('#major_checkboxes :checkbox').each(function() {
+            this.disabled = true;
+        });
+      }else{
+        $('#major_checkboxes :checkbox').each(function() {
+            this.disabled = false;
+        });
+      }
+  });
+
+  var flag = true;
+
   $('#select_all').click(function(event) {
     if(flag) {
         // Iterate each checkbox
-        $(':checkbox').each(function() {
+        $('#major_checkboxes :checkbox').each(function() {
             this.checked = true;
         });
         flag = false;
     }
     else {
-      $(':checkbox').each(function() {
+      $('#major_checkboxes :checkbox').each(function() {
             this.checked = false;
         });
         flag = true;

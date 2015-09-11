@@ -6,6 +6,8 @@
 
 <!-- STYLESSHEETS -->
 
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100">
+
 	{!! Html::style('css/bootstrap.min.css') !!}
 
 	{!! Html::style('css/flat-ui.min.css') !!}

@@ -10,15 +10,19 @@
 			<header class="row">
 				@include('includes.sidebar')
 			</header>
-
 			<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-				<span class="fui-triangle-left-large"></span>
+				<span class="fui-arrow-left"></span>
 			</a>
 
 			<br>
 
 			<div id="page-content-wrapper">
 
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Library</a></li>
+				  <li class="active">Data</li>
+				</ol>
 				<div class="container-fluid">
 					<div id="main" class="row">
 						@yield('content')

@@ -49,8 +49,15 @@ class PostController extends Controller
         $post->title = $_POST['title'];
         $post->description = $_POST['description'];
         $post->event_date = $_POST['date'];
+        if(isset($_POST['public']))
+        {
+            $post->public = 1;
+        }
         $post->save();
-        $post->majors()->sync($_POST['majors'], $post->id, false);
+        if(!(isset($_POST['public'])))
+        {
+            $post->majors()->sync($_POST['majors'], $post->id, false);
+        }
 
         return redirect()->route('post.index', $request->abrev);
     }
