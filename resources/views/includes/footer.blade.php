@@ -1,1 +1,1 @@
-<div id="copyright text-right">© Copyright 2015 Juan Carlos Minaya Morillo</div>
+<div id="copyright text-right">© Copyright 2015 Comitec</div>

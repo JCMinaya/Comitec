@@ -20,10 +20,13 @@ Route::get('/', 'HomeController@index');
 
 Route::group(['namespace' => 'Auth'], function()
 {
+	Route::controller('auth', 'AuthController');
 	//Login Routes
+	/*
 	Route::get('auth/login', 'AuthController@getLogin');
 	Route::post('auth/login', 'AuthController@postLogin');
 	Route::get('auth/logout', 'AuthController@getLogout');
+	*/
 
 	// Registration routes...
 	// Route::get('auth/register', 'AuthController@getRegister');
