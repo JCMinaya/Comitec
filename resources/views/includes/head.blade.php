@@ -2,7 +2,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="Scotch">
 
-	<title>LaraApp</title>
+	<title>COMITEC</title>
 
 <!-- STYLESSHEETS -->
 

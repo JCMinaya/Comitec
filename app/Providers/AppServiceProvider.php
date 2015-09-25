@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Request;
+use View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        View::composer('layouts.default', function($view)
+        {
+            $sections = explode('/', Request::path());
+            array_unshift($sections, 'Home');
+            // dd(print_r($sections));
+            $view->with('sections', $sections);
+        });
     }
 
     /**

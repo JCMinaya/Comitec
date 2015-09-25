@@ -10,11 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-// View::composer('layouts.default', function($view)
-// {
-	
-// 	 $view->with("friendRequest", Friend::FriendsRequest()->count());
-// });
+
 
 Route::get('/', 'HomeController@index');
 
