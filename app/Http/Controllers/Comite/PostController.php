@@ -18,9 +18,9 @@ class PostController extends Controller
     public function index()
     {
         $posts = \App\Post::where('comite_id', Auth::user()->comite_id)->get();
-        $abrev = Auth::user()->comite->abreviation;
-        // dd($posts);
-        return view('pages.dashboard.posts', compact('posts', 'abrev'));
+        $comite = Auth::user()->comite;
+        
+        return view('pages.dashboard.posts', compact('posts', 'comite'));
     }
 
     /**

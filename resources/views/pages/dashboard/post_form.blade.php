@@ -72,8 +72,8 @@
         </div>
     
         <div class="btn-group pull-right">
-            {!! Form::reset("Reset", ['class' => 'btn btn-warning']) !!}
-            {!! Form::submit("Add", ['class' => 'btn btn-success']) !!}
+            {!! Form::reset("Reset", ['class' => 'btn btn-danger']) !!}
+            {!! Form::submit("Add", ['class' => 'btn btn-inverse']) !!}
         </div>
     
     {!! Form::close() !!}

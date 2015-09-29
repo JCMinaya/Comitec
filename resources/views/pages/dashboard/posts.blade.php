@@ -12,7 +12,7 @@
         </h3>
     </div>
     <div class="col-md-2">
-        <a href="/comite/{{$abrev}}/dashboard/post/create" class="btn btn-success to-right">
+        <a href="/comite/{{$comite->abreviation}}/dashboard/post/create" class="btn btn-danger to-right">
             <span class="fui-plus"> </span>
             Crear publicación
         </a>
@@ -24,8 +24,8 @@
         <hr>
        @if(!$posts->isEmpty())
            @foreach($posts as $post)
-               {{$post->title}}
-                <hr>
+              @include('includes.post_structure')
+              <hr>
            @endforeach
        @else
            <p>No hay publicaciones.</p>

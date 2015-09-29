@@ -24,8 +24,8 @@ class ComiteTableSeeder extends Seeder
             'Comité Estudiantil de Ingeniería Electrónica y de Comunicaciones' => 'CEIEC',
             'Comité Estudiantil de Ingeniería Eléctrica' => 'CEIE',
             'Comité Estudiantil de Ingeniería Civil' => 'CEIC',
-            'Comité Estudianéil de Medicina' => 'CEMED',
-            'Comité Estudianéil de Psicología' => 'CEP'
+            'Comité Estudiantil de Medicina' => 'CEMED',
+            'Comité Estudiantil de Psicología' => 'CEP'
             );
         
         foreach($comites as $comite => $abre) {

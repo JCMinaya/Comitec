@@ -40,6 +40,7 @@ Route::group(['namespace' => 'Comite'], function()
 
 	Route::group(['middleware' => ['auth', 'member']], function()
 	{
+
 		Route::get('comite/{abrev}/dashboard', ['as' => 'comite.dashboard', 'uses' => 'ComiteController@showDashboard']);
 
 		Route::get('comite/{abrev}/dashboard/message', 'ComiteController@showMessages');
@@ -55,6 +56,11 @@ Route::group(['namespace' => 'Comite'], function()
 				'store' => 'poll.store'
 			]
 		]);
+		Route::resource('message', 'messageController', [
+			'names' => [
+				'store' => 'message.store'
+			]
+		]);
 		// Route::get('comite/{abrev}/dashboard/postForm', 'ComiteController@showPostForm');
 		// Route::get('comite/{abrev}/dashboard/pollForm', 'ComiteController@showPollForm');
 		// Route::post('comite/{abrev}/dashboard/postForm', 'ComiteController@createPost');
@@ -62,4 +68,3 @@ Route::group(['namespace' => 'Comite'], function()
 	});
 });
 
-Route::get('student/{id}', 'UserController@showProfile');

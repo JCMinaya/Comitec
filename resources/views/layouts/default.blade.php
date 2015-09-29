@@ -18,12 +18,22 @@
 
 			<div id="page-content-wrapper">
 				<ol class="breadcrumb">
-					@foreach($sections as $section)
+					@foreach($sections as $key => $section)
+						<?php
+							$path = $sections;
+							$path = array_slice($path, 0, $key+1);
+							array_shift($path);
+							$path = implode('/', $path);
+						?>
 						@if($section != "" && $section != 'comite' && $section != 'auth')
 							@if(end($sections) == $section)
 								<li class="active">{{$section}}</li>
 							@else
-								<li><a href="#">{{$section}}</a></li>
+								@if($section == 'Home')
+									<li><a href="/">Home</a></li>
+								@else
+									<li><a href="/{{$path}}">{{$section}}</a></li>
+								@endif
 							@endif
 						@endif
 					@endforeach

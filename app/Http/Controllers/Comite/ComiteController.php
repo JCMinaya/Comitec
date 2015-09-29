@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Proposal;
 use App\Comite;
 use App\Major;
+use App\User;
 use Auth;
 
 class ComiteController extends Controller
@@ -49,8 +50,9 @@ class ComiteController extends Controller
                               ->where('comite_id', $comite->id)
                               ->orderBy('created_at')->get();
         }
+        $members = User::where('comite_id', $comite->id)->get();
 
-        return view('pages.comite', compact('comite', 'posts'));
+        return view('pages.comite', compact('comite', 'posts', 'members'));
     }
 
     public function showMessages($abrev){

@@ -17,7 +17,9 @@ class AppServiceProvider extends ServiceProvider
     {
         View::composer('layouts.default', function($view)
         {
-            $sections = explode('/', Request::path());
+            $path = Request::path();
+            $sections = explode('/', $path);
+            // $path = $sections;
             array_unshift($sections, 'Home');
             // dd(print_r($sections));
             $view->with('sections', $sections);

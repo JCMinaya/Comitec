@@ -123,3 +123,42 @@ hr {
 	border: 2px solid #5B5B5B;
 	margin-top: 10px;
 }
+.title{
+	color: #B63B2F;
+	font-family: 'lato';
+	font-size: 130px;
+	font-weight: 100;
+}
+.description{
+	background:#555;
+	border-radius:3px;
+	padding:10px;
+}
+.circle {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: #333;
+	position: relative;
+	/* width and height can be anything, as long as they're equal */
+}.circle span{
+	position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -40px;
+	color: #fff;
+	font-size: 30px;
+}
+.white{
+	color: #fff;
+}
+.message-form{
+	padding-bottom: 50px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+.comite-info{
+	background-color: #333;
+	color: #fff;
+	font-size: 15px;
+}
