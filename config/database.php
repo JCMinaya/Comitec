@@ -55,9 +55,10 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', ''),
-            'username'  => env('DB_USERNAME', ''),
-            'password'  => env('DB_PASSWORD', ''),
+            'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
+            'database'  => env('DB_DATABASE', 'comitec'),
+            'username'  => env('DB_USERNAME', 'ComitecAdmin'),
+            'password'  => env('DB_PASSWORD', 'Comitec@2015'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
