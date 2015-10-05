@@ -50,9 +50,10 @@ class ComiteController extends Controller
                               ->where('comite_id', $comite->id)
                               ->orderBy('created_at')->get();
         }
-        $members = User::where('comite_id', $comite->id)->get();
+        $members = User::where('comite_id', $comite->id)
+                        ->where('member', 1)->get();
 
-        return view('pages.comite', compact('comite', 'posts', 'members'));
+        return view('pages.comite', compact('comite', 'posts', 'members', 'abrev'));
     }
 
     public function showMessages($abrev){

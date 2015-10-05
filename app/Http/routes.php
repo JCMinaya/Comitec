@@ -47,8 +47,10 @@ Route::group(['namespace' => 'Comite'], function()
 		Route::resource('comite/{abrev}/dashboard/post', 'PostController', [
 			'names' => [
 				'index' => 'post.index',
-				'store' => 'post.store'
-		]
+				'store' => 'post.store',
+				'update' => 'post.update',
+				'destroy' => 'post.destroy'
+			]
 		]);
 		Route::resource('comite/{abrev}/dashboard/poll', 'PollController', [
 			'names' => [
@@ -56,15 +58,11 @@ Route::group(['namespace' => 'Comite'], function()
 				'store' => 'poll.store'
 			]
 		]);
-		Route::resource('message', 'messageController', [
+		Route::resource('message', 'MessageController', [
 			'names' => [
 				'store' => 'message.store'
 			]
 		]);
-		// Route::get('comite/{abrev}/dashboard/postForm', 'ComiteController@showPostForm');
-		// Route::get('comite/{abrev}/dashboard/pollForm', 'ComiteController@showPollForm');
-		// Route::post('comite/{abrev}/dashboard/postForm', 'ComiteController@createPost');
-		// Route::post('comite/{abrev}/dashboard/pollForm', 'ComiteController@createPoll');
 	});
 });
 

@@ -23,12 +23,14 @@
            <p>No hay publicaciones.</p>
        @endif
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 no-padding">
       <div class="my-box comite-info">
-        <span class="fui-mail"> email@hotmail.com{{$comite->email}}</span><br>
-        @foreach($members as $member)
-          <span class="fui-user"> {{$member->name}} {{$member->last_name}} - {{App\Role::find($member->role_id)->role_name}}</span>
-        @endforeach
+        <span class="fui-mail"> {{$comite->email}}</span><br>
+        @if(!$members->isEmpty())
+          @foreach($members as $member)
+            <span class="fui-user"> {{$member->name}} {{$member->last_name}} - {{App\Role::find($member->role_id)->role_name}}</span>
+          @endforeach
+        @endif
        </div><br>
       {!! Form::open(['method' => 'POST', 'route' => 'message.store', 'class' => 'form-horizontal my-box message-form']) !!}
       

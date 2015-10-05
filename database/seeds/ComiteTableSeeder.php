@@ -13,27 +13,28 @@ class ComiteTableSeeder extends Seeder
      */
     public function run()
     {
-        // $faker = Faker::create();
 
-        $comites = array('Comité Estudiantil de Negocio' => 'CENIT',
-            'Comité Estudiantil de Sistemas y Software' => 'CEISS',
-            'Comité Estudiantil de Ingeniería Industrial' => 'CEII',
-            'Comité Estudiantil de Diseño Industrial' => 'CEDI',
-            'Comité Estudiantil de Ingeniería Mecánica' => 'CIM',
-            'Comité Estudiantil de Ingeniería Mecatrónica' => 'CEIM',
-            'Comité Estudiantil de Ingeniería Electrónica y de Comunicaciones' => 'CEIEC',
-            'Comité Estudiantil de Ingeniería Eléctrica' => 'CEIE',
-            'Comité Estudiantil de Ingeniería Civil' => 'CEIC',
-            'Comité Estudiantil de Medicina' => 'CEMED',
-            'Comité Estudiantil de Psicología' => 'CEP'
+        $comites = array(
+                ['Comité Estudiantil de Negocio','CENIT','intec.cenit@gmail.com'],
+                ['Comité Estudiantil de Sistemas y Software','CEISS','comitesoftwaresistemas@gmail.com'],
+                ['Comité Estudiantil de Ingeniería Industrial','CEII','ceii.intecrd@gmail.com'],
+                ['Comité Estudiantil de Diseño Industrial','CEDI','dinintec@gmail.com'],
+                ['Comité Estudiantil de Ingeniería Mecánica','CIM','pendiente@CIM'],
+                ['Comité Estudiantil de Ingeniería Mecatrónica','CEIMC','intec.ceimc@gmail.com'],
+                ['Comité Estudiantil de Ingeniería Electrónica y de Comunicaciones','CEIEC','pendiente@CEIEC'],
+                ['Comité Estudiantil de Ingeniería Eléctrica','CEIE','pendiente@CEIE'],
+                ['Comité Estudiantil de Ingeniería Civil','CEIC','ceic.intec00@gmail.com'],
+                ['Comité Estudiantil de Medicina','CEMED','cemedintecrd@gmail.com'],
+                ['Comité Estudiantil de Psicología','CEPSI','cepsiintecrd@gmail.com']
             );
         
-        foreach($comites as $comite => $abre) {
+        foreach($comites as $comite) {
         	$comite = Comite::create(array(
-        	'name' => $comite,
-        	'abreviation' => $abre,
-            'description' => 'Esta es la descripcion del comité'
-       	));
+            	'name' => $comite[0],
+            	'abreviation' => $comite[1],
+                'email' => $comite[2],
+                'description' => 'Esta es la descripcion del comité.'
+           	));
         }
     }
 }
