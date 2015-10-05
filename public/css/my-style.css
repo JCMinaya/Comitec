@@ -37,7 +37,9 @@ hr {
 	padding-right: 10px;
 	padding-left: 10px;
 }
-
+.no-padding{
+	padding: 0;
+}
 .center{
 	margin: 0 auto;
 	width: 70%;
@@ -161,4 +163,32 @@ hr {
 	background-color: #333;
 	color: #fff;
 	font-size: 15px;
+}
+#post-container{
+	position: relative;
+}
+.edit{
+	color: #50B948;
+	font-size: 29px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.delete{
+	color: #e74c3c;
+	font-size: 30px;
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+#test{
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

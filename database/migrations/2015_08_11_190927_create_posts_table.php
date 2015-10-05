@@ -18,10 +18,9 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->integer('public');
-            $table->date('date');
-            $table->date('end_date');
+            $table->text('date');
+            $table->text('end_date')->nullable();
             $table->integer('mark');
-            $table->date('event_date')->nullable();
             $table->timeStamps();
         });
     }
