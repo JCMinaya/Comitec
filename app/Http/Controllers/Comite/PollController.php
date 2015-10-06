@@ -19,8 +19,9 @@ class PollController extends Controller
     {
         $polls = \App\Poll::where('comite_id', Auth::user()->comite_id)->get();
         $abrev = Auth::user()->comite->abreviation;
+        $majors = \App\Major::all();
 
-        return view('pages.dashboard.polls', compact('polls', 'abrev'));
+        return view('pages.dashboard.poll.polls', compact('polls', 'abrev', 'majors'));
     }
 
     /**
@@ -32,7 +33,7 @@ class PollController extends Controller
     {
         $majors = \App\Major::all();
 
-        return view('pages.dashboard.poll_form', compact('majors'));
+        return view('pages.dashboard.poll.new_poll', compact('majors'));
     }
 
     /**
@@ -46,7 +47,8 @@ class PollController extends Controller
         $poll = new \App\Poll;
         $poll->title = $_POST['title'];
         $poll->description = $_POST['description'];
-        $post->event_date = $_POST['event_date'];
+        $post->date = $_POST['date'];
+        $post->end_date = $_POST['end_date'];
         $post->location = $_POST['location'];
         $post->save();
         $post->majors()->sync($_POST['majors'], $post->id, false);
@@ -71,7 +73,9 @@ class PollController extends Controller
      */
     public function edit($id)
     {
-        //
+        $poll = Poll::find($id);
+
+        return view('pages.dashboard.poll.edit_poll', compact('poll'));
     }
 
     /**

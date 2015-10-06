@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Proposal;
 use App\Comite;
 use App\Major;
+use App\User;
 use Auth;
 
 class ComiteController extends Controller
@@ -18,7 +19,8 @@ class ComiteController extends Controller
         return Comite::where('abreviation', $abrev)->first();
     }
 
-    public function showDashboard($abrev){
+    public function showDashboard($abrev)
+    {
         $comite = $this->getComite($abrev);
         $members = $comite->users;
         // dd($members);
@@ -36,17 +38,22 @@ class ComiteController extends Controller
             // Get filter posts for authenticated user
             $user = Auth::user();
             $major = Major::find($user->major_id);
-            $posts = $major->posts()->where('comite_id', $comite->id)
-                                    ->orWhere('public', 1
-)                                    ->orderBy('created_at')->get();       
+            $postsFilterByMajor = $major->posts()->where('comite_id', $comite->id)
+                                    ->orderBy('created_at')->get();
+
+            $postsPublic = \App\Post::where('public', 1)
+                              ->where('comite_id', $comite->id)
+                              ->orderBy('created_at')->get();
+            $posts = $postsFilterByMajor->merge($postsPublic);
         }else{
             $posts = \App\Post::where('public', 1)
                               ->where('comite_id', $comite->id)
                               ->orderBy('created_at')->get();
         }
+        $members = User::where('comite_id', $comite->id)
+                        ->where('member', 1)->get();
 
-
-        return view('pages.comite', compact('comite', 'posts'));
+        return view('pages.comite', compact('comite', 'posts', 'members', 'abrev'));
     }
 
     public function showMessages($abrev){

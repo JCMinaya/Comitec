@@ -1,8 +1,9 @@
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="author" content="Scotch">
+	<meta name="_token" content="{{ csrf_token() }}"/>
 
-	<title>LaraApp</title>
+	<title>COMITEC</title>
 
 <!-- STYLESSHEETS -->
 
@@ -34,4 +35,7 @@
 	
 	{!! Html::script('js/jquery-te.min.js') !!}
 
+	{!! Html::script('js/questions.js') !!}
+
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+

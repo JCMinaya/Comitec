@@ -14,15 +14,30 @@
 				<span class="fui-arrow-left"></span>
 			</a>
 
-			<br>
+			{{-- <br> --}}
 
 			<div id="page-content-wrapper">
-
 				<ol class="breadcrumb">
-				  <li><a href="#">Home</a></li>
-				  <li><a href="#">Library</a></li>
-				  <li class="active">Data</li>
-				</ol>
+					@foreach($sections as $key => $section)
+						<?php
+							$path = $sections;
+							$path = array_slice($path, 0, $key+1);
+							array_shift($path);
+							$path = implode('/', $path);
+						?>
+						@if($section != "" && $section != 'comite' && $section != 'auth')
+							@if(end($sections) == $section)
+								<li class="active">{{$section}}</li>
+							@else
+								@if($section == 'Home')
+									<li><a href="/">Home</a></li>
+								@else
+									<li><a href="/{{$path}}">{{$section}}</a></li>
+								@endif
+							@endif
+						@endif
+					@endforeach
+				</ol><br>
 				<div class="container-fluid">
 					<div id="main" class="row">
 						@yield('content')

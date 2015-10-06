@@ -16,6 +16,7 @@ class CreateComiteTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('abreviation')->unique();
+            $table->string('email')->unique();
             $table->text('description');
             $table->timestamps();
         });

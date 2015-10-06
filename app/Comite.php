@@ -13,7 +13,7 @@ class Comite extends Model
      */
     protected $table = 'comite';
 
-    protected $fillable = ['name', 'abreviacion', 'descripcion'];
+    protected $fillable = ['name', 'abreviacion', 'descripcion', 'email'];
 
     public function major()
     {

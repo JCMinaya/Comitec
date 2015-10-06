@@ -12,13 +12,18 @@
 	        </h3>
 	    </div>
 	</div>
-
-	@if(!$proposals->isEmpty())
-		@foreach($proposals as $proposal)
-			{{$proposal->subject}}
-		@endforeach
-	@else
-		<p>No hay mensajes.</p>
-	@endif
+	
+	<div class="container-fluid">
+		<div class="col-md-12">
+			<hr>
+			@if(!$proposals->isEmpty())
+				@foreach($proposals as $proposal)
+					{{$proposal->subject}}
+				@endforeach
+			@else
+				<p>No hay mensajes.</p>
+			@endif
+		</div>
+	</div>
 
 @stop

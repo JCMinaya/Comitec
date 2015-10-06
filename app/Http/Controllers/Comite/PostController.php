@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
+use App\Post;
 
 class PostController extends Controller
 {
@@ -15,12 +16,12 @@ class PostController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index($abrev)
     {
         $posts = \App\Post::where('comite_id', Auth::user()->comite_id)->get();
-        $abrev = Auth::user()->comite->abreviation;
-        // dd($posts);
-        return view('pages.dashboard.posts', compact('posts', 'abrev'));
+        $comite = Auth::user()->comite;
+        
+        return view('pages.dashboard.post.posts', compact('posts', 'comite', 'abrev'));
     }
 
     /**
@@ -33,7 +34,7 @@ class PostController extends Controller
         $majors = \App\Major::all();
         $abrev = $request->abrev;
         
-        return view('pages.dashboard.post_form', compact('majors', 'abrev'));
+        return view('pages.dashboard.post.new_post', compact('majors', 'abrev'));
     }
 
     /**
@@ -42,13 +43,14 @@ class PostController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $abrev)
     {
         $post = new \App\Post;
         $post->comite_id = Auth::user()->comite_id;
         $post->title = $_POST['title'];
         $post->description = $_POST['description'];
-        $post->event_date = $_POST['date'];
+        $post->date = $_POST['date'];
+        $post->end_date = $_POST['end_date'];
         if(isset($_POST['public']))
         {
             $post->public = 1;
@@ -59,7 +61,7 @@ class PostController extends Controller
             $post->majors()->sync($_POST['majors'], $post->id, false);
         }
 
-        return redirect()->route('post.index', $request->abrev);
+        return redirect()->route('post.index', $abrev);
     }
 
     /**
@@ -79,9 +81,12 @@ class PostController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function edit($id)
+    public function edit($abrev, $id)
     {
-        //
+        $post = Post::find($id);
+        $majors = \App\Major::all();
+
+        return view('pages.dashboard.post.edit_post', compact('post', 'majors', 'abrev'));
     }
 
     /**
@@ -91,9 +96,25 @@ class PostController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $abrev, $id)
     {
-        //
+        $post = Post::find($id);
+        $post->comite_id = Auth::user()->comite_id;
+        $post->title = $_POST['title'];
+        $post->description = $_POST['description'];
+        $post->date = $_POST['date'];
+        $post->end_date = $_POST['end_date'];
+        if(isset($_POST['public']))
+        {
+            $post->public = 1;
+        }
+        $post->save();
+        if(!(isset($_POST['public'])))
+        {
+            $post->majors()->sync($_POST['majors'], $post->id, false);
+        }
+
+        return redirect()->route('post.index', $abrev);
     }
 
     /**
@@ -104,7 +125,7 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Post::destroy($id);
     }
 
 }

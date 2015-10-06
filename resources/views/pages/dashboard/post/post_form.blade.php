@@ -1,11 +1,3 @@
-@extends('layouts.default')
-
-@section('content')
-
-@include('includes.header')
-
-<div class="center">
-    {!! Form::open(['method' => 'POST', 'route' => ['post.store', $abrev], 'class' => 'form-horizontal']) !!}
     
         <div class="form-group">
             {!! Form::label('title', 'Título') !!}
@@ -65,26 +57,23 @@
             <small class="text-danger">{{ $errors->first('Carreras') }}</small>
         </div>
 
-        <div class="form-group">
+        <div class="form-group col-md-12">
             {!! Form::label('date', 'Fecha del evento') !!}
-            <input name="date" type="text" id="datepicker" class="form-control"> 
+            <div class="form-group">
+                {!! Form::label('start', 'Empieza', ['class' => 'col-sm-3 control-label']) !!}
+                <div class="col-sm-9">
+                    {!! Form::text('date', null, ['id' => 'datepicker', 'class' => 'form-control', 'required' => 'required']) !!}
+                    <small class="text-danger">{{ $errors->first('date') }}</small>
+                </div>
+            </div>
+            <div class="form-group">
+                {!! Form::label('end', 'Termina (opcional)', ['class' => 'col-sm-3 control-label']) !!}
+                <div class="col-sm-9">
+                    {!! Form::text('end_date', null, ['id' => 'datepicker2', 'class' => 'form-control']) !!}
+                    <small class="text-danger">{{ $errors->first('end_date') }}</small>
+                </div>
+            </div>
             <small class="text-danger">{{ $errors->first('date') }}</small>
         </div>
     
-        <div class="btn-group pull-right">
-            {!! Form::reset("Reset", ['class' => 'btn btn-warning']) !!}
-            {!! Form::submit("Add", ['class' => 'btn btn-success']) !!}
-        </div>
-    
-    {!! Form::close() !!}
-</div>
-
-<script type="text/javascript">
-    $(function(){
-        $('#datepicker').datepicker();
-    });
-</script>
-
-
-@stop
-
+        

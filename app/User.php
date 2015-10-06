@@ -35,7 +35,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     public function role()
     {
-        return $this->hasOne('App\Role', 'student_id');
+        return $this->belongsTo('App\Role', 'student_id');
     }
 
     public function comite()

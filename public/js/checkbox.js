@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  
   $('#checkbox_public').change(function(){
       if (this.checked) {
         $('#major_checkboxes :checkbox').each(function() {

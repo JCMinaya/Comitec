@@ -10,11 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-// View::composer('layouts.default', function($view)
-// {
-	
-// 	 $view->with("friendRequest", Friend::FriendsRequest()->count());
-// });
+
 
 Route::get('/', 'HomeController@index');
 
@@ -44,14 +40,17 @@ Route::group(['namespace' => 'Comite'], function()
 
 	Route::group(['middleware' => ['auth', 'member']], function()
 	{
+
 		Route::get('comite/{abrev}/dashboard', ['as' => 'comite.dashboard', 'uses' => 'ComiteController@showDashboard']);
 
 		Route::get('comite/{abrev}/dashboard/message', 'ComiteController@showMessages');
 		Route::resource('comite/{abrev}/dashboard/post', 'PostController', [
 			'names' => [
 				'index' => 'post.index',
-				'store' => 'post.store'
-		]
+				'store' => 'post.store',
+				'update' => 'post.update',
+				'destroy' => 'post.destroy'
+			]
 		]);
 		Route::resource('comite/{abrev}/dashboard/poll', 'PollController', [
 			'names' => [
@@ -59,11 +58,11 @@ Route::group(['namespace' => 'Comite'], function()
 				'store' => 'poll.store'
 			]
 		]);
-		// Route::get('comite/{abrev}/dashboard/postForm', 'ComiteController@showPostForm');
-		// Route::get('comite/{abrev}/dashboard/pollForm', 'ComiteController@showPollForm');
-		// Route::post('comite/{abrev}/dashboard/postForm', 'ComiteController@createPost');
-		// Route::post('comite/{abrev}/dashboard/pollForm', 'ComiteController@createPoll');
+		Route::resource('message', 'MessageController', [
+			'names' => [
+				'store' => 'message.store'
+			]
+		]);
 	});
 });
 
-Route::get('student/{id}', 'UserController@showProfile');
