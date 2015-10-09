@@ -30,8 +30,13 @@ class Poll extends Model
         return $this->belongsToMany('App\Major');
     }
 
-    public function questions()
+    public function answers()
     {
-        return $this->hasMany('App\Question');
+        return $this->hasMany('App\Answer');
     }
+
+    // public function questions()
+    // {
+    //     return $this->hasMany('App\Question');
+    // }
 }

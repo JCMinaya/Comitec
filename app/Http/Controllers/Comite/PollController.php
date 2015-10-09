@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
+use App\Poll;
 
 class PollController extends Controller
 {
@@ -15,10 +16,9 @@ class PollController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index($abrev)
     {
         $polls = \App\Poll::where('comite_id', Auth::user()->comite_id)->get();
-        $abrev = Auth::user()->comite->abreviation;
         $majors = \App\Major::all();
 
         return view('pages.dashboard.poll.polls', compact('polls', 'abrev', 'majors'));
@@ -32,8 +32,9 @@ class PollController extends Controller
     public function create()
     {
         $majors = \App\Major::all();
+        $abrev = Auth::user()->comite->abreviation;
 
-        return view('pages.dashboard.poll.new_poll', compact('majors'));
+        return view('pages.dashboard.poll.new_poll', compact('majors', 'abrev'));
     }
 
     /**
@@ -44,14 +45,45 @@ class PollController extends Controller
      */
     public function store(Request $request)
     {
+        $options = [];
         $poll = new \App\Poll;
-        $poll->title = $_POST['title'];
-        $poll->description = $_POST['description'];
-        $post->date = $_POST['date'];
-        $post->end_date = $_POST['end_date'];
-        $post->location = $_POST['location'];
-        $post->save();
-        $post->majors()->sync($_POST['majors'], $post->id, false);
+        $poll->comite_id = Auth::user()->comite_id;
+        $poll->question = $_POST['question'];
+        // Setting if accepts multiple answers
+        if(isset($_POST['multiple_answers']))
+            $poll->multiple = 1;
+
+        // Setting answer type (free answer or predefined options)
+        if(isset($_POST['answer_type']))
+            $poll->free_answer = 1;
+        else{
+            for ($i=0; $i < 10; $i++) { 
+                if($request->input('option_'.$i))
+                    array_push($options, $request->input('option_'.$i));
+            }
+        }
+
+        // Assigning poll majors visibility
+        if(isset($_POST['public']))
+            $poll->public = 1;
+
+        $poll->save();
+
+        // Storing options on answers table
+        if($options)
+        {
+            foreach ($options as $option) {
+                $answer = new \App\Answer;
+                $answer->poll_id = $poll->id;
+                $answer->answer = $option;
+                $answer->save();
+            }
+        }
+
+        if(!(isset($_POST['public'])))
+            $poll->majors()->sync($_POST['majors'], $poll->id, false);
+
+        return redirect()->route('poll.index', $request->abrev);
     }
 
     /**
@@ -71,11 +103,12 @@ class PollController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function edit($id)
+    public function edit($abrev, $id)
     {
         $poll = Poll::find($id);
+        $majors = \App\Major::all();
 
-        return view('pages.dashboard.poll.edit_poll', compact('poll'));
+        return view('pages.dashboard.poll.edit_poll', compact('poll', 'abrev', 'majors'));
     }
 
     /**
@@ -85,9 +118,55 @@ class PollController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $abrev, $id)
     {
-        //
+        $options = [];
+        $poll = Poll::find($id);
+
+        //Deleting old answers
+        $old_answers = $poll->answers;
+        foreach ($old_answers as $old_answer)
+            \App\Answer::destroy($old_answer->id);
+
+        // Assigning new values
+        $poll->comite_id = Auth::user()->comite_id;
+        $poll->question = $_POST['question'];
+
+        // Setting if accepts multiple answers
+        if(isset($_POST['multiple_answers']))
+            $poll->multiple = 1;
+
+        // Setting answer type (free answer or predefined options)
+        if(isset($_POST['answer_type']))
+            $poll->free_answer = 1;
+        else{
+            for ($i=0; $i < 10; $i++) { 
+                if($request->input('option_'.$i))
+                    array_push($options, $request->input('option_'.$i));
+            }
+        }
+
+        // Assigning poll majors visibility
+        if(isset($_POST['public']))
+            $poll->public = 1;
+
+        $poll->save();
+
+        // Storing options on answers table
+        if($options)
+        {
+            foreach ($options as $option) {
+                $answer = new \App\Answer;
+                $answer->poll_id = $poll->id;
+                $answer->answer = $option;
+                $answer->save();
+            }
+        }
+
+        if(!(isset($_POST['public'])))
+            $poll->majors()->sync($_POST['majors'], $poll->id, false);
+
+        return redirect()->route('poll.index', $request->abrev);
     }
 
     /**
@@ -96,8 +175,10 @@ class PollController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy($id)
+    public function destroy($abrev, $id)
     {
-        //
+        Poll::destroy($id);
+
+        return redirect()->route('poll.index', $abrev);
     }
 }

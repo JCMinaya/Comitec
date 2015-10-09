@@ -24,8 +24,15 @@
         <hr>
        @if(!$polls->isEmpty())
            @foreach($polls as $poll)
-               {{$poll->title}}
-                <hr>
+              <div id="poll-container">
+                @include('includes.poll_structure')
+                <a href="poll/{{$poll->id}}/edit"><span class="fui-new edit"></span></a>
+
+                  {!! Form::open(array('route' => array('poll.destroy', $abrev, $poll->id), 'method' => 'delete')) !!}
+                    <button type="submit" class="btn btn-danger btn-mini delete"><span class="fui-trash delete"></span></button>
+                  {!! Form::close() !!}
+              </div>
+              <hr>
            @endforeach
        @else
            <p>No hay encuestas.</p>

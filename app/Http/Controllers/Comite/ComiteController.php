@@ -56,12 +56,4 @@ class ComiteController extends Controller
         return view('pages.comite', compact('comite', 'posts', 'members', 'abrev'));
     }
 
-    public function showMessages($abrev){
-        $comite = $this->getComite($abrev);
-        $proposals = $comite->proposals;
-        // dd($proposals); 
-
-        return view('pages.dashboard.messages', compact('proposals'));
-    }
-
 }

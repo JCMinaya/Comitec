@@ -17,7 +17,7 @@ class CreateProposalsTable extends Migration
             $table->integer('student_id');
             $table->integer('comite_id');
             $table->string('subject');
-            $table->text('text');
+            $table->text('content');
             $table->timeStamps();
         });
     }

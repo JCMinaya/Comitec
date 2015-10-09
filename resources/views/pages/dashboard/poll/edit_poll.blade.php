@@ -6,7 +6,7 @@
 
 	<div class="center">
 		
-	{!! Form::model($poll, ['route' => ['poll.update', $poll->id}], 'method' => 'PUT', 'class' => 'form-horizontal']) !!}
+	{!! Form::model($poll, ['route' => ['poll.update', $abrev, $poll->id], 'method' => 'PUT', 'class' => 'form-horizontal']) !!}
 	
 	    @include('pages.dashboard.poll.poll_form')
 	

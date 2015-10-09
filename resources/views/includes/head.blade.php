@@ -35,7 +35,10 @@
 	
 	{!! Html::script('js/jquery-te.min.js') !!}
 
-	{!! Html::script('js/questions.js') !!}
+	{{-- {!! Html::script('js/questions.js') !!} --}}
+	{!! Html::script('js/options.js') !!}
+
+	{!! Html::script('js/laravel.js') !!}
 
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 

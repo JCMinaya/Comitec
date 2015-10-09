@@ -27,8 +27,12 @@
                <div id="post-container">
                   @include('includes.post_structure')
                   <a href="post/{{$post->id}}/edit"><span class="fui-new edit"></span></a>
-                  
-                  <a href="destroy/{{$post->id}}"><span class="fui-trash delete"></span></a>
+
+                  {{-- <a href="post/{{$post->id}}" data-method="delete"><span class="fui-trash delete"></span></a> --}}
+                  {!! Form::open(array('route' => array('post.destroy', $abrev, $post->id), 'method' => 'delete')) !!}
+                    <button type="submit" class="btn btn-danger btn-mini delete"><span class="fui-trash delete"></span></button>
+                  {!! Form::close() !!}
+
                </div>
                <hr>
             @endforeach
