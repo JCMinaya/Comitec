@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use \Serverfireteam\Panel\CrudController;
 use App\Proposal;
 use App\Comite;
 use App\Major;
 use App\User;
 use Auth;
 
-class ComiteController extends Controller
+class ComiteController extends Controller 
 {
     public static function getComite($abrev)
     {
@@ -57,4 +58,17 @@ class ComiteController extends Controller
         return view('pages.comite', compact('comite', 'posts', 'members', 'abrev'));
     }
 
+<<<<<<< HEAD
+    public function showMessages($abrev){
+        $comite = $this->getComite($abrev);
+        $proposals = $comite->proposals;
+        // dd($proposals); 
+
+        return view('pages.dashboard.messages', compact('proposals'));
+    }
+
+   
+
+=======
+>>>>>>> d9e857a68d774e6fdfdacc6466a8d6c418355b03
 }
