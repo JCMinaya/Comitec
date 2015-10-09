@@ -1,12 +1,13 @@
 
 	    <div class="form-group">
-	        {!! Form::label('question_1', 'Ingresa la pregunta #1.') !!}
-	        {!! Form::text('question_1', null, ['class' => 'form-control', 'required' => 'required']) !!}
-	        <small class="text-danger">{{ $errors->first('question_1') }}</small>
+	        {!! Form::label('question', 'Ingresa la pregunta.') !!}
+	        {!! Form::text('question', null, ['class' => 'form-control', 'required' => 'required']) !!}
+	        <small class="text-danger">{{ $errors->first('question') }}</small>
 	    </div>
-
-		<button id="add-question" class="btn btn-info">Agregar pregunta</button>
-		<button id="remove-question" class="btn btn-danger">Eliminar pregunta</button>
+		
+		<div class="form-group">
+	    	@include('includes.option')
+		</div>
 
 	    <div class="form-group">
             {!! Form::label('majors', 'Selecciona las carreras que verán este post:') !!}
@@ -29,7 +30,7 @@
             <small class="text-danger">{{ $errors->first('Carreras') }}</small>
         </div>
 
-        <div class="form-group col-md-12">
+        {{-- <div class="form-group col-md-12">
             {!! Form::label('date', 'Fecha del evento') !!}
             <div class="form-group">
                 {!! Form::label('start', 'Empieza', ['class' => 'col-sm-3 control-label']) !!}
@@ -46,6 +47,4 @@
                 </div>
             </div>
             <small class="text-danger">{{ $errors->first('date') }}</small>
-        </div>
-
-@stop
+        </div> --}}

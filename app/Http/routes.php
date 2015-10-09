@@ -11,6 +11,17 @@
 |
 */
 
+View::composer('includes.sidebar', function($view)
+{
+    $abrev = Request::path();
+
+    if(Request::is('comite/*'))
+    	$abrev = explode('/', Request::path())[1];
+    if(Request::is('comite/*/dashboard'))
+    	$abrev = 'Different';
+
+    $view->with('abrev', $abrev);
+});
 
 Route::get('/', 'HomeController@index');
 
@@ -36,14 +47,16 @@ Route::group(['namespace' => 'Auth'], function()
 
 Route::group(['namespace' => 'Comite'], function()
 {
-	Route::get('comite/{abrev}', 'ComiteController@showComitePosts');
+	Route::get('comite/{abrev}', ['as' => 'comite.posts', 'uses' => 'ComiteController@showComitePosts']);
 
 	Route::group(['middleware' => ['auth', 'member']], function()
 	{
 
 		Route::get('comite/{abrev}/dashboard', ['as' => 'comite.dashboard', 'uses' => 'ComiteController@showDashboard']);
 
-		Route::get('comite/{abrev}/dashboard/message', 'ComiteController@showMessages');
+		Route::get('comite/{abrev}/dashboard/message', 'MessageController@index');
+		Route::post('comite/{abrev}/dashboard/message', ['as' => 'message.store', 'uses' => 'MessageController@store']);
+
 		Route::resource('comite/{abrev}/dashboard/post', 'PostController', [
 			'names' => [
 				'index' => 'post.index',
@@ -55,12 +68,9 @@ Route::group(['namespace' => 'Comite'], function()
 		Route::resource('comite/{abrev}/dashboard/poll', 'PollController', [
 			'names' => [
 				'index' => 'poll.index',
-				'store' => 'poll.store'
-			]
-		]);
-		Route::resource('message', 'MessageController', [
-			'names' => [
-				'store' => 'message.store'
+				'store' => 'poll.store',
+				'update' => 'poll.update',
+				'destroy' => 'poll.destroy'
 			]
 		]);
 	});

@@ -72,6 +72,7 @@ hr {
 	background-color: #34495E;
 	padding: 15px;
 	position: relative;
+	padding-bottom: 40px;
 }
 
 .columns{
@@ -122,8 +123,10 @@ hr {
     left: 50px;
 }
 #comite-logo{
-	border: 2px solid #5B5B5B;
+	/*border: 2px solid #5B5B5B;*/
 	margin-top: 10px;
+	width: 500px;
+	height: auto;
 }
 .title{
 	color: #B63B2F;
@@ -164,7 +167,7 @@ hr {
 	color: #fff;
 	font-size: 15px;
 }
-#post-container{
+#post-container, #poll-container{
 	position: relative;
 }
 .edit{
@@ -175,11 +178,11 @@ hr {
 	right: 0;
 }
 .delete{
-	color: #e74c3c;
-	font-size: 30px;
+	font-size: 20px;
 	position: absolute;
-	top: 40px;
+	top: 50px;
 	right: 0;
+	padding: 3px;
 }
 #test{
 	max-width: 200px;
@@ -191,4 +194,18 @@ hr {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+.padding-bottom{
+	padding-bottom: 10px;
+}
+#navbar{
+	padding-left: 45px;
+}
+.description-box{
+	background: #4B4B4B url('/img/patterns/always-grey.png') repeat;
+	padding: 20px;
+}.description-box h6{
+	font-family: 'lato';
+	font-size: larger;
+	font-weight: 400;
 }

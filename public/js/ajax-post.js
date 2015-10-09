@@ -24,7 +24,7 @@ $(document).ready(function () {
       console.log(id);
      $.ajax({
          url: 'post/' + id,
-         type: 'delete',
+         type: 'DELETE',
          headers: { 'X-CSRF-Token' : $('meta[name=_token]').attr('content') },
          data: {
             _id: id

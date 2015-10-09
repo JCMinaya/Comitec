@@ -1,6 +1,6 @@
 
 <div class="row demo-row">
-    <div class="col-xs-12">
+    <div id="navbar" class="col-xs-12">
       <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">

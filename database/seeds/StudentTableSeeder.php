@@ -25,7 +25,7 @@ class StudentTableSeeder extends Seeder
                     'gender' => array_rand($gender),
                     'password' => Hash::make('secret'),
                     'member' => true,
-                    'comite_id' => 2,
+                    'comite_id' => 3,
                     'role_id' => 1,
                     'major_id' => 2
                 ));

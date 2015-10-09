@@ -16,9 +16,12 @@
 	<div class="container-fluid">
 		<div class="col-md-12">
 			<hr>
-			@if(!$proposals->isEmpty())
-				@foreach($proposals as $proposal)
-					{{$proposal->subject}}
+			@if(!$messages->isEmpty())
+				@foreach($messages as $message)
+					<h5>From: <em>{{$message->user->name}} {{$message->user->last_name}}</em></h5>
+					<h6>About: <em>{{$message->subject}}</em></h6>
+					<p>Mensaje: <em>{{$message->text}}</em></p>
+					<hr>
 				@endforeach
 			@else
 				<p>No hay mensajes.</p>

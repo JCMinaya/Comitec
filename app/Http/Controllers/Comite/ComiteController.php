@@ -57,6 +57,7 @@ class ComiteController extends Controller
         return view('pages.comite', compact('comite', 'posts', 'members', 'abrev'));
     }
 
+<<<<<<< HEAD
     public function showMessages($abrev){
         $comite = $this->getComite($abrev);
         $proposals = $comite->proposals;
@@ -67,4 +68,6 @@ class ComiteController extends Controller
 
    
 
+=======
+>>>>>>> d9e857a68d774e6fdfdacc6466a8d6c418355b03
 }

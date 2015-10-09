@@ -123,9 +123,11 @@ class PostController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy($id)
+    public function destroy($abrev, $id)
     {
         Post::destroy($id);
+
+        return redirect()->route('post.index', $abrev);
     }
 
 }
