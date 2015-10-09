@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use \Serverfireteam\Panel\CrudController;
 use App\Proposal;
 use App\Comite;
 use App\Major;
 use App\User;
 use Auth;
 
-class ComiteController extends Controller
+class ComiteController extends Controller 
 {
     public static function getComite($abrev)
     {
@@ -63,5 +64,7 @@ class ComiteController extends Controller
 
         return view('pages.dashboard.messages', compact('proposals'));
     }
+
+   
 
 }
