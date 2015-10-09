@@ -45,7 +45,8 @@ class ComiteController extends Controller
                               ->where('comite_id', $comite->id)
                               ->orderBy('created_at')->get();
             $posts = $postsFilterByMajor->merge($postsPublic);
-        }else{
+        }
+        else{
             $posts = \App\Post::where('public', 1)
                               ->where('comite_id', $comite->id)
                               ->orderBy('created_at')->get();

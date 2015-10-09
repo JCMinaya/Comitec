@@ -10,14 +10,14 @@
 		<div class="col-md-12">
 			<h6><strong>Pregunta:</strong> <em>{{$poll->question}}</em></h6>
 		</div>
-		<div class="col-md-2">
+		<div class="col-md-3">
 			@if($poll->free_answer)
 				<h6><strong>Respuesta libre.</strong></h6>
 			@else
 				<h6><strong>Opciones:</strong></h6>
 			@endif
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-9">
 			@foreach($poll->answers as $answer)
 			  <li>{{$answer->answer}}</li>
 			@endforeach

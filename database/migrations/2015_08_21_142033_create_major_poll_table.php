@@ -16,7 +16,6 @@ class CreateMajorPollTable extends Migration
             $table->increments('id');
             $table->integer('poll_id');
             $table->integer('major_id');
-            $table->timeStamps();
         });
     }
 

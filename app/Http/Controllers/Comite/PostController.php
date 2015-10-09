@@ -105,9 +105,10 @@ class PostController extends Controller
         $post->date = $_POST['date'];
         $post->end_date = $_POST['end_date'];
         if(isset($_POST['public']))
-        {
             $post->public = 1;
-        }
+        else
+            $post->public = 0;
+        
         $post->save();
         if(!(isset($_POST['public'])))
         {
