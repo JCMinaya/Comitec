@@ -4,7 +4,7 @@
 			<span>{{$comite->abreviation}}</span>
 		</div> --}}
 		<span class="helper"></span>
-		<img id="test" src="/img/{{$abrev}}.png">
+		<img id="test" src="/img/{{$post->comite->abreviation}}.png">
 	</div>
 	<div class="col-xs-7 col-sm-8 col-md-10">
 		<h4>{{$post->title}}</h4>

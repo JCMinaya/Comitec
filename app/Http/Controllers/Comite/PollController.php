@@ -188,16 +188,17 @@ class PollController extends Controller
 
     public function store_result(Request $request, $abrev, $id)
     {
-        // dd($_POST['optionsRadios']);
         $poll_result = new \App\Poll_Result;
         $poll_result->student_id = Auth::user()->id;
         $poll_result->poll_id = $id;
 
         $poll = Poll::find($id);
         // dd($poll);
-        if($poll->free_answer)
-            $poll_result->answer = $_POST('free_answer');
-        elseif($poll->multiple)
+        if($poll->free_answer){
+            $poll_result->answer = (string) $_POST['free_answer'];
+            // dd($_POST['free_answer']);
+        }
+        else if($poll->multiple)
         {
             $checkboxes = $_POST['optionsCheckboxes'];
             $checkboxesResult = implode(', ', $checkboxes);
@@ -209,7 +210,7 @@ class PollController extends Controller
 
         $poll_result->save();
 
-        $poll = (array) $poll;
-        return back()->withInput($poll);
+        // $poll = (array) $poll;
+        return back();
     }
 }

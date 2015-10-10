@@ -20,7 +20,7 @@
 				@foreach($messages as $message)
 					<h5>From: <em>{{$message->user->name}} {{$message->user->last_name}}</em></h5>
 					<h6>About: <em>{{$message->subject}}</em></h6>
-					<p>Mensaje: <em>{{$message->text}}</em></p>
+					<p>Mensaje: <em>{{$message->content}}</em></p>
 					<hr>
 				@endforeach
 			@else

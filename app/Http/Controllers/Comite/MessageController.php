@@ -33,7 +33,7 @@ class MessageController extends Controller
     {
         $message = new \App\Proposal;
         $message->subject = $_POST['about'];
-        $message->text = $_POST['message'];
+        $message->content = $_POST['message'];
         $message->comite_id = $request->abrev;
         $message->student_id = Auth::user()->id;
         $message->save();

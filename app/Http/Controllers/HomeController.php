@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -17,8 +18,15 @@ class HomeController extends Controller
     public function index()
     {
     	$comites = \App\Comite::all();
+        $major = \App\Major::find(Auth::user()->major_id);
+        // dd($major);
+        $publicPosts = \App\Post::where('public', 1)->get();
+        $postsFilterByMajor = $major->posts()->get();
+        $posts = $postsFilterByMajor->merge($publicPosts);
 
-        return view('pages.home', compact('comites'));
+        // dd($posts);
+
+        return view('pages.home', compact('comites', 'posts'));
     }
 
 }
