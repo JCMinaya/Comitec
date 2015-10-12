@@ -17,12 +17,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-    	$comites = \App\Comite::all();
-        $major = \App\Major::find(Auth::user()->major_id);
-        // dd($major);
-        $publicPosts = \App\Post::where('public', 1)->get();
-        $postsFilterByMajor = $major->posts()->get();
-        $posts = $postsFilterByMajor->merge($publicPosts);
+        $comites = \App\Comite::all();
+        $posts = \App\Post::where('public', 1)->get();
+        if(Auth::check()){
+            $major = \App\Major::find(Auth::user()->major_id);
+            $postsFilterByMajor = $major->posts()->get();
+            $posts = $postsFilterByMajor->merge($posts);
+        }
 
         // dd($posts);
 
