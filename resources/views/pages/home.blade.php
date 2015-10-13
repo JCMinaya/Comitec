@@ -13,4 +13,24 @@
 			</a>
 		@endforeach
 	</div>
+
+
+<div id="home-posts" class="container-fluid">
+	<div class="text-center">
+		<span style="font-size:50px;color:#E74C3C" class="fui-triangle-down"></span>
+		<h2>Todos los posts</h5>
+	</div>
+	<hr>
+	<div class="container-fluid">
+		@if(!$posts->isEmpty())
+	       @foreach($posts as $post)
+	          @include('includes.post_structure')
+	          <hr>
+	       @endforeach
+	   @else
+	       <p>No hay publicaciones.</p>
+	   @endif
+	</div>
+</div>
+
 @stop

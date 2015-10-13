@@ -14,9 +14,9 @@ class CreatePollResultsTable extends Migration
     {
         Schema::create('poll_results', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('post_id');
+            $table->integer('poll_id');
             $table->integer('student_id');
-            $table->integer('answer_id');
+            $table->text('answer');
             $table->timeStamps();
         });
     }

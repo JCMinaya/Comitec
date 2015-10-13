@@ -49,6 +49,8 @@ class PollController extends Controller
         $poll = new \App\Poll;
         $poll->comite_id = Auth::user()->comite_id;
         $poll->question = $_POST['question'];
+        $poll->active = 1;
+
         // Setting if accepts multiple answers
         if(isset($_POST['multiple_answers']))
             $poll->multiple = 1;
@@ -66,6 +68,8 @@ class PollController extends Controller
         // Assigning poll majors visibility
         if(isset($_POST['public']))
             $poll->public = 1;
+        else
+            $poll->public = 0;
 
         $poll->save();
 
@@ -180,5 +184,33 @@ class PollController extends Controller
         Poll::destroy($id);
 
         return redirect()->route('poll.index', $abrev);
+    }
+
+    public function store_result(Request $request, $abrev, $id)
+    {
+        $poll_result = new \App\Poll_Result;
+        $poll_result->student_id = Auth::user()->id;
+        $poll_result->poll_id = $id;
+
+        $poll = Poll::find($id);
+        // dd($poll);
+        if($poll->free_answer){
+            $poll_result->answer = (string) $_POST['free_answer'];
+            // dd($_POST['free_answer']);
+        }
+        else if($poll->multiple)
+        {
+            $checkboxes = $_POST['optionsCheckboxes'];
+            $checkboxesResult = implode(', ', $checkboxes);
+            $poll_result->answer = $checkboxesResult;
+        }
+        else{
+            $poll_result->answer = $_POST['optionsRadios'];
+        }
+
+        $poll_result->save();
+
+        // $poll = (array) $poll;
+        return back();
     }
 }

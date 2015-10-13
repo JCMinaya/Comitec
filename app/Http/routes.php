@@ -13,14 +13,52 @@
 
 View::composer('includes.sidebar', function($view)
 {
-    $abrev = Request::path();
+    $path = Request::path();
+    $polls = \App\Poll::where('public', 1)
+    					->where('active', 1)
+    					->orderBy('created_at')->get();
 
-    if(Request::is('comite/*'))
-    	$abrev = explode('/', Request::path())[1];
-    if(Request::is('comite/*/dashboard'))
-    	$abrev = 'Different';
+    if($path == '/')
+    {
+    	if(Auth::check())
+    	{
+    		$user = Auth::user();
+	        $major = \App\Major::find($user->major_id);
+	        $pollsFilterByMajor = $major->polls()->where('active', 1)
+	        							->where('major_id', $major->id)
+	        							->orderBy('created_at')->get();
 
-    $view->with('abrev', $abrev);
+	        $polls = $pollsFilterByMajor->merge($polls);
+    	}
+    }
+
+    if(Request::is('comite/*')){
+    	if(Auth::check()){
+	    	$abrev = explode('/', Request::path())[1];
+	    	$comite = \App\Comite::where('abreviation', $abrev)->first();
+	    	$user = Auth::user();
+	        $major = \App\Major::find($user->major_id);
+	        $pollsFilterByMajor = $major->polls()->where('active', 1)
+	        							->where('comite_id', $comite->id)
+	        							->orderBy('created_at')->get();
+
+			$pollsPublic = \App\Poll::where('public', 1)
+									->where('active', 1)
+	                              	->where('comite_id', $comite->id)
+	                              	->orderBy('created_at')->get();
+
+	        $polls = $pollsFilterByMajor->merge($pollsPublic);	
+    	}
+    	else{
+    		$polls = \App\Poll::where('public', 1)
+    						  ->where('active', 1)
+	                          ->where('comite_id', $comite->id)
+	                          ->orderBy('created_at')->get();
+    	}
+    }
+    // dd($polls);
+
+    $view->with(['polls' => $polls]);
 });
 
 Route::get('/', 'HomeController@index');
@@ -72,6 +110,10 @@ Route::group(['namespace' => 'Comite'], function()
 				'update' => 'poll.update',
 				'destroy' => 'poll.destroy'
 			]
+		]);
+		Route::post('comite/{abrev}/dashboard/poll/{id}', [
+			'as' => 'poll.store_result', 
+			'uses' => 'PollController@store_result'
 		]);
 	});
 });
