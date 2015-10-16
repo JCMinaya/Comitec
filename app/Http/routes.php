@@ -11,6 +11,55 @@
 |
 */
 
+View::composer('includes.sidebar', function($view)
+{
+    $path = Request::path();
+    $polls = \App\Poll::where('public', 1)
+    					->where('active', 1)
+    					->orderBy('created_at')->get();
+
+    if($path == '/')
+    {
+    	if(Auth::check())
+    	{
+    		$user = Auth::user();
+	        $major = \App\Major::find($user->major_id);
+	        $pollsFilterByMajor = $major->polls()->where('active', 1)
+	        							->where('major_id', $major->id)
+	        							->orderBy('created_at')->get();
+
+	        $polls = $pollsFilterByMajor->merge($polls);
+    	}
+    }
+
+    if(Request::is('comite/*')){
+    	if(Auth::check()){
+	    	$abrev = explode('/', Request::path())[1];
+	    	$comite = \App\Comite::where('abreviation', $abrev)->first();
+	    	$user = Auth::user();
+	        $major = \App\Major::find($user->major_id);
+	        $pollsFilterByMajor = $major->polls()->where('active', 1)
+	        							->where('comite_id', $comite->id)
+	        							->orderBy('created_at')->get();
+
+			$pollsPublic = \App\Poll::where('public', 1)
+									->where('active', 1)
+	                              	->where('comite_id', $comite->id)
+	                              	->orderBy('created_at')->get();
+
+	        $polls = $pollsFilterByMajor->merge($pollsPublic);	
+    	}
+    	else{
+    		$polls = \App\Poll::where('public', 1)
+    						  ->where('active', 1)
+	                          ->where('comite_id', $comite->id)
+	                          ->orderBy('created_at')->get();
+    	}
+    }
+    // dd($polls);
+
+    $view->with(['polls' => $polls]);
+});
 
 Route::get('/', 'HomeController@index');
 
@@ -36,14 +85,16 @@ Route::group(['namespace' => 'Auth'], function()
 
 Route::group(['namespace' => 'Comite'], function()
 {
-	Route::get('comite/{abrev}', 'ComiteController@showComitePosts');
+	Route::get('comite/{abrev}', ['as' => 'comite.posts', 'uses' => 'ComiteController@showComitePosts']);
 
 	Route::group(['middleware' => ['auth', 'member']], function()
 	{
 
 		Route::get('comite/{abrev}/dashboard', ['as' => 'comite.dashboard', 'uses' => 'ComiteController@showDashboard']);
 
-		Route::get('comite/{abrev}/dashboard/message', 'ComiteController@showMessages');
+		Route::get('comite/{abrev}/dashboard/message', 'MessageController@index');
+		Route::post('comite/{abrev}/dashboard/message', ['as' => 'message.store', 'uses' => 'MessageController@store']);
+
 		Route::resource('comite/{abrev}/dashboard/post', 'PostController', [
 			'names' => [
 				'index' => 'post.index',
@@ -55,13 +106,14 @@ Route::group(['namespace' => 'Comite'], function()
 		Route::resource('comite/{abrev}/dashboard/poll', 'PollController', [
 			'names' => [
 				'index' => 'poll.index',
-				'store' => 'poll.store'
+				'store' => 'poll.store',
+				'update' => 'poll.update',
+				'destroy' => 'poll.destroy'
 			]
 		]);
-		Route::resource('message', 'MessageController', [
-			'names' => [
-				'store' => 'message.store'
-			]
+		Route::post('comite/{abrev}/dashboard/poll/{id}', [
+			'as' => 'poll.store_result', 
+			'uses' => 'PollController@store_result'
 		]);
 	});
 });

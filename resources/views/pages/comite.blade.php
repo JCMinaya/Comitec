@@ -32,13 +32,13 @@
           @endforeach
         @endif
        </div><br>
-      {!! Form::open(['method' => 'POST', 'route' => 'message.store', 'class' => 'form-horizontal my-box message-form']) !!}
+      {!! Form::open(['method' => 'POST', 'route' => ['message.store', $abrev], 'class' => 'form-horizontal my-box message-form']) !!}
       
           <p class="white">Envíale un mensaje a este comité</p>
           <div class="white form-group">
               {!! Form::label('about', 'Acerca:') !!}
-              {!! Form::text('Acerca', null, ['class' => 'form-control', 'required' => 'required']) !!}
-              <small class="text-danger">{{ $errors->first('Acerca') }}</small>
+              {!! Form::text('about', null, ['class' => 'form-control', 'required' => 'required']) !!}
+              <small class="text-danger">{{ $errors->first('about') }}</small>
           </div>
           <div class="white form-group">
               {!! Form::label('message', 'Mensaje') !!}

@@ -54,10 +54,11 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST','mysqldb2.csapgrylrbtw.us-west-2.rds.amazonaws.com'),
-            'database'  => env('DB_DATABASE', 'comitec'),
-            'username'  => env('DB_USERNAME', 'root'),
-            'password'  => env('DB_PASSWORD', 'kakito123'),
+            'host'      => explode('|', env('DB_HOST')),
+            'unix_socket'  => env('UNIX_SOCKET'),
+            'database'  => explode('|', env('DB_DATABASE')),
+            'username'  => explode('|', env('DB_USERNAME')),
+            'password'  => explode('|', env('DB_PASSWORD')),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

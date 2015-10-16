@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use \Serverfireteam\Panel\CrudController;
 use App\Proposal;
 use App\Comite;
 use App\Major;
 use App\User;
 use Auth;
 
-class ComiteController extends Controller
+class ComiteController extends Controller 
 {
     public static function getComite($abrev)
     {
@@ -44,8 +45,9 @@ class ComiteController extends Controller
             $postsPublic = \App\Post::where('public', 1)
                               ->where('comite_id', $comite->id)
                               ->orderBy('created_at')->get();
-            $posts = $postsFilterByMajor->merge($postsPublic);
-        }else{
+            $posts = $postsFilterByMajor->merge($postsPublic); 
+        }
+        else{
             $posts = \App\Post::where('public', 1)
                               ->where('comite_id', $comite->id)
                               ->orderBy('created_at')->get();
