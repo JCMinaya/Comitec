@@ -105,9 +105,10 @@ class PostController extends Controller
         $post->date = $_POST['date'];
         $post->end_date = $_POST['end_date'];
         if(isset($_POST['public']))
-        {
             $post->public = 1;
-        }
+        else
+            $post->public = 0;
+        
         $post->save();
         if(!(isset($_POST['public'])))
         {
@@ -123,9 +124,11 @@ class PostController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy($id)
+    public function destroy($abrev, $id)
     {
         Post::destroy($id);
+
+        return redirect()->route('post.index', $abrev);
     }
 
 }

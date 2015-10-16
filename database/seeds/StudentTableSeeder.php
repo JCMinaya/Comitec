@@ -25,7 +25,7 @@ class StudentTableSeeder extends Seeder
                     'gender' => array_rand($gender),
                     'password' => Hash::make('secret'),
                     'member' => true,
-                    'comite_id' => 2,
+                    'comite_id' => 3,
                     'role_id' => 1,
                     'major_id' => 2
                 ));
@@ -37,7 +37,7 @@ class StudentTableSeeder extends Seeder
                     'email' => '1054444@est.intec.edu.do',
                     'gender' => array_rand($gender),
                     'password' => Hash::make('segura'),
-                    'member' => false,
+                    'member' => true,
                     'comite_id' => 4,
                     'major_id' => 3
                 ));

@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "4a96256578dcbfac4c9a7a148517497e",
+    "content-hash": "54fb5f15ec885a6a5b998f6bb87539d7",
     "packages": [
         {
             "name": "barryvdh/elfinder-builds",
@@ -3726,6 +3727,105 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2015-09-14 14:14:09"
+        },
+        {
+            "name": "zofe/burp",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zofe/burp.git",
+                "reference": "f69d1cb1ee498c02f83baa99ccefd379bd1a4325"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zofe/burp/zipball/f69d1cb1ee498c02f83baa99ccefd379bd1a4325",
+                "reference": "f69d1cb1ee498c02f83baa99ccefd379bd1a4325",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zofe\\Burp\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Felice Ostuni",
+                    "email": "felice.ostuni@gmail.com"
+                }
+            ],
+            "description": "Simple PHP router that works with query-string and uri-segments",
+            "homepage": "https://github.com/zofe/burp",
+            "keywords": [
+                "Simple",
+                "filter",
+                "front controller",
+                "php",
+                "router"
+            ],
+            "time": "2015-03-09 22:51:58"
+        },
+        {
+            "name": "zofe/rapyd",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zofe/rapyd-laravel.git",
+                "reference": "1431470ff004190344ffbe3d6381732b712d8a95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zofe/rapyd-laravel/zipball/1431470ff004190344ffbe3d6381732b712d8a95",
+                "reference": "1431470ff004190344ffbe3d6381732b712d8a95",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/html": "~5.0",
+                "illuminate/support": "~5.0",
+                "intervention/image": "2.*",
+                "php": ">=5.4.0",
+                "zofe/burp": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "migrations"
+                ],
+                "psr-4": {
+                    "Zofe\\Rapyd\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "zofe",
+                    "email": "felice.ostuni@gmail.com"
+                }
+            ],
+            "description": "crud widgets for laravel, to make an admin in few lines of code",
+            "homepage": "https://github.com/zofe/rapyd-laravel",
+            "keywords": [
+                "Rapyd",
+                "admin",
+                "administrator",
+                "backend",
+                "crud",
+                "datatable",
+                "form",
+                "laravel"
+            ],
+            "time": "2015-09-16 09:34:41"
         }
     ],
     "aliases": [],
