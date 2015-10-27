@@ -1,8 +1,8 @@
 /vendor
 /node_modules
 /bootstrap/compiled.php
-.env.*.php
-.env.php
+.env.*
+.env
 comitec.sublime-project
 comitec.sublime-workspace
 .env

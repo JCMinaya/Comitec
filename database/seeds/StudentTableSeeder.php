@@ -39,7 +39,20 @@ class StudentTableSeeder extends Seeder
                     'password' => Hash::make('segura'),
                     'member' => true,
                     'comite_id' => 4,
+                    'role_id' => 1,
                     'major_id' => 3
+                ));
+            }
+            elseif ($i == 2) {
+                $student = User::create(array(
+                    'name' => 'Fulano',
+                    'last_name' => 'Derp',
+                    'email' => '1050000@est.intec.edu.do',
+                    'gender' => array_rand($gender),
+                    'password' => Hash::make('segura'),
+                    'member' => false,
+                    'comite_id' => 4,
+                    'major_id' => 1
                 ));
             }
         	$student = User::create(array(
