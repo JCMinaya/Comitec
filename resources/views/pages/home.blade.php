@@ -17,7 +17,7 @@
 
 <div id="home-posts" class="container-fluid">
 	<div class="text-center">
-		<a href="#arrpw"><span id="arrow" style="font-size:50px;color:#E74C3C" class="fui-triangle-down"></span></a>
+		<a href="#arrow"><span id="arrow" style="font-size:50px;color:#E74C3C" class="fui-triangle-down"></span></a>
 		<h2>Todos los posts</h5>
 	</div>
 	<hr>
