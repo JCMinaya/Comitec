@@ -60,7 +60,7 @@
 			          		</label>
 						@else
 							<label class="checkbox" for="checkbox1" style="margin-top:0">
-				            <input type="checkbox" name="optionsCheckboxes" value="{{$answer->id}}" id="checkbox_{{$answer->id}}" data-toggle="checkbox" class="custom-checkbox" required>
+				            <input type="checkbox" name="optionsCheckboxes" value="{{$answer->answer}}" id="checkbox_{{$answer->id}}" data-toggle="checkbox" class="custom-checkbox" required>
 					            <span class="icons">
 					            	<span class="icon-unchecked"></span>
 					            	<span class="icon-checked"></span>
