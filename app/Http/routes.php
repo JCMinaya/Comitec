@@ -33,9 +33,11 @@ View::composer('includes.sidebar', function($view)
     }
 
     if(Request::is('comite/*')){
+	    
+	    $abrev = explode('/', Request::path())[1];
+	    $comite = \App\Comite::where('abreviation', $abrev)->first();
+	    
     	if(Auth::check()){
-	    	$abrev = explode('/', Request::path())[1];
-	    	$comite = \App\Comite::where('abreviation', $abrev)->first();
 	    	$user = Auth::user();
 	        $major = \App\Major::find($user->major_id);
 	        $pollsFilterByMajor = $major->polls()->where('active', 1)
