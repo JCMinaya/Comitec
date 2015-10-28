@@ -95,7 +95,6 @@ Route::group(['namespace' => 'Comite'], function()
 		Route::get('comite/{abrev}/dashboard', ['as' => 'comite.dashboard', 'uses' => 'ComiteController@showDashboard']);
 
 		Route::get('comite/{abrev}/dashboard/message', 'MessageController@index');
-		Route::post('comite/{abrev}/dashboard/message', ['as' => 'message.store', 'uses' => 'MessageController@store']);
 
 		Route::resource('comite/{abrev}/dashboard/post', 'PostController', [
 			'names' => [
@@ -118,5 +117,11 @@ Route::group(['namespace' => 'Comite'], function()
 			'uses' => 'PollController@store_result'
 		]);
 	});
+
+	Route::post('comite/{abrev}/dashboard/message', [
+		'as' => 'message.store',
+		'uses' => 'MessageController@store',
+		'middleware' => 'auth'
+		]);
 });
 

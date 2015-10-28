@@ -184,6 +184,13 @@ hr {
 	right: 0;
 	padding: 3px;
 }
+.comment{
+	font-size: 20px;
+	position: absolute;
+	bottom: 50px;
+	right: 20px;
+	padding: 3px;
+}
 #test{
 	max-width: 200px;
 	width: 100%;

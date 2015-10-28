@@ -17,6 +17,7 @@
        @if(!$posts->isEmpty())
            @foreach($posts as $post)
               @include('includes.post_structure')
+              <a href="#"><span class="fui-chat comment"> Comentarios</span></a>
               <hr>
            @endforeach
        @else

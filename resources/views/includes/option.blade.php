@@ -1,7 +1,7 @@
 	
 	<div id="static" class="col-lg-6">
 	    <div id="input_group_1" class="input-group padding-bottom">
-	      <input id="option_1" name="option_1" type="text" class="form-control" aria-label="...">
+	      <input id="option_1" name="option_1" type="text" class="form-control" aria-label="..." required>
 	      <div class="input-group-btn">
 	        <a id="remove_option_1" type="button" class="btn btn-danger" disabled>Eliminar opción</a>
 	      </div><!-- /btn-group -->
