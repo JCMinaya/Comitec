@@ -16,7 +16,15 @@
         <hr>
        @if(!$posts->isEmpty())
            @foreach($posts as $post)
+            <div class="relative">
+
               @include('includes.post_structure')
+
+              <br>
+
+              @include('includes.comments')
+              
+            </div>
               <hr>
            @endforeach
        @else
@@ -52,5 +60,6 @@
       
       {!! Form::close() !!}
     </div>
-</div>  
+</div> 
+
 @stop

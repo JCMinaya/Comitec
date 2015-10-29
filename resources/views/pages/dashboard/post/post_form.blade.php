@@ -40,7 +40,7 @@
             {!! Form::label('majors', 'Selecciona las carreras que verán este post:') !!}
             <div class="my-box columns" style="background:#D1D1D1">
                 <label for="checkbox_public">
-                    <input name="public" type="checkbox" id="checkbox_public" data-toggle="checkbox">
+                    <input name="public" type="checkbox" id="checkbox_public" data-toggle="checkbox" checked="checked">
                     Público <em>[ Visible para cualquiera que entre a la plataforma ]</em>
                 </label>
                 <hr style="margin:10px 0 10px">

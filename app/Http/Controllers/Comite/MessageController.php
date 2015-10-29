@@ -29,15 +29,16 @@ class MessageController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $abrev)
     {
         $message = new \App\Proposal;
         $message->subject = $_POST['about'];
         $message->content = $_POST['message'];
-        $message->comite_id = $request->abrev;
+        $comite = \App\Comite::where('abreviation', $abrev)->first();
+        $message->comite_id = $comite->id;
         $message->student_id = Auth::user()->id;
         $message->save();
 
-        return redirect()->route('comite.posts', $request->abrev);
+        return redirect()->route('comite.posts', $abrev);
     }
 }
