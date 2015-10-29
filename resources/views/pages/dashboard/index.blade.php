@@ -20,7 +20,7 @@
 			<h3>Integrantes:</h3>
 			<ul>
 				@foreach($members as $member)
-					<li>{{$member->name}} {{$member->last_name}} - [ {{App\Role::find($member->role_id)->role_name}} ]</li>
+					<li>{{$member->name}} {{$member->last_name}} - [ {{\App\Role::find($member->role_id)->role_name}} ]</li>
 				@endforeach
 			</ul>
 		</div>
