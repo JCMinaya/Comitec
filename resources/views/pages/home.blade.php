@@ -24,7 +24,11 @@
 	<div class="container-fluid">
 		@if(!$posts->isEmpty())
 	       @foreach($posts as $post)
+	       	<div class="relative">
 	          @include('includes.post_structure')
+	          <br>
+              @include('includes.comments')
+	        </div>
 	          <hr>
 	       @endforeach
 	   @else

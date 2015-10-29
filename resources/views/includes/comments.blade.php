@@ -1,4 +1,4 @@
-<a href="#"><span id="{{$post->id}}" class="fui-chat comment"> Comentarios</span></a>
+              <a href="javascript:void(0)"><span id="{{$post->id}}" class="fui-chat comment"> Comentarios</span></a>
               <div id="comment_{{$post->id}}" class="comentarios container-fluid">
               {{-- {{dd($comentarios)}} --}}
                 <ul>
