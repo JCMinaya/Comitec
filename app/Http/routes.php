@@ -124,10 +124,10 @@ Route::group(['middleware' => 'auth'], function()
 {
 	Route::post('comite/{abrev}/dashboard/message', [
 		'as' => 'message.store',
-		'uses' => 'MessageController@store'
+		'uses' => 'Comite\MessageController@store'
 		]);
 
-	Route::post('comment/{post_id}/{abrev}', [
+	Route::post('comment/{post_id}/{abrev}/{pathinfo}', [
 		'as' => 'comment',
 		'uses' => 'CommentController@store'
 		]);

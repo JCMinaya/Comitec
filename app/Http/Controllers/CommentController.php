@@ -17,15 +17,19 @@ class CommentController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request, $post_id, $abrev)
+    public function store(Request $request, $post_id, $abrev, $pathinfo)
     {
+
         $comment = new \App\Comment;
         $comment->student_id = Auth::user()->id;
         $comment->post_id = $post_id;
         $comment->text = $_POST['comment'];
         $comment->save();
 
-        return redirect()->route('comite.posts', [$abrev]);
+        if($pathinfo)
+            return redirect()->back();
+        else
+            return redirect()->route('comite.posts', [$abrev]);
     }
 
     /**
