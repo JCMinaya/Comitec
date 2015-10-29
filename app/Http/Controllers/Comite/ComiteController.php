@@ -23,7 +23,7 @@ class ComiteController extends Controller
     public function showDashboard($abrev)
     {
         $comite = $this->getComite($abrev);
-        $members = $comite->users;
+        $members = $comite->users()->where('member',1)->get();
         // dd($members);
 
         return view('pages.dashboard.index', compact('comite', 'members'));
