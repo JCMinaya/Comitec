@@ -11,7 +11,11 @@
                     </li>
                   @endforeach
                 @endif
-                  {!! Form::open(['method' => 'POST', 'route' => ['comment', $post->id, $comite->abreviation], 'class' => 'form-horizontal']) !!}
+                @if(Request::is('comite/*'))
+                  {!! Form::open(['method' => 'POST', 'route' => ['comment', $post->id, $comite->abreviation, 0], 'class' => 'form-horizontal']) !!}
+                @else
+                  {!! Form::open(['method' => 'POST', 'route' => ['comment', $post->id, $comite->abreviation, 1], 'class' => 'form-horizontal']) !!}
+                @endif
                   
                       <div class="form-group">
                           {!! Form::textarea('comment', null, ['rows' => 3, 'placeholder' => 'Escribe un comentario...', 'class' => 'form-control', 'required' => 'required']) !!}
