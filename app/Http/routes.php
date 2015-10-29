@@ -118,10 +118,17 @@ Route::group(['namespace' => 'Comite'], function()
 		]);
 	});
 
-	Route::post('comite/{abrev}/dashboard/message', [
-		'as' => 'message.store',
-		'uses' => 'MessageController@store',
-		'middleware' => 'auth'
-		]);
 });
 
+Route::group(['middleware' => 'auth'], function()
+{
+	Route::post('comite/{abrev}/dashboard/message', [
+		'as' => 'message.store',
+		'uses' => 'MessageController@store'
+		]);
+
+	Route::post('comment/{post_id}/{abrev}', [
+		'as' => 'comment',
+		'uses' => 'CommentController@store'
+		]);
+});
