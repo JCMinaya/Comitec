@@ -3,8 +3,8 @@
 Homestead.yaml
 Homestead.json
 /bootstrap/compiled.php
-.env.*.php
-.env.php
+.env.*
+.env
 comitec.sublime-project
 comitec.sublime-workspace
 .idea
