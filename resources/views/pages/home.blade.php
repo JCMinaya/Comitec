@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('content')
-	<a id="guide" href="https://docs.google.com/document/u/0/d/11CkMWfAAJqc2Nxj2VJtc2ySOplHiWDwn3WrZdWPgsSI/export?format=docx"><span class="fui-bookmark"></span></a>
+	<a id="guide" href="/pdf/ManualdeUsuario.pdf" target="blank"><span class="fui-bookmark"></span></a>
 	<div class="logo text-center">
 		<span>COMI</span><span>TEC</span>
 	</div>
