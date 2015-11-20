@@ -1,5 +1,6 @@
 @extends('layouts.default')
 @section('content')
+	<a id="guide" href="/pdf/ManualdeUsuario.pdf" target="blank"><span class="fui-bookmark"></span></a>
 	<div class="logo text-center">
 		<span>COMI</span><span>TEC</span>
 	</div>
@@ -38,3 +39,10 @@
 </div>
 
 @stop
+<script type="text/javascript">
+	// $.(document).ready(function(){
+	// 	$('#guide').on('click', function(){
+	// 		$('#guide').colorbox({href:"../includes/user_guide.html"}); 
+	// 	});
+	// });
+</script>

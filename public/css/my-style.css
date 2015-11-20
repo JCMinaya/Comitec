@@ -235,3 +235,9 @@ hr {
 	padding-left: 10px;
 	border-left: 2px solid;
 }
+#guide{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 30px;
+}

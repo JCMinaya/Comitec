@@ -19,6 +19,8 @@
 
 	{!! Html::style('css/jquery-te.css') !!}
 
+	{!! Html::style('css/colorbox.css') !!}
+
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/vader/jquery-ui.css">
 
 <!-- SCRIPTS -->
@@ -41,6 +43,8 @@
 	{!! Html::script('js/laravel.js') !!}
 
 	{!! Html::script('js/slideComment.js') !!}
+
+	{!! Html::script('js/jquery.colorbox-min.js') !!}
 
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
