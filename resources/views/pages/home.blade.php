@@ -39,10 +39,3 @@
 </div>
 
 @stop
-<script type="text/javascript">
-	// $.(document).ready(function(){
-	// 	$('#guide').on('click', function(){
-	// 		$('#guide').colorbox({href:"../includes/user_guide.html"}); 
-	// 	});
-	// });
-</script>

@@ -5,7 +5,7 @@
 @include('includes.header')
 
 <div class="center">
-    {!! Form::open(['method' => 'POST', 'route' => ['post.store', $abrev], 'class' => 'form-horizontal']) !!}
+    {!! Form::open(['method' => 'POST', 'route' => ['post.store', $abrev], 'class' => 'form-horizontal', 'files' => true]) !!}
     
         @include('pages.dashboard.post.post_form')
 

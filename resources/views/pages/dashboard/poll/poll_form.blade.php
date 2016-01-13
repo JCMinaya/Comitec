@@ -30,21 +30,4 @@
             <small class="text-danger">{{ $errors->first('Carreras') }}</small>
         </div>
 
-        {{-- <div class="form-group col-md-12">
-            {!! Form::label('date', 'Fecha del evento') !!}
-            <div class="form-group">
-                {!! Form::label('start', 'Empieza', ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-9">
-                    {!! Form::text('date', null, ['id' => 'datepicker', 'class' => 'form-control', 'required' => 'required']) !!}
-                    <small class="text-danger">{{ $errors->first('date') }}</small>
-                </div>
-            </div>
-            <div class="form-group">
-                {!! Form::label('end', 'Termina (opcional)', ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-9">
-                    {!! Form::text('end_date', null, ['id' => 'datepicker2', 'class' => 'form-control']) !!}
-                    <small class="text-danger">{{ $errors->first('end_date') }}</small>
-                </div>
-            </div>
-            <small class="text-danger">{{ $errors->first('date') }}</small>
-        </div> --}}
+        

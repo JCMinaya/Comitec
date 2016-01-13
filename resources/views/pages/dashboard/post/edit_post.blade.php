@@ -5,7 +5,7 @@
 @include('includes.header')
 
 <div class="center">
-    {!! Form::model($post, ['route' => ['post.update', $abrev, $post->id], 'method' => 'PUT', 'class' => 'form-horizontal']) !!}
+    {!! Form::model($post, ['route' => ['post.update', $abrev, $post->id], 'method' => 'PUT', 'class' => 'form-horizontal', 'files' => true]) !!}
     
         @include('pages.dashboard.post.post_form')
     

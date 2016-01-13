@@ -30,7 +30,7 @@
 								<li class="active">{{$section}}</li>
 							@else
 								@if($section == 'Home')
-									<li><a href="/">Home</a></li>
+									<li><a href="/">Inicio</a></li>
 								@else
 									<li><a href="/{{$path}}">{{$section}}</a></li>
 								@endif

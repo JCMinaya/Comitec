@@ -58,8 +58,8 @@ View::composer('includes.sidebar', function($view)
 	                          ->orderBy('created_at')->get();
     	}
     }
-    // dd($polls);
-
+    
+    
     $view->with(['polls' => $polls]);
 });
 

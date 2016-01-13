@@ -18,11 +18,11 @@
 			<hr>
 			@if(!$messages->isEmpty())
 				@foreach($messages as $message)
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="vertical-line">
-						<h5>From: <em>{{$message->user->name}} {{$message->user->last_name}}</em><p>[{{$message->user->email}}]</p></h5>
-						<h6>About: <em>{{$message->subject}}</em></h6>
-						<p>Mensaje: <em>{{$message->content}}</em></p>
+						<h5 >De: <em>{{$message->user->name}} {{$message->user->last_name}}<p>[{{$message->user->email}}]</p></em></h5>
+						<h6> - <em>{{$message->subject}}</em></h6>
+						<p><span class="fui-triangle-right-large"></span> <em>{{$message->content}}</em></p>
 					</div>
 					<hr>
 				</div>
