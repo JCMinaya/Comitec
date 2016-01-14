@@ -58,8 +58,18 @@ View::composer('includes.sidebar', function($view)
 	                          ->orderBy('created_at')->get();
     	}
     }
-    // dd($polls);
-
+    if (Auth::check()) {
+	    foreach ($polls as $key => $value) {
+	    	$voted_poll = \App\Poll_Result::where('poll_id', $value->id)
+	    								->where('student_id', Auth::user()->id)
+	    								->first();
+	    	if(isset($voted_poll) && !empty($voted_poll)){
+	    		$polls->pull($key);
+	    	}
+	    	// dd($polls);
+	    }
+    }
+    
     $view->with(['polls' => $polls]);
 });
 

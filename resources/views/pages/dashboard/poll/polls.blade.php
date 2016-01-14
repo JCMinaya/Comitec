@@ -20,7 +20,7 @@
 </div>
     
 <div class="container-">
-    <div class="col-sm-12 col-md-9">
+    <div class="col-sm-12 col-md-12">
         <hr>
        @if(!$polls->isEmpty())
            @foreach($polls as $poll)

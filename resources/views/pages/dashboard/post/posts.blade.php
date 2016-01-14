@@ -20,7 +20,7 @@
 </div>
 
 <div class="container-fluid">
-    <div class="col-sm-12 col-md-9">
+    <div class="col-md-12">
         <hr>
          @if(!$posts->isEmpty())
             @foreach($posts as $post)
@@ -30,7 +30,7 @@
 
                   {{-- <a href="post/{{$post->id}}" data-method="delete"><span class="fui-trash delete"></span></a> --}}
                   {!! Form::open(array('route' => array('post.destroy', $abrev, $post->id), 'method' => 'delete')) !!}
-                    <button type="submit" class="btn btn-danger btn-mini delete"><span class="fui-trash delete"></span></button>
+                    <button id='delete' type="submit" class="btn btn-danger btn-mini delete"><span class="fui-trash delete"></span></button>
                   {!! Form::close() !!}
 
                </div>

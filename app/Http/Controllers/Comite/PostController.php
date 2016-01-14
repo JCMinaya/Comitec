@@ -33,7 +33,7 @@ class PostController extends Controller
     {
         $majors = \App\Major::all();
         $abrev = $request->abrev;
-        
+
         return view('pages.dashboard.post.new_post', compact('majors', 'abrev'));
     }
 
@@ -55,6 +55,11 @@ class PostController extends Controller
         {
             $post->public = 1;
         }
+
+        $file_path = $this->fileValidation($request, 'image');
+        if($file_path)
+            $post->image = $file_path;
+
         $post->save();
         if(!(isset($_POST['public'])))
         {
@@ -108,7 +113,11 @@ class PostController extends Controller
             $post->public = 1;
         else
             $post->public = 0;
-        
+
+        $file_path = $this->fileValidation($request, 'image');
+        if($file_path)
+            $post->image = $file_path;
+
         $post->save();
         if(!(isset($_POST['public'])))
         {
@@ -129,6 +138,22 @@ class PostController extends Controller
         Post::destroy($id);
 
         return redirect()->route('post.index', $abrev);
+    }
+
+    private function fileValidation($request, $name)
+    {
+        if($request->hasFile($name))
+        {
+            if($request->file($name)->isValid())
+            {
+                $file_name = $request->file($name)->getClientOriginalName();
+                $file_path = 'uploads/';
+                $request->file($name)->move($file_path, $file_name);
+
+                return $file_path.$file_name;
+            }
+        }
+        return false;
     }
 
 }

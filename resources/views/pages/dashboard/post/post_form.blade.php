@@ -1,4 +1,4 @@
-    
+
         <div class="form-group">
             {!! Form::label('title', 'Título') !!}
             {!! Form::text('title', null, ['class' => 'form-control', 'required' => 'required']) !!}
@@ -11,30 +11,12 @@
             <small class="text-danger">{{ $errors->first('Description') }}</small>
         </div>
 
-        {{-- <div class="form-group">
-            {!! Form::label('file', 'Adjunta un archivo') !!}
-            {!! Form::file('file', ['class' => 'required']) !!}
-            <p class="help-block">Help block text</p>
-            <small class="text-danger">{{ $errors->first('file') }}</small>
-        </div> --}}
-
-{{--         <!-------------------------- jQUERY TEXT EDITOR -------------------------->
-
-        <input name="input" type="text" value="<b>My contents are from <u><span style=&quot;color:rgb(0, 148, 133);&quot;>INPUT</span></u></b>" class="jqte-test">
-
-        <script>
-            $('.jqte-test').jqte();
-            
-            // settings of status
-            var jqteStatus = true;
-            $(".status").click(function()
-            {
-                jqteStatus = jqteStatus ? false : true;
-                $('.jqte-test').jqte({"status" : jqteStatus})
-            });
-        </script>
-
-        <!------------------------- jQUERY TEXT EDITOR --------------------------> --}}
+        <div class="form-group">
+            {!! Form::label('image', 'Adjunta una imagen') !!}
+            {!! Form::file('image' , ['class' => 'form-control']) !!}
+            <p class="help-block">Sube una imagen correspondiente al post</p>
+            <small class="text-danger">{{ $errors->first('image') }}</small>
+        </div>
 
         <div class="form-group">
             {!! Form::label('majors', 'Selecciona las carreras que verán este post:') !!}

@@ -19,7 +19,7 @@
 
 	{!! Html::style('css/jquery-te.css') !!}
 
-	{!! Html::style('css/colorbox.css') !!}
+	{!! Html::style('css/jquery.fancybox.css') !!}
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/vader/jquery-ui.css">
 
@@ -44,7 +44,7 @@
 
 	{!! Html::script('js/slideComment.js') !!}
 
-	{!! Html::script('js/jquery.colorbox-min.js') !!}
+	{!! Html::script('js/jquery.fancybox.js') !!}
 
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 

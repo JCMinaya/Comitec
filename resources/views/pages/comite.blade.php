@@ -29,20 +29,20 @@
            @endforeach
        @else
            <p>No hay publicaciones.</p>
-       @endif
-    </div>
+       @endif </div>
     <div class="col-md-3 no-padding">
       <div class="my-box comite-info">
-        <span class="fui-mail"> {{$comite->email}}</span><br>
+        <span class="fui-mail"> {{$comite->email}}</span><br><hr>
         @if(!$members->isEmpty())
           @foreach($members as $member)
-            <span class="fui-user"> {{$member->name}} {{$member->last_name}} - {{App\Role::find($member->role_id)->role_name}}</span>
+            <span class="fui-user"> {{$member->name}} {{$member->last_name}}</span><br>
+            {{-- <span class="fui-user"> {{$member->name}} {{$member->last_name}} - {{App\Role::find($member->role_id)->role_name}}</span><br> --}}
           @endforeach
         @endif
        </div><br>
       {!! Form::open(['method' => 'POST', 'route' => ['message.store', $abrev], 'class' => 'form-horizontal my-box message-form']) !!}
       
-          <p class="white">Envíale un mensaje a este comité</p>
+          <p class="white lead small">Envíale un mensaje a este comité</p>
           <div class="white form-group">
               {!! Form::label('about', 'Acerca:') !!}
               {!! Form::text('about', null, ['class' => 'form-control', 'required' => 'required']) !!}
