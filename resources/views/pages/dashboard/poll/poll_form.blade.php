@@ -30,4 +30,3 @@
             <small class="text-danger">{{ $errors->first('Carreras') }}</small>
         </div>
 
-        

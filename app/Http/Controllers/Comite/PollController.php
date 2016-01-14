@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
 use App\Poll;
+use DB;
 
 class PollController extends Controller
 {
@@ -20,8 +21,11 @@ class PollController extends Controller
     {
         $polls = \App\Poll::where('comite_id', Auth::user()->comite_id)->get();
         $majors = \App\Major::all();
+        
+        $votes = collect(DB::select('SELECT pr.poll_id, pr.answer, count(pr.answer_id) as cant from poll_results pr 
+                                        group by pr.poll_id, pr.answer_id'));
 
-        return view('pages.dashboard.poll.polls', compact('polls', 'abrev', 'majors'));
+        return view('pages.dashboard.poll.polls', compact('polls', 'abrev', 'majors', 'votes'));
     }
 
     /**
@@ -205,7 +209,8 @@ class PollController extends Controller
             $poll_result->answer = $checkboxesResult;
         }
         else{
-            $poll_result->answer = $_POST['optionsRadios'];
+            $poll_result->answer = \App\Answer::find($_POST['optionRadio'])->answer;
+            $poll_result->answer_id = $_POST['optionRadio'];
         }
 
         $poll_result->save();

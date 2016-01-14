@@ -8,19 +8,28 @@
 	</div>
 	<div class="col-xs-7 col-sm-8 col-md-10">
 		<div class="col-md-12">
-			<h6><strong>Pregunta:</strong> <em>{{$poll->question}}</em></h6>
+			<p class="lead small"><strong>Pregunta:</strong> <em>{{$poll->question}}</em></p>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 			@if($poll->free_answer)
-				<h6><strong>Respuesta libre.</strong></h6>
+				<p class="lead small"><strong>Respuestas.</strong></p>
+				@foreach($votes as $value)
+					@if($value->poll_id == $poll->id)
+						<span class="fui-triangle-right-large"></span>{{$value->answer}}<br>
+					@endif
+				@endforeach
 			@else
-				<h6><strong>Opciones:</strong></h6>
+				<p class="lead small"><strong>Resultados:</strong></p>
 			@endif
 		</div>
 		<div class="col-md-9">
-			@foreach($poll->answers as $answer)
-			  <li>{{$answer->answer}}</li>
+		@if($poll->free_answer != 1)
+			@foreach($votes as $vote)
+				@if($vote->poll_id == $poll->id)
+					<li>{{$vote->answer}} - <em style="color:blue">{{$vote->cant}}</em></li>
+				@endif
 			@endforeach
+		@endif
 		</div>
 	</div>
 </div>
